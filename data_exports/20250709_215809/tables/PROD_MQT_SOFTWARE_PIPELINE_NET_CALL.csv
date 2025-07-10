@@ -1,0 +1,1001 @@
+YEAR,QUARTER,GEOGRAPHY,MARKET,UT15_NAME,TRANSACTIONAL_ADJUSTMENT,WEEK,CALL,NET_CALL
+2023,4,Americas,Canadian Market,Z TPS,0.0,10.0,895311.99,895311.99
+2023,4,Americas,Canadian Market,Z TPS,0.0,11.0,555311.99,555311.99
+2023,4,Americas,Canadian Market,Z TPS,0.0,12.0,159311.99,159311.99
+2023,4,Americas,Canadian Market,Z TPS,0.0,13.0,141311.97999999998,141311.97999999998
+2023,4,Americas,Canadian Market,Z TPS,0.0,14.0,141311.97999999998,141311.97999999998
+2023,4,Americas,Canadian Market,Z TPS,0.0,15.0,141311.97999999998,141311.97999999998
+2023,4,Americas,Latin America Market,Automation Platform,0.0,1.0,30423589.53,30423589.53
+2023,4,Americas,Latin America Market,Automation Platform,0.0,2.0,33177354.83,33177354.83
+2023,4,Americas,Latin America Market,Automation Platform,0.0,3.0,32877101.06,32877101.06
+2023,4,Americas,Latin America Market,Automation Platform,0.0,4.0,33180160.93,33180160.93
+2023,4,Americas,Latin America Market,Automation Platform,0.0,5.0,33309557.65,33309557.65
+2023,4,Americas,Latin America Market,Automation Platform,0.0,6.0,34670730.38,34670730.38
+2023,4,Americas,Latin America Market,Automation Platform,0.0,7.0,35218591.07,35218591.07
+2023,4,Americas,Latin America Market,Automation Platform,0.0,8.0,36979206.14,36979206.14
+2023,4,Americas,Latin America Market,Automation Platform,0.0,9.0,37217131.17,37217131.17
+2023,4,Americas,Latin America Market,Automation Platform,0.0,10.0,37203225.53,37203225.53
+2023,4,Americas,Latin America Market,Automation Platform,0.0,11.0,38116093.02,38116093.02
+2023,4,Americas,Latin America Market,Automation Platform,0.0,12.0,38482281.01,38482281.01
+2023,4,Americas,Latin America Market,Automation Platform,0.0,13.0,50768933.08,50768933.08
+2023,4,Americas,Latin America Market,Automation Platform,0.0,14.0,50724964.55,50724964.55
+2023,4,Americas,Latin America Market,Automation Platform,0.0,15.0,50700886.47,50700886.47
+2023,4,Americas,Latin America Market,Data Platform,0.0,1.0,37174153.97,37174153.97
+2023,4,Americas,Latin America Market,Data Platform,0.0,2.0,39264354.37,39264354.37
+2023,4,Americas,Latin America Market,Data Platform,0.0,3.0,38953352.33,38953352.33
+2023,4,Americas,Latin America Market,Data Platform,0.0,4.0,38930300.85,38930300.85
+2023,4,Americas,Latin America Market,Data Platform,0.0,5.0,42737017.18,42737017.18
+2023,4,Americas,Latin America Market,Data Platform,0.0,6.0,39971865.32,39971865.32
+2023,4,Americas,Latin America Market,Data Platform,0.0,7.0,41075617.65,41075617.65
+2023,4,Americas,Latin America Market,Data Platform,0.0,8.0,48141063.83,48141063.83
+2023,4,Americas,Latin America Market,Data Platform,0.0,9.0,48781474.33,48781474.33
+2023,4,Americas,Latin America Market,Data Platform,0.0,10.0,49168560.59,49168560.59
+2023,4,Americas,Latin America Market,Data Platform,0.0,11.0,52963211.54,52963211.54
+2023,4,Americas,Latin America Market,Data Platform,0.0,12.0,54556462.11,54556462.11
+2023,4,Americas,Latin America Market,Data Platform,0.0,13.0,70377087.91,70377087.91
+2023,4,Americas,Latin America Market,Data Platform,0.0,14.0,68113806.38,68113806.38
+2023,4,Americas,Latin America Market,Data Platform,0.0,15.0,68669902.5,68669902.5
+2023,4,Americas,Latin America Market,Public Cloud Platform,0.0,1.0,0.0,0.0
+2023,4,Americas,Latin America Market,Public Cloud Platform,0.0,2.0,0.0,0.0
+2023,4,Americas,Latin America Market,Public Cloud Platform,0.0,3.0,0.0,0.0
+2023,4,Americas,Latin America Market,Public Cloud Platform,0.0,4.0,0.0,0.0
+2023,4,Americas,Latin America Market,Public Cloud Platform,0.0,5.0,0.0,0.0
+2023,4,Americas,Latin America Market,Public Cloud Platform,0.0,6.0,0.0,0.0
+2023,4,Americas,Latin America Market,Public Cloud Platform,0.0,7.0,0.0,0.0
+2023,4,Americas,Latin America Market,Public Cloud Platform,0.0,8.0,0.0,0.0
+2023,4,Americas,Latin America Market,Public Cloud Platform,0.0,9.0,0.0,0.0
+2023,4,Americas,Latin America Market,Public Cloud Platform,0.0,10.0,0.0,0.0
+2023,4,Americas,Latin America Market,Public Cloud Platform,0.0,11.0,0.0,0.0
+2023,4,Americas,Latin America Market,Public Cloud Platform,0.0,12.0,0.0,0.0
+2023,4,Americas,Latin America Market,Storage TPS,0.0,1.0,3127498.06,3127498.06
+2023,4,Americas,Latin America Market,Storage TPS,0.0,2.0,3557498.06,3557498.06
+2023,4,Americas,Latin America Market,Storage TPS,0.0,3.0,3119065.07,3119065.07
+2023,4,Americas,Latin America Market,Storage TPS,0.0,4.0,3664065.0700000003,3664065.0700000003
+2023,4,Americas,Latin America Market,Storage TPS,0.0,5.0,3504600.68,3504600.68
+2023,4,Americas,Latin America Market,Storage TPS,0.0,6.0,3498491.85,3498491.85
+2023,4,Americas,Latin America Market,Storage TPS,0.0,7.0,3311015.71,3311015.71
+2023,4,Americas,Latin America Market,Storage TPS,0.0,8.0,3662585.92,3662585.92
+2023,4,Americas,Latin America Market,Storage TPS,0.0,9.0,3944959.92,3944959.92
+2023,4,Americas,Latin America Market,Storage TPS,0.0,10.0,4271215.81,4271215.81
+2023,4,Americas,Latin America Market,Storage TPS,0.0,11.0,4572738.5,4572738.5
+2023,4,Americas,Latin America Market,Storage TPS,0.0,12.0,4751930.33,4751930.33
+2023,4,Americas,Latin America Market,Storage TPS,0.0,13.0,6415411.8100000005,6415411.8100000005
+2023,4,Americas,Latin America Market,Storage TPS,0.0,14.0,6425892.27,6425892.27
+2023,4,Americas,Latin America Market,Storage TPS,0.0,15.0,6484389.35,6484389.35
+2023,4,Americas,Latin America Market,Z TPS,0.0,1.0,13393784.79,13393784.79
+2023,4,Americas,Latin America Market,Z TPS,0.0,2.0,13460024.61,13460024.61
+2023,4,Americas,Latin America Market,Z TPS,0.0,3.0,13460024.61,13460024.61
+2023,4,Americas,Latin America Market,Z TPS,0.0,4.0,13610024.61,13610024.61
+2023,4,Americas,Latin America Market,Z TPS,0.0,5.0,14152191.52,14152191.52
+2023,4,Americas,Latin America Market,Z TPS,0.0,6.0,14152191.52,14152191.52
+2023,4,Americas,Latin America Market,Z TPS,0.0,7.0,14180695.47,14180695.47
+2023,4,Americas,Latin America Market,Z TPS,0.0,8.0,15144488.129999999,15144488.129999999
+2023,4,Americas,Latin America Market,Z TPS,0.0,9.0,15277488.129999999,15277488.129999999
+2023,4,Americas,Latin America Market,Z TPS,0.0,10.0,15304488.129999999,15304488.129999999
+2023,4,Americas,Latin America Market,Z TPS,0.0,11.0,19719932.29,19719932.29
+2023,4,Americas,Latin America Market,Z TPS,0.0,12.0,21341538.07,21341538.07
+2023,4,Americas,Latin America Market,Z TPS,0.0,13.0,18290563.16,18290563.16
+2023,4,Americas,Latin America Market,Z TPS,0.0,14.0,18290853.56,18290853.56
+2023,4,Americas,Latin America Market,Z TPS,0.0,15.0,18290853.56,18290853.56
+2023,4,Americas,US Federal Market,Automation Platform,0.0,1.0,17436082.169999998,17436082.169999998
+2023,4,Americas,US Federal Market,Automation Platform,0.0,2.0,17796882.89,17796882.89
+2023,4,Americas,US Federal Market,Automation Platform,0.0,3.0,17217905.48,17217905.48
+2023,4,Americas,US Federal Market,Automation Platform,0.0,4.0,15313992.64,15313992.64
+2023,4,Americas,US Federal Market,Automation Platform,0.0,5.0,18136414.78,18136414.78
+2023,4,Americas,US Federal Market,Automation Platform,0.0,6.0,18583421.84,18583421.84
+2023,4,Americas,US Federal Market,Automation Platform,0.0,7.0,16752271.49,16752271.49
+2023,4,Americas,US Federal Market,Automation Platform,0.0,8.0,17311271.49,17311271.49
+2023,4,Americas,US Federal Market,Automation Platform,0.0,9.0,17609787.17,17609787.17
+2023,4,Americas,US Federal Market,Automation Platform,0.0,10.0,19653342.11,19653342.11
+2023,4,Americas,US Federal Market,Automation Platform,0.0,11.0,20319730.97,20319730.97
+2023,4,Americas,US Federal Market,Automation Platform,0.0,12.0,22015412.29,22015412.29
+2023,4,Americas,US Federal Market,Automation Platform,0.0,13.0,21297825.55,21297825.55
+2023,4,Americas,US Federal Market,Automation Platform,0.0,14.0,21713710.81,21713710.81
+2023,4,Americas,US Federal Market,Automation Platform,0.0,15.0,21713710.81,21713710.81
+2023,4,Americas,US Federal Market,Data Platform,0.0,1.0,18451670.36,18451670.36
+2023,4,Americas,US Federal Market,Data Platform,0.0,2.0,18587200.53,18587200.53
+2023,4,Americas,US Federal Market,Data Platform,0.0,3.0,17661598.93,17661598.93
+2023,4,Americas,US Federal Market,Data Platform,0.0,4.0,15616322.73,15616322.73
+2023,4,Americas,US Federal Market,Data Platform,0.0,5.0,15056625.07,15056625.07
+2023,4,Americas,US Federal Market,Data Platform,0.0,6.0,15686955.66,15686955.66
+2023,4,Americas,US Federal Market,Data Platform,0.0,7.0,15653594.46,15653594.46
+2023,4,Americas,US Federal Market,Data Platform,0.0,8.0,15103394.46,15103394.46
+2023,4,Americas,US Federal Market,Data Platform,0.0,9.0,13992830.66,13992830.66
+2023,4,Americas,US Federal Market,Data Platform,0.0,10.0,13623183.15,13623183.15
+2023,4,Americas,US Federal Market,Data Platform,0.0,11.0,15186570.46,15186570.46
+2023,4,Americas,US Federal Market,Data Platform,0.0,12.0,15309071.46,15309071.46
+2023,4,Americas,US Federal Market,Data Platform,0.0,13.0,15429327.67,15429327.67
+2023,4,Americas,US Federal Market,Data Platform,0.0,14.0,15429526.67,15429526.67
+2023,4,Americas,US Federal Market,Data Platform,0.0,15.0,16731392.870000001,16731392.870000001
+2023,4,Americas,US Federal Market,Power TPS,0.0,1.0,0.0,0.0
+2023,4,Americas,US Federal Market,Power TPS,0.0,2.0,0.0,0.0
+2023,4,Americas,US Federal Market,Power TPS,0.0,3.0,0.0,0.0
+2023,4,Americas,US Federal Market,Power TPS,0.0,4.0,0.0,0.0
+2023,4,Americas,US Federal Market,Power TPS,0.0,5.0,0.0,0.0
+2023,4,Americas,US Federal Market,Power TPS,0.0,6.0,0.0,0.0
+2023,4,Americas,US Federal Market,Public Cloud Platform,0.0,1.0,0.0,0.0
+2023,4,Americas,US Federal Market,Storage TPS,0.0,1.0,504538.0,504538.0
+2023,4,Americas,US Federal Market,Storage TPS,0.0,2.0,526393.5,526393.5
+2023,4,Americas,US Federal Market,Storage TPS,0.0,3.0,522238.0,522238.0
+2023,4,Americas,US Federal Market,Storage TPS,0.0,4.0,522238.0,522238.0
+2023,4,Americas,US Federal Market,Storage TPS,0.0,5.0,522238.0,522238.0
+2023,4,Americas,US Federal Market,Storage TPS,0.0,6.0,524878.0,524878.0
+2023,4,Americas,US Federal Market,Storage TPS,0.0,7.0,524878.0,524878.0
+2023,4,Americas,US Federal Market,Storage TPS,0.0,8.0,524878.0,524878.0
+2023,4,Americas,US Federal Market,Storage TPS,0.0,9.0,343562.0,343562.0
+2023,4,Americas,US Federal Market,Storage TPS,0.0,10.0,498562.0,498562.0
+2023,4,Americas,US Federal Market,Storage TPS,0.0,11.0,498562.0,498562.0
+2023,4,Americas,US Federal Market,Storage TPS,0.0,12.0,590710.0,590710.0
+2023,4,Americas,US Federal Market,Storage TPS,0.0,13.0,1835562.0,1835562.0
+2023,4,Americas,US Federal Market,Storage TPS,0.0,14.0,1385562.0,1385562.0
+2023,4,Americas,US Federal Market,Storage TPS,0.0,15.0,1385562.0,1385562.0
+2023,4,Americas,US Federal Market,Z TPS,0.0,1.0,4520634.83,4520634.83
+2023,4,Americas,US Federal Market,Z TPS,0.0,2.0,4520634.83,4520634.83
+2023,4,Americas,US Federal Market,Z TPS,0.0,3.0,4520634.83,4520634.83
+2023,4,Americas,US Federal Market,Z TPS,0.0,4.0,4647022.93,4647022.93
+2023,4,Americas,US Federal Market,Z TPS,0.0,5.0,4647022.93,4647022.93
+2023,4,Americas,US Federal Market,Z TPS,0.0,6.0,4647022.93,4647022.93
+2023,4,Americas,US Federal Market,Z TPS,0.0,7.0,4647022.93,4647022.93
+2023,4,Americas,US Federal Market,Z TPS,0.0,8.0,4647022.93,4647022.93
+2023,4,Americas,US Federal Market,Z TPS,0.0,9.0,347022.93,347022.93
+2023,4,Americas,US Federal Market,Z TPS,0.0,10.0,347022.93,347022.93
+2023,4,Americas,US Federal Market,Z TPS,0.0,11.0,347022.93,347022.93
+2023,4,Americas,US Federal Market,Z TPS,0.0,12.0,422477.56,422477.56
+2023,4,Americas,US Federal Market,Z TPS,0.0,13.0,422477.56,422477.56
+2023,4,Americas,US Federal Market,Z TPS,0.0,14.0,422477.56,422477.56
+2023,4,Americas,US Federal Market,Z TPS,0.0,15.0,422477.56,422477.56
+2023,4,Americas,US Financial Service Market,Automation Platform,0.0,1.0,48063155.98,48063155.98
+2023,4,Americas,US Financial Service Market,Automation Platform,0.0,2.0,48911874.62,48911874.62
+2023,4,Americas,US Financial Service Market,Automation Platform,0.0,3.0,49019176.54,49019176.54
+2023,4,Americas,US Financial Service Market,Automation Platform,0.0,4.0,48409828.04,48409828.04
+2023,4,Americas,US Financial Service Market,Automation Platform,0.0,5.0,51024183.04,51024183.04
+2023,4,Americas,US Financial Service Market,Automation Platform,0.0,6.0,53474183.04,53474183.04
+2023,4,Americas,US Financial Service Market,Automation Platform,0.0,7.0,61166228.04,61166228.04
+2023,4,Americas,US Financial Service Market,Automation Platform,0.0,8.0,56407682.7,56407682.7
+2023,4,Americas,US Financial Service Market,Automation Platform,0.0,9.0,53131042.51,53131042.51
+2023,4,Americas,US Financial Service Market,Automation Platform,0.0,10.0,57414948.99,57414948.99
+2023,4,Americas,US Financial Service Market,Automation Platform,0.0,11.0,57747814.1,57747814.1
+2023,4,Americas,US Financial Service Market,Automation Platform,0.0,12.0,56956950.980000004,56956950.980000004
+2023,4,Americas,US Financial Service Market,Automation Platform,0.0,13.0,46033162.68,46033162.68
+2023,4,Americas,US Financial Service Market,Automation Platform,0.0,14.0,47597071.480000004,47597071.480000004
+2023,4,Americas,US Financial Service Market,Automation Platform,0.0,15.0,47597071.480000004,47597071.480000004
+2023,4,Americas,US Financial Service Market,Data Platform,0.0,1.0,86166149.17,86166149.17
+2023,4,Americas,US Financial Service Market,Data Platform,0.0,2.0,87661799.03,87661799.03
+2023,4,Americas,US Financial Service Market,Data Platform,0.0,3.0,87670305.51,87670305.51
+2023,4,Americas,US Financial Service Market,Data Platform,0.0,4.0,97586090.37,97586090.37
+2023,4,Americas,US Financial Service Market,Data Platform,0.0,5.0,120100710.56,120100710.56
+2023,4,Americas,US Financial Service Market,Data Platform,0.0,6.0,121473605.84,121473605.84
+2023,4,Americas,US Financial Service Market,Data Platform,0.0,7.0,128894241.52,128894241.52
+2023,4,Americas,US Financial Service Market,Data Platform,0.0,8.0,129643444.33,129643444.33
+2023,4,Americas,US Financial Service Market,Data Platform,0.0,9.0,137062711.09,137062711.09
+2023,4,Americas,US Financial Service Market,Data Platform,0.0,10.0,124217536.89,124217536.89
+2023,4,Americas,US Financial Service Market,Data Platform,0.0,11.0,120089023.04,120089023.04
+2023,4,Americas,US Financial Service Market,Data Platform,0.0,12.0,102808427.95,102808427.95
+2023,4,Americas,US Financial Service Market,Data Platform,0.0,13.0,86798316.9,86798316.9
+2023,4,Americas,US Financial Service Market,Data Platform,0.0,14.0,86798316.9,86798316.9
+2023,4,Americas,US Financial Service Market,Data Platform,0.0,15.0,86812779.99,86812779.99
+2023,4,Americas,US Financial Service Market,Public Cloud Platform,0.0,1.0,0.0,0.0
+2023,4,APAC,Korea Market,Automation Platform,0.0,14.0,1835222.99,1835222.99
+2023,4,APAC,Korea Market,Automation Platform,0.0,15.0,1835222.99,1835222.99
+2023,4,APAC,Korea Market,Data Platform,0.0,1.0,6386000.0,6386000.0
+2023,4,APAC,Korea Market,Data Platform,0.0,2.0,8186000.0,8186000.0
+2023,4,APAC,Korea Market,Data Platform,0.0,3.0,8168562.62,8168562.62
+2023,4,APAC,Korea Market,Data Platform,0.0,4.0,6432948.67,6432948.67
+2023,4,APAC,Korea Market,Data Platform,0.0,5.0,6707706.47,6707706.47
+2023,4,APAC,Korea Market,Data Platform,0.0,6.0,6776706.47,6776706.47
+2023,4,APAC,Korea Market,Data Platform,0.0,7.0,8167906.47,8167906.47
+2023,4,APAC,Korea Market,Data Platform,0.0,8.0,7979387.15,7979387.15
+2023,4,APAC,Korea Market,Data Platform,0.0,9.0,8412056.67,8412056.67
+2023,4,APAC,Korea Market,Data Platform,0.0,10.0,8409056.67,8409056.67
+2023,4,APAC,Korea Market,Data Platform,0.0,11.0,8765230.870000001,8765230.870000001
+2023,4,APAC,Korea Market,Data Platform,0.0,12.0,8942230.870000001,8942230.870000001
+2023,4,APAC,Korea Market,Data Platform,0.0,13.0,7838530.87,7838530.87
+2023,4,APAC,Korea Market,Data Platform,0.0,14.0,7838530.87,7838530.87
+2023,4,APAC,Korea Market,Data Platform,0.0,15.0,7889890.87,7889890.87
+2023,4,APAC,Korea Market,Storage TPS,0.0,1.0,1265000.8,1265000.8
+2023,4,APAC,Korea Market,Storage TPS,0.0,2.0,1258000.8,1258000.8
+2023,4,APAC,Korea Market,Storage TPS,0.0,3.0,1258000.8,1258000.8
+2023,4,APAC,Korea Market,Storage TPS,0.0,4.0,1313000.0,1313000.0
+2023,4,APAC,Korea Market,Storage TPS,0.0,5.0,1303000.0,1303000.0
+2023,4,APAC,Korea Market,Storage TPS,0.0,6.0,1303000.0,1303000.0
+2023,4,APAC,Korea Market,Storage TPS,0.0,7.0,1397000.0,1397000.0
+2023,4,APAC,Korea Market,Storage TPS,0.0,8.0,1507000.0,1507000.0
+2023,4,APAC,Korea Market,Storage TPS,0.0,9.0,1507000.0,1507000.0
+2023,4,APAC,Korea Market,Storage TPS,0.0,10.0,1598080.0,1598080.0
+2023,4,APAC,Korea Market,Storage TPS,0.0,11.0,1700080.0,1700080.0
+2023,4,APAC,Korea Market,Storage TPS,0.0,12.0,1757080.0,1757080.0
+2023,4,APAC,Korea Market,Storage TPS,0.0,13.0,1807080.0,1807080.0
+2023,4,APAC,Korea Market,Storage TPS,0.0,14.0,1777080.0,1777080.0
+2023,4,APAC,Korea Market,Storage TPS,0.0,15.0,1777080.0,1777080.0
+2023,4,APAC,Korea Market,Z TPS,0.0,1.0,0.0,0.0
+2023,4,APAC,Korea Market,Z TPS,0.0,2.0,0.0,0.0
+2023,4,APAC,Korea Market,Z TPS,0.0,3.0,0.0,0.0
+2023,4,APAC,Korea Market,Z TPS,0.0,4.0,0.0,0.0
+2023,4,APAC,Korea Market,Z TPS,0.0,5.0,0.0,0.0
+2023,4,Americas,Canadian Market,Automation Platform,0.0,1.0,27862532.13,27862532.13
+2023,4,Americas,Canadian Market,Automation Platform,0.0,2.0,27541641.79,27541641.79
+2023,4,Americas,Canadian Market,Automation Platform,0.0,3.0,31573687.6,31573687.6
+2023,4,Americas,Canadian Market,Automation Platform,0.0,4.0,32577717.19,32577717.19
+2023,4,Americas,Canadian Market,Automation Platform,0.0,5.0,34300192.82,34300192.82
+2023,4,Americas,Canadian Market,Automation Platform,0.0,6.0,33336329.45,33336329.45
+2023,4,Americas,Canadian Market,Automation Platform,0.0,7.0,32489303.87,32489303.87
+2023,4,Americas,Canadian Market,Automation Platform,0.0,8.0,32334029.130000003,32334029.130000003
+2023,4,Americas,Canadian Market,Automation Platform,0.0,9.0,38597140.08,38597140.08
+2023,4,Americas,Canadian Market,Automation Platform,0.0,10.0,39650732.67,39650732.67
+2023,4,Americas,Canadian Market,Automation Platform,0.0,11.0,40350406.71,40350406.71
+2023,4,Americas,Canadian Market,Automation Platform,0.0,12.0,37409002.88,37409002.88
+2023,4,Americas,Canadian Market,Automation Platform,0.0,13.0,32713006.59,32713006.59
+2023,4,Americas,Canadian Market,Automation Platform,0.0,14.0,32717210.17,32717210.17
+2023,4,Americas,Canadian Market,Automation Platform,0.0,15.0,32216650.17,32216650.17
+2023,4,Americas,Canadian Market,Data Platform,0.0,1.0,26472735.06,26472735.06
+2023,4,Americas,Canadian Market,Data Platform,0.0,2.0,25677716.39,25677716.39
+2023,4,Americas,Canadian Market,Data Platform,0.0,3.0,25715950.02,25715950.02
+2023,4,Americas,Canadian Market,Data Platform,0.0,4.0,31507978.15,31507978.15
+2023,4,Americas,Canadian Market,Data Platform,0.0,5.0,34676279.769999996,34676279.769999996
+2023,4,Americas,Canadian Market,Data Platform,0.0,6.0,34184237.31,34184237.31
+2023,4,Americas,Canadian Market,Data Platform,0.0,7.0,34364457.89,34364457.89
+2023,4,Americas,Canadian Market,Data Platform,0.0,8.0,34970450.53,34970450.53
+2023,4,Americas,Canadian Market,Data Platform,0.0,9.0,33864996.6,33864996.6
+2023,4,Americas,Canadian Market,Data Platform,0.0,10.0,34161496.69,34161496.69
+2023,4,Americas,Canadian Market,Data Platform,0.0,11.0,36622765.04,36622765.04
+2023,4,Americas,Canadian Market,Data Platform,0.0,12.0,38190982.24,38190982.24
+2023,4,Americas,Canadian Market,Data Platform,0.0,13.0,37189457.01,37189457.01
+2023,4,Americas,Canadian Market,Data Platform,0.0,14.0,37244740.34,37244740.34
+2023,4,Americas,Canadian Market,Data Platform,0.0,15.0,37243220.34,37243220.34
+2023,4,Americas,Canadian Market,Power TPS,0.0,1.0,0.0,0.0
+2023,4,Americas,Canadian Market,Power TPS,0.0,2.0,0.0,0.0
+2023,4,Americas,Canadian Market,Power TPS,0.0,3.0,0.0,0.0
+2023,4,Americas,Canadian Market,Power TPS,0.0,4.0,0.0,0.0
+2023,4,Americas,Canadian Market,Power TPS,0.0,5.0,0.0,0.0
+2023,4,Americas,Canadian Market,Power TPS,0.0,6.0,0.0,0.0
+2023,4,Americas,Canadian Market,Power TPS,0.0,7.0,0.0,0.0
+2023,4,Americas,Canadian Market,Power TPS,0.0,8.0,0.0,0.0
+2023,4,Americas,Canadian Market,Power TPS,0.0,9.0,0.0,0.0
+2023,4,Americas,Canadian Market,Power TPS,0.0,10.0,0.0,0.0
+2023,4,Americas,Canadian Market,Power TPS,0.0,11.0,0.0,0.0
+2023,4,Americas,Canadian Market,Public Cloud Platform,0.0,1.0,0.0,0.0
+2023,4,Americas,Canadian Market,Public Cloud Platform,0.0,2.0,0.0,0.0
+2023,4,Americas,Canadian Market,Public Cloud Platform,0.0,3.0,0.0,0.0
+2023,4,Americas,Canadian Market,Public Cloud Platform,0.0,4.0,0.0,0.0
+2023,4,Americas,Canadian Market,Public Cloud Platform,0.0,5.0,0.0,0.0
+2023,4,Americas,Canadian Market,Public Cloud Platform,0.0,6.0,0.0,0.0
+2023,4,Americas,Canadian Market,Public Cloud Platform,0.0,7.0,0.0,0.0
+2023,4,Americas,Canadian Market,Public Cloud Platform,0.0,8.0,0.0,0.0
+2023,4,Americas,Canadian Market,Public Cloud Platform,0.0,9.0,0.0,0.0
+2023,4,Americas,Canadian Market,Public Cloud Platform,0.0,10.0,0.0,0.0
+2023,4,Americas,Canadian Market,Storage TPS,0.0,1.0,1468000.0,1468000.0
+2023,4,Americas,Canadian Market,Storage TPS,0.0,2.0,1468000.0,1468000.0
+2023,4,Americas,Canadian Market,Storage TPS,0.0,3.0,1293000.0,1293000.0
+2023,4,Americas,Canadian Market,Storage TPS,0.0,4.0,1293000.0,1293000.0
+2023,4,Americas,Canadian Market,Storage TPS,0.0,5.0,1756675.6600000001,1756675.6600000001
+2023,4,Americas,Canadian Market,Storage TPS,0.0,6.0,1607675.6600000001,1607675.6600000001
+2023,4,Americas,Canadian Market,Storage TPS,0.0,7.0,1607675.6600000001,1607675.6600000001
+2023,4,Americas,Canadian Market,Storage TPS,0.0,8.0,1607675.6600000001,1607675.6600000001
+2023,4,Americas,Canadian Market,Storage TPS,0.0,9.0,1814675.6600000001,1814675.6600000001
+2023,4,Americas,Canadian Market,Storage TPS,0.0,10.0,2164675.66,2164675.66
+2023,4,Americas,Canadian Market,Storage TPS,0.0,11.0,2178009.0,2178009.0
+2023,4,Americas,Canadian Market,Storage TPS,0.0,12.0,2182009.0,2182009.0
+2023,4,Americas,Canadian Market,Storage TPS,0.0,13.0,2222911.0,2222911.0
+2023,4,Americas,Canadian Market,Storage TPS,0.0,14.0,2240244.33,2240244.33
+2023,4,Americas,Canadian Market,Storage TPS,0.0,15.0,2240244.33,2240244.33
+2023,4,Americas,Canadian Market,Z TPS,0.0,1.0,644559.39,644559.39
+2023,4,Americas,Canadian Market,Z TPS,0.0,2.0,644559.39,644559.39
+2023,4,Americas,Canadian Market,Z TPS,0.0,3.0,1294559.3900000001,1294559.3900000001
+2023,4,Americas,Canadian Market,Z TPS,0.0,4.0,894559.39,894559.39
+2023,4,Americas,Canadian Market,Z TPS,0.0,5.0,594311.99,594311.99
+2023,4,Americas,Canadian Market,Z TPS,0.0,6.0,594311.99,594311.99
+2023,4,Americas,Canadian Market,Z TPS,0.0,7.0,594311.99,594311.99
+2023,4,Americas,Canadian Market,Z TPS,0.0,8.0,594311.99,594311.99
+2023,4,Americas,Canadian Market,Z TPS,0.0,9.0,594311.99,594311.99
+2023,4,Americas,US National Market,Power TPS,0.0,7.0,5000.0,5000.0
+2023,4,Americas,US National Market,Power TPS,0.0,8.0,10000.0,10000.0
+2023,4,Americas,US National Market,Power TPS,0.0,9.0,10000.0,10000.0
+2023,4,Americas,US National Market,Power TPS,0.0,10.0,10000.0,10000.0
+2023,4,Americas,US National Market,Power TPS,0.0,11.0,10000.0,10000.0
+2023,4,Americas,US National Market,Power TPS,0.0,12.0,10000.0,10000.0
+2023,4,Americas,US National Market,Power TPS,0.0,13.0,10000.0,10000.0
+2023,4,Americas,US National Market,Power TPS,0.0,14.0,10000.0,10000.0
+2023,4,Americas,US National Market,Power TPS,0.0,15.0,10000.0,10000.0
+2023,4,Americas,US National Market,Public Cloud Platform,0.0,1.0,158484.9,158484.9
+2023,4,Americas,US National Market,Public Cloud Platform,0.0,2.0,158484.9,158484.9
+2023,4,Americas,US National Market,Public Cloud Platform,0.0,3.0,158484.9,158484.9
+2023,4,Americas,US National Market,Public Cloud Platform,0.0,4.0,158484.9,158484.9
+2023,4,Americas,US National Market,Public Cloud Platform,0.0,5.0,47384.9,47384.9
+2023,4,Americas,US National Market,Public Cloud Platform,0.0,6.0,46297.34,46297.34
+2023,4,Americas,US National Market,Public Cloud Platform,0.0,7.0,46297.34,46297.34
+2023,4,Americas,US National Market,Public Cloud Platform,0.0,8.0,46297.34,46297.34
+2023,4,Americas,US National Market,Public Cloud Platform,0.0,9.0,46297.34,46297.34
+2023,4,Americas,US National Market,Public Cloud Platform,0.0,10.0,46276.770000000004,46276.770000000004
+2023,4,Americas,US National Market,Public Cloud Platform,0.0,11.0,7376.77,7376.77
+2023,4,Americas,US National Market,Public Cloud Platform,0.0,12.0,7376.77,7376.77
+2023,4,Americas,US National Market,Public Cloud Platform,0.0,13.0,7376.77,7376.77
+2023,4,Americas,US National Market,Public Cloud Platform,0.0,14.0,7376.77,7376.77
+2023,4,Americas,US National Market,Public Cloud Platform,0.0,15.0,7376.77,7376.77
+2023,4,Americas,US National Market,Storage TPS,0.0,1.0,5989609.4,5989609.4
+2023,4,Americas,US National Market,Storage TPS,0.0,2.0,5988049.4,5988049.4
+2023,4,Americas,US National Market,Storage TPS,0.0,3.0,6215549.4,6215549.4
+2023,4,Americas,US National Market,Storage TPS,0.0,4.0,6536723.4,6536723.4
+2023,4,Americas,US National Market,Storage TPS,0.0,5.0,7640191.359999999,7640191.359999999
+2023,4,Americas,US National Market,Storage TPS,0.0,6.0,7066366.16,7066366.16
+2023,4,Americas,US National Market,Storage TPS,0.0,7.0,7451975.74,7451975.74
+2023,4,Americas,US National Market,Storage TPS,0.0,8.0,7222271.74,7222271.74
+2023,4,Americas,US National Market,Storage TPS,0.0,9.0,7236132.54,7236132.54
+2023,4,Americas,US National Market,Storage TPS,0.0,10.0,13991026.030000001,13991026.030000001
+2023,4,Americas,US National Market,Storage TPS,0.0,11.0,13848568.41,13848568.41
+2023,4,Americas,US National Market,Storage TPS,0.0,12.0,13139703.33,13139703.33
+2023,4,Americas,US National Market,Storage TPS,0.0,13.0,16028782.98,16028782.98
+2023,4,Americas,US National Market,Storage TPS,0.0,14.0,15528782.98,15528782.98
+2023,4,Americas,US National Market,Storage TPS,0.0,15.0,15632782.98,15632782.98
+2023,4,Americas,US National Market,Z TPS,0.0,1.0,1115338.0,1115338.0
+2023,4,Americas,US National Market,Z TPS,0.0,2.0,1139338.0,1139338.0
+2023,4,Americas,US National Market,Z TPS,0.0,3.0,1489338.0,1489338.0
+2023,4,Americas,US National Market,Z TPS,0.0,4.0,2043039.55,2043039.55
+2023,4,Americas,US National Market,Z TPS,0.0,5.0,2153199.92,2153199.92
+2023,4,Americas,US National Market,Z TPS,0.0,6.0,2153199.92,2153199.92
+2023,4,Americas,US National Market,Z TPS,0.0,7.0,1988199.92,1988199.92
+2023,4,Americas,US National Market,Z TPS,0.0,8.0,3344564.18,3344564.18
+2023,4,Americas,US National Market,Z TPS,0.0,9.0,3413022.34,3413022.34
+2023,4,Americas,US National Market,Z TPS,0.0,10.0,3494545.34,3494545.34
+2023,4,Americas,US National Market,Z TPS,0.0,11.0,3494545.34,3494545.34
+2023,4,Americas,US National Market,Z TPS,0.0,12.0,7390287.74,7390287.74
+2023,4,Americas,US National Market,Z TPS,0.0,13.0,14070399.51,14070399.51
+2023,4,Americas,US National Market,Z TPS,0.0,14.0,14070399.51,14070399.51
+2023,4,Americas,US National Market,Z TPS,0.0,15.0,14070399.51,14070399.51
+2023,4,Americas,US Partner Service Market,Automation Platform,0.0,1.0,2133584.0,2133584.0
+2023,4,Americas,US Partner Service Market,Automation Platform,0.0,2.0,2133584.0,2133584.0
+2023,4,Americas,US Partner Service Market,Automation Platform,0.0,3.0,2858012.0,2858012.0
+2023,4,Americas,US Partner Service Market,Automation Platform,0.0,4.0,2358012.0,2358012.0
+2023,4,Americas,US Partner Service Market,Automation Platform,0.0,5.0,2973420.0,2973420.0
+2023,4,Americas,US Partner Service Market,Automation Platform,0.0,6.0,5180172.0,5180172.0
+2023,4,Americas,US Partner Service Market,Automation Platform,0.0,7.0,5173420.0,5173420.0
+2023,4,Americas,US Partner Service Market,Automation Platform,0.0,8.0,5218420.0,5218420.0
+2023,4,Americas,US Partner Service Market,Automation Platform,0.0,9.0,6874324.0,6874324.0
+2023,4,Americas,US Partner Service Market,Automation Platform,0.0,10.0,6829324.0,6829324.0
+2023,4,Americas,US Partner Service Market,Automation Platform,0.0,11.0,6809946.0,6809946.0
+2023,4,Americas,US Partner Service Market,Automation Platform,0.0,12.0,6387799.28,6387799.28
+2023,4,Americas,US Partner Service Market,Automation Platform,0.0,13.0,6142899.2299999995,6142899.2299999995
+2023,4,Americas,US Partner Service Market,Automation Platform,0.0,14.0,6147928.53,6147928.53
+2023,4,Americas,US Partner Service Market,Automation Platform,0.0,15.0,6147928.53,6147928.53
+2023,4,Americas,US Partner Service Market,Data Platform,0.0,1.0,1048813.6,1048813.6
+2023,4,Americas,US Partner Service Market,Data Platform,0.0,2.0,1043813.6,1043813.6
+2023,4,Americas,US Partner Service Market,Data Platform,0.0,3.0,1248237.6,1248237.6
+2023,4,Americas,US Partner Service Market,Data Platform,0.0,4.0,812400.0,812400.0
+2023,4,Americas,US Partner Service Market,Data Platform,0.0,5.0,812400.0,812400.0
+2023,4,Americas,US Partner Service Market,Data Platform,0.0,6.0,2522440.0,2522440.0
+2023,4,Americas,US Partner Service Market,Data Platform,0.0,7.0,2756103.2,2756103.2
+2023,4,Americas,US Partner Service Market,Data Platform,0.0,8.0,2756103.2,2756103.2
+2023,4,Americas,US Partner Service Market,Data Platform,0.0,9.0,3908493.2,3908493.2
+2023,4,Americas,US Partner Service Market,Data Platform,0.0,10.0,3908493.2,3908493.2
+2023,4,Americas,US Partner Service Market,Data Platform,0.0,11.0,3404396.92,3404396.92
+2023,4,Americas,US Partner Service Market,Data Platform,0.0,12.0,2797865.92,2797865.92
+2023,4,Americas,US Partner Service Market,Data Platform,0.0,13.0,3841995.98,3841995.98
+2023,4,Americas,US Partner Service Market,Data Platform,0.0,14.0,3841995.98,3841995.98
+2023,4,Americas,US Partner Service Market,Data Platform,0.0,15.0,3841995.98,3841995.98
+2023,4,Americas,US Partner Service Market,Storage TPS,0.0,1.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Storage TPS,0.0,2.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Storage TPS,0.0,3.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Storage TPS,0.0,4.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Storage TPS,0.0,5.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Storage TPS,0.0,6.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Storage TPS,0.0,7.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Storage TPS,0.0,8.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Storage TPS,0.0,9.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Storage TPS,0.0,10.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Storage TPS,0.0,11.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Storage TPS,0.0,12.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Storage TPS,0.0,13.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Storage TPS,0.0,14.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Storage TPS,0.0,15.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Z TPS,0.0,1.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Z TPS,0.0,2.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Z TPS,0.0,3.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Z TPS,0.0,4.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Z TPS,0.0,5.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Z TPS,0.0,6.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Z TPS,0.0,7.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Z TPS,0.0,8.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Z TPS,0.0,9.0,1000000.0,1000000.0
+2023,4,Americas,US Partner Service Market,Z TPS,0.0,10.0,1000000.0,1000000.0
+2023,4,Americas,US Partner Service Market,Z TPS,0.0,11.0,1000000.0,1000000.0
+2023,4,Americas,US Partner Service Market,Z TPS,0.0,12.0,1000000.0,1000000.0
+2023,4,Americas,US Partner Service Market,Z TPS,0.0,13.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Z TPS,0.0,14.0,0.0,0.0
+2023,4,Americas,US Partner Service Market,Z TPS,0.0,15.0,0.0,0.0
+2023,4,Americas,US Public Market,Automation Platform,0.0,1.0,21323347.25,21323347.25
+2023,4,Americas,US Public Market,Automation Platform,0.0,2.0,21904410.96,21904410.96
+2023,4,Americas,US Public Market,Automation Platform,0.0,3.0,22422831.0,22422831.0
+2023,4,Americas,US Public Market,Automation Platform,0.0,4.0,22857523.509999998,22857523.509999998
+2023,4,Americas,US Public Market,Automation Platform,0.0,5.0,25208232.73,25208232.73
+2023,4,Americas,US Public Market,Automation Platform,0.0,6.0,25350926.08,25350926.08
+2023,4,Americas,US Public Market,Automation Platform,0.0,7.0,25648079.759999998,25648079.759999998
+2023,4,Americas,US Public Market,Automation Platform,0.0,8.0,23569459.23,23569459.23
+2023,4,Americas,US Public Market,Automation Platform,0.0,9.0,31978087.14,31978087.14
+2023,4,Americas,US Public Market,Automation Platform,0.0,10.0,31803941.53,31803941.53
+2023,4,Americas,US Public Market,Automation Platform,0.0,11.0,34167046.79,34167046.79
+2023,4,Americas,US Public Market,Automation Platform,0.0,12.0,36716304.63,36716304.63
+2023,4,Americas,US Public Market,Automation Platform,0.0,13.0,31897758.85,31897758.85
+2023,4,Americas,US Public Market,Automation Platform,0.0,14.0,31802664.13,31802664.13
+2023,4,Americas,US Public Market,Automation Platform,0.0,15.0,31802664.13,31802664.13
+2023,4,Americas,US Public Market,Data Platform,0.0,1.0,33104644.11,33104644.11
+2023,4,Americas,US Public Market,Data Platform,0.0,2.0,35971632.18,35971632.18
+2023,4,Americas,US Public Market,Data Platform,0.0,3.0,35641132.18,35641132.18
+2023,4,Americas,US Public Market,Data Platform,0.0,4.0,35899738.91,35899738.91
+2023,4,Americas,US Public Market,Data Platform,0.0,5.0,34787511.5,34787511.5
+2023,4,Americas,US Public Market,Data Platform,0.0,6.0,34938441.5,34938441.5
+2023,4,Americas,US Public Market,Data Platform,0.0,7.0,35474688.19,35474688.19
+2023,4,Americas,US Public Market,Data Platform,0.0,8.0,32517772.91,32517772.91
+2023,4,Americas,US Public Market,Data Platform,0.0,9.0,43853334.019999996,43853334.019999996
+2023,4,Americas,US Public Market,Data Platform,0.0,10.0,44533828.47,44533828.47
+2023,4,Americas,US Public Market,Data Platform,0.0,11.0,50987946.61,50987946.61
+2023,4,Americas,US Public Market,Data Platform,0.0,12.0,52359126.69,52359126.69
+2023,4,Americas,US Public Market,Data Platform,0.0,13.0,42368801.92,42368801.92
+2023,4,Americas,US Public Market,Data Platform,0.0,14.0,42368679.8,42368679.8
+2023,4,Americas,US Public Market,Data Platform,0.0,15.0,42373919.410000004,42373919.410000004
+2023,4,Americas,US Public Market,Power TPS,0.0,1.0,0.0,0.0
+2023,4,Americas,US Public Market,Power TPS,0.0,2.0,0.0,0.0
+2023,4,Americas,US Public Market,Power TPS,0.0,3.0,0.0,0.0
+2023,4,Americas,US Public Market,Power TPS,0.0,4.0,0.0,0.0
+2023,4,Americas,US Financial Service Market,Public Cloud Platform,0.0,2.0,0.0,0.0
+2023,4,Americas,US Financial Service Market,Public Cloud Platform,0.0,3.0,0.0,0.0
+2023,4,Americas,US Financial Service Market,Public Cloud Platform,0.0,4.0,0.0,0.0
+2023,4,Americas,US Financial Service Market,Public Cloud Platform,0.0,5.0,0.0,0.0
+2023,4,Americas,US Financial Service Market,Public Cloud Platform,0.0,6.0,0.0,0.0
+2023,4,Americas,US Financial Service Market,Public Cloud Platform,0.0,7.0,0.0,0.0
+2023,4,Americas,US Financial Service Market,Public Cloud Platform,0.0,8.0,0.0,0.0
+2023,4,Americas,US Financial Service Market,Public Cloud Platform,0.0,9.0,210846.6,210846.6
+2023,4,Americas,US Financial Service Market,Public Cloud Platform,0.0,10.0,128210.16,128210.16
+2023,4,Americas,US Financial Service Market,Public Cloud Platform,0.0,11.0,0.0,0.0
+2023,4,Americas,US Financial Service Market,Storage TPS,0.0,1.0,7641666.0,7641666.0
+2023,4,Americas,US Financial Service Market,Storage TPS,0.0,2.0,7641666.0,7641666.0
+2023,4,Americas,US Financial Service Market,Storage TPS,0.0,3.0,7641666.0,7641666.0
+2023,4,Americas,US Financial Service Market,Storage TPS,0.0,4.0,9141666.0,9141666.0
+2023,4,Americas,US Financial Service Market,Storage TPS,0.0,5.0,9375001.0,9375001.0
+2023,4,Americas,US Financial Service Market,Storage TPS,0.0,6.0,9875001.0,9875001.0
+2023,4,Americas,US Financial Service Market,Storage TPS,0.0,7.0,17200828.990000002,17200828.990000002
+2023,4,Americas,US Financial Service Market,Storage TPS,0.0,8.0,30530828.990000002,30530828.990000002
+2023,4,Americas,US Financial Service Market,Storage TPS,0.0,9.0,31000828.990000002,31000828.990000002
+2023,4,Americas,US Financial Service Market,Storage TPS,0.0,10.0,31000828.990000002,31000828.990000002
+2023,4,Americas,US Financial Service Market,Storage TPS,0.0,11.0,19959736.0,19959736.0
+2023,4,Americas,US Financial Service Market,Storage TPS,0.0,12.0,13823136.0,13823136.0
+2023,4,Americas,US Financial Service Market,Storage TPS,0.0,13.0,14435059.01,14435059.01
+2023,4,Americas,US Financial Service Market,Storage TPS,0.0,14.0,14435059.01,14435059.01
+2023,4,Americas,US Financial Service Market,Storage TPS,0.0,15.0,14435059.01,14435059.01
+2023,4,Americas,US Financial Service Market,Z TPS,0.0,1.0,57254091.08,57254091.08
+2023,4,Americas,US Financial Service Market,Z TPS,0.0,2.0,57754091.08,57754091.08
+2023,4,Americas,US Financial Service Market,Z TPS,0.0,3.0,57554091.08,57554091.08
+2023,4,Americas,US Financial Service Market,Z TPS,0.0,4.0,58387235.08,58387235.08
+2023,4,Americas,US Financial Service Market,Z TPS,0.0,5.0,77154631.08,77154631.08
+2023,4,Americas,US Financial Service Market,Z TPS,0.0,6.0,74154631.08,74154631.08
+2023,4,Americas,US Financial Service Market,Z TPS,0.0,7.0,76154631.08,76154631.08
+2023,4,Americas,US Financial Service Market,Z TPS,0.0,8.0,100178514.08,100178514.08
+2023,4,Americas,US Financial Service Market,Z TPS,0.0,9.0,103061837.37,103061837.37
+2023,4,Americas,US Financial Service Market,Z TPS,0.0,10.0,60065487.370000005,60065487.370000005
+2023,4,Americas,US Financial Service Market,Z TPS,0.0,11.0,65183487.370000005,65183487.370000005
+2023,4,Americas,US Financial Service Market,Z TPS,0.0,12.0,87061649.37,87061649.37
+2023,4,Americas,US Financial Service Market,Z TPS,0.0,13.0,83113642.28999999,83113642.28999999
+2023,4,Americas,US Financial Service Market,Z TPS,0.0,14.0,83113642.28999999,83113642.28999999
+2023,4,Americas,US Financial Service Market,Z TPS,0.0,15.0,83113642.28999999,83113642.28999999
+2023,4,Americas,US Industry Market,Automation Platform,0.0,1.0,34765264.42,34765264.42
+2023,4,Americas,US Industry Market,Automation Platform,0.0,2.0,43888223.44,43888223.44
+2023,4,Americas,US Industry Market,Automation Platform,0.0,3.0,45319312.22,45319312.22
+2023,4,Americas,US Industry Market,Automation Platform,0.0,4.0,48618552.06,48618552.06
+2023,4,Americas,US Industry Market,Automation Platform,0.0,5.0,55637528.66,55637528.66
+2023,4,Americas,US Industry Market,Automation Platform,0.0,6.0,55969285.06,55969285.06
+2023,4,Americas,US Industry Market,Automation Platform,0.0,7.0,50872806.6,50872806.6
+2023,4,Americas,US Industry Market,Automation Platform,0.0,8.0,51258885.0,51258885.0
+2023,4,Americas,US Industry Market,Automation Platform,0.0,9.0,49956631.54,49956631.54
+2023,4,Americas,US Industry Market,Automation Platform,0.0,10.0,52628897.629999995,52628897.629999995
+2023,4,Americas,US Industry Market,Automation Platform,0.0,11.0,52358140.15,52358140.15
+2023,4,Americas,US Industry Market,Automation Platform,0.0,12.0,52897711.36,52897711.36
+2023,4,Americas,US Industry Market,Automation Platform,0.0,13.0,50203479.78,50203479.78
+2023,4,Americas,US Industry Market,Automation Platform,0.0,14.0,50098665.38,50098665.38
+2023,4,Americas,US Industry Market,Automation Platform,0.0,15.0,50098665.38,50098665.38
+2023,4,Americas,US Industry Market,Data Platform,0.0,1.0,29760707.02,29760707.02
+2023,4,Americas,US Industry Market,Data Platform,0.0,2.0,29702521.15,29702521.15
+2023,4,Americas,US Industry Market,Data Platform,0.0,3.0,34524929.81,34524929.81
+2023,4,Americas,US Industry Market,Data Platform,0.0,4.0,43618591.71,43618591.71
+2023,4,Americas,US Industry Market,Data Platform,0.0,5.0,43689973.480000004,43689973.480000004
+2023,4,Americas,US Industry Market,Data Platform,0.0,6.0,44029101.480000004,44029101.480000004
+2023,4,Americas,US Industry Market,Data Platform,0.0,7.0,44481634.89,44481634.89
+2023,4,Americas,US Industry Market,Data Platform,0.0,8.0,44219506.89,44219506.89
+2023,4,Americas,US Industry Market,Data Platform,0.0,9.0,54473949.96,54473949.96
+2023,4,Americas,US Industry Market,Data Platform,0.0,10.0,75164563.27,75164563.27
+2023,4,Americas,US Industry Market,Data Platform,0.0,11.0,79755861.88,79755861.88
+2023,4,Americas,US Industry Market,Data Platform,0.0,12.0,86231203.74000001,86231203.74000001
+2023,4,Americas,US Industry Market,Data Platform,0.0,13.0,85767885.76,85767885.76
+2023,4,Americas,US Industry Market,Data Platform,0.0,14.0,85801960.7,85801960.7
+2023,4,Americas,US Industry Market,Data Platform,0.0,15.0,85802140.7,85802140.7
+2023,4,Americas,US Industry Market,Public Cloud Platform,0.0,3.0,0.0,0.0
+2023,4,Americas,US Industry Market,Public Cloud Platform,0.0,4.0,0.0,0.0
+2023,4,Americas,US Industry Market,Public Cloud Platform,0.0,5.0,0.0,0.0
+2023,4,Americas,US Industry Market,Public Cloud Platform,0.0,6.0,0.0,0.0
+2023,4,Americas,US Industry Market,Public Cloud Platform,0.0,7.0,0.0,0.0
+2023,4,Americas,US Industry Market,Public Cloud Platform,0.0,8.0,0.0,0.0
+2023,4,Americas,US Industry Market,Storage TPS,0.0,1.0,4506250.0,4506250.0
+2023,4,Americas,US Industry Market,Storage TPS,0.0,2.0,4970025.58,4970025.58
+2023,4,Americas,US Industry Market,Storage TPS,0.0,3.0,5020025.58,5020025.58
+2023,4,Americas,US Industry Market,Storage TPS,0.0,4.0,4870025.58,4870025.58
+2023,4,Americas,US Industry Market,Storage TPS,0.0,5.0,4672860.65,4672860.65
+2023,4,Americas,US Industry Market,Storage TPS,0.0,6.0,5077860.65,5077860.65
+2023,4,Americas,US Industry Market,Storage TPS,0.0,7.0,13277860.65,13277860.65
+2023,4,Americas,US Industry Market,Storage TPS,0.0,8.0,13277860.65,13277860.65
+2023,4,Americas,US Industry Market,Storage TPS,0.0,9.0,15275830.950000001,15275830.950000001
+2023,4,Americas,US Industry Market,Storage TPS,0.0,10.0,15286453.950000001,15286453.950000001
+2023,4,Americas,US Industry Market,Storage TPS,0.0,11.0,15313981.620000001,15313981.620000001
+2023,4,Americas,US Industry Market,Storage TPS,0.0,12.0,15318093.620000001,15318093.620000001
+2023,4,Americas,US Industry Market,Storage TPS,0.0,13.0,15639645.620000001,15639645.620000001
+2023,4,Americas,US Industry Market,Storage TPS,0.0,14.0,15639645.620000001,15639645.620000001
+2023,4,Americas,US Industry Market,Storage TPS,0.0,15.0,15639645.620000001,15639645.620000001
+2023,4,Americas,US Industry Market,Z TPS,0.0,1.0,5105486.0,5105486.0
+2023,4,Americas,US Industry Market,Z TPS,0.0,2.0,4805486.0,4805486.0
+2023,4,Americas,US Industry Market,Z TPS,0.0,3.0,3805486.0,3805486.0
+2023,4,Americas,US Industry Market,Z TPS,0.0,4.0,2905486.0,2905486.0
+2023,4,Americas,US Industry Market,Z TPS,0.0,5.0,3005486.0,3005486.0
+2023,4,Americas,US Industry Market,Z TPS,0.0,6.0,4605486.0,4605486.0
+2023,4,Americas,US Industry Market,Z TPS,0.0,7.0,2428486.0,2428486.0
+2023,4,Americas,US Industry Market,Z TPS,0.0,8.0,2149486.0,2149486.0
+2023,4,Americas,US Industry Market,Z TPS,0.0,9.0,1219486.0,1219486.0
+2023,4,Americas,US Industry Market,Z TPS,0.0,10.0,1132486.0,1132486.0
+2023,4,Americas,US Industry Market,Z TPS,0.0,11.0,2112898.76,2112898.76
+2023,4,Americas,US Industry Market,Z TPS,0.0,12.0,1946301.26,1946301.26
+2023,4,Americas,US Industry Market,Z TPS,0.0,13.0,1542884.23,1542884.23
+2023,4,Americas,US Industry Market,Z TPS,0.0,14.0,1542884.23,1542884.23
+2023,4,Americas,US Industry Market,Z TPS,0.0,15.0,1542884.23,1542884.23
+2023,4,Americas,US National Market,Automation Platform,0.0,1.0,47506731.16,47506731.16
+2023,4,Americas,US National Market,Automation Platform,0.0,2.0,47930172.97,47930172.97
+2023,4,Americas,US National Market,Automation Platform,0.0,3.0,51901287.05,51901287.05
+2023,4,Americas,US National Market,Automation Platform,0.0,4.0,54227036.13,54227036.13
+2023,4,Americas,US National Market,Automation Platform,0.0,5.0,59134508.3,59134508.3
+2023,4,Americas,US National Market,Automation Platform,0.0,6.0,61910878.06,61910878.06
+2023,4,Americas,US National Market,Automation Platform,0.0,7.0,65614683.47,65614683.47
+2023,4,Americas,US National Market,Automation Platform,0.0,8.0,67563271.95,67563271.95
+2023,4,Americas,US National Market,Automation Platform,0.0,9.0,66890583.21,66890583.21
+2023,4,Americas,US National Market,Automation Platform,0.0,10.0,68355098.33,68355098.33
+2023,4,Americas,US National Market,Automation Platform,0.0,11.0,69000782.49,69000782.49
+2023,4,Americas,US National Market,Automation Platform,0.0,12.0,67302952.96,67302952.96
+2023,4,Americas,US National Market,Automation Platform,0.0,13.0,66689191.8,66689191.8
+2023,4,Americas,US National Market,Automation Platform,0.0,14.0,67916252.58,67916252.58
+2023,4,Americas,US National Market,Automation Platform,0.0,15.0,67909634.58,67909634.58
+2023,4,Americas,US National Market,Data Platform,0.0,1.0,43016767.68,43016767.68
+2023,4,Americas,US National Market,Data Platform,0.0,2.0,46695053.25,46695053.25
+2023,4,Americas,US National Market,Data Platform,0.0,3.0,46883670.12,46883670.12
+2023,4,Americas,US National Market,Data Platform,0.0,4.0,48374896.78,48374896.78
+2023,4,Americas,US National Market,Data Platform,0.0,5.0,57572918.73,57572918.73
+2023,4,Americas,US National Market,Data Platform,0.0,6.0,57625442.07,57625442.07
+2023,4,Americas,US National Market,Data Platform,0.0,7.0,57518176.09,57518176.09
+2023,4,Americas,US National Market,Data Platform,0.0,8.0,59199909.87,59199909.87
+2023,4,Americas,US National Market,Data Platform,0.0,9.0,60415872.06,60415872.06
+2023,4,Americas,US National Market,Data Platform,0.0,10.0,65492041.39,65492041.39
+2023,4,Americas,US National Market,Data Platform,0.0,11.0,61700549.72,61700549.72
+2023,4,Americas,US National Market,Data Platform,0.0,12.0,67122120.45,67122120.45
+2023,4,Americas,US National Market,Data Platform,0.0,13.0,77218942.96,77218942.96
+2023,4,Americas,US National Market,Data Platform,0.0,14.0,76630292.13,76630292.13
+2023,4,Americas,US National Market,Data Platform,0.0,15.0,76631003.13,76631003.13
+2023,4,Americas,US National Market,Power TPS,0.0,1.0,0.0,0.0
+2023,4,Americas,US National Market,Power TPS,0.0,2.0,0.0,0.0
+2023,4,Americas,US National Market,Power TPS,0.0,3.0,0.0,0.0
+2023,4,Americas,US National Market,Power TPS,0.0,4.0,0.0,0.0
+2023,4,Americas,US National Market,Power TPS,0.0,5.0,0.0,0.0
+2023,4,Americas,US National Market,Power TPS,0.0,6.0,5000.0,5000.0
+2023,4,EMEA,DACH Market,Public Cloud Platform,0.0,6.0,28200.0,28200.0
+2023,4,EMEA,DACH Market,Public Cloud Platform,0.0,7.0,28200.0,28200.0
+2023,4,EMEA,DACH Market,Public Cloud Platform,0.0,8.0,46950.0,46950.0
+2023,4,EMEA,DACH Market,Public Cloud Platform,0.0,9.0,37950.0,37950.0
+2023,4,EMEA,DACH Market,Public Cloud Platform,0.0,10.0,37950.0,37950.0
+2023,4,EMEA,DACH Market,Public Cloud Platform,0.0,11.0,66730.0,66730.0
+2023,4,EMEA,DACH Market,Public Cloud Platform,0.0,12.0,70810.0,70810.0
+2023,4,EMEA,DACH Market,Public Cloud Platform,0.0,13.0,70810.0,70810.0
+2023,4,EMEA,DACH Market,Public Cloud Platform,0.0,14.0,70810.0,70810.0
+2023,4,EMEA,DACH Market,Public Cloud Platform,0.0,15.0,70810.0,70810.0
+2023,4,EMEA,DACH Market,Storage TPS,0.0,1.0,7646001.0,7646001.0
+2023,4,EMEA,DACH Market,Storage TPS,0.0,2.0,8196001.0,8196001.0
+2023,4,EMEA,DACH Market,Storage TPS,0.0,3.0,8175000.0,8175000.0
+2023,4,EMEA,DACH Market,Storage TPS,0.0,4.0,8303500.0,8303500.0
+2023,4,EMEA,DACH Market,Storage TPS,0.0,5.0,8115500.0,8115500.0
+2023,4,EMEA,DACH Market,Storage TPS,0.0,6.0,8143561.0,8143561.0
+2023,4,EMEA,DACH Market,Storage TPS,0.0,7.0,8232561.0,8232561.0
+2023,4,EMEA,DACH Market,Storage TPS,0.0,8.0,15777308.0,15777308.0
+2023,4,EMEA,DACH Market,Storage TPS,0.0,9.0,14504144.95,14504144.95
+2023,4,EMEA,DACH Market,Storage TPS,0.0,10.0,15016126.95,15016126.95
+2023,4,EMEA,DACH Market,Storage TPS,0.0,11.0,14484172.16,14484172.16
+2023,4,EMEA,DACH Market,Storage TPS,0.0,12.0,24737862.48,24737862.48
+2023,4,EMEA,DACH Market,Storage TPS,0.0,13.0,25011149.05,25011149.05
+2023,4,EMEA,DACH Market,Storage TPS,0.0,14.0,25020149.05,25020149.05
+2023,4,EMEA,DACH Market,Storage TPS,0.0,15.0,25003149.05,25003149.05
+2023,4,EMEA,DACH Market,Z TPS,0.0,1.0,19765000.0,19765000.0
+2023,4,EMEA,DACH Market,Z TPS,0.0,2.0,19765000.0,19765000.0
+2023,4,EMEA,DACH Market,Z TPS,0.0,3.0,19790000.0,19790000.0
+2023,4,EMEA,DACH Market,Z TPS,0.0,4.0,22320000.0,22320000.0
+2023,4,EMEA,DACH Market,Z TPS,0.0,5.0,23020144.0,23020144.0
+2023,4,EMEA,DACH Market,Z TPS,0.0,6.0,26222547.0,26222547.0
+2023,4,EMEA,DACH Market,Z TPS,0.0,7.0,28470657.0,28470657.0
+2023,4,EMEA,DACH Market,Z TPS,0.0,8.0,24476153.55,24476153.55
+2023,4,EMEA,DACH Market,Z TPS,0.0,9.0,24455903.55,24455903.55
+2023,4,EMEA,DACH Market,Z TPS,0.0,10.0,28455903.55,28455903.55
+2023,4,EMEA,DACH Market,Z TPS,0.0,11.0,28455903.55,28455903.55
+2023,4,EMEA,DACH Market,Z TPS,0.0,12.0,55222973.760000005,55222973.760000005
+2023,4,EMEA,DACH Market,Z TPS,0.0,13.0,53303485.16,53303485.16
+2023,4,EMEA,DACH Market,Z TPS,0.0,14.0,53303485.16,53303485.16
+2023,4,EMEA,DACH Market,Z TPS,0.0,15.0,53303485.16,53303485.16
+2023,4,EMEA,France Market,Automation Platform,0.0,1.0,17800367.68,17800367.68
+2023,4,EMEA,France Market,Automation Platform,0.0,2.0,17496112.65,17496112.65
+2023,4,EMEA,France Market,Automation Platform,0.0,3.0,17054438.23,17054438.23
+2023,4,EMEA,France Market,Automation Platform,0.0,4.0,17796753.23,17796753.23
+2023,4,EMEA,France Market,Automation Platform,0.0,5.0,18376625.2,18376625.2
+2023,4,EMEA,France Market,Automation Platform,0.0,6.0,18829827.0,18829827.0
+2023,4,EMEA,France Market,Automation Platform,0.0,7.0,15784395.0,15784395.0
+2023,4,EMEA,France Market,Automation Platform,0.0,8.0,15753501.44,15753501.44
+2023,4,EMEA,France Market,Automation Platform,0.0,9.0,16118802.44,16118802.44
+2023,4,EMEA,France Market,Automation Platform,0.0,10.0,15096433.76,15096433.76
+2023,4,EMEA,France Market,Automation Platform,0.0,11.0,13883979.76,13883979.76
+2023,4,EMEA,France Market,Automation Platform,0.0,12.0,14894232.379999999,14894232.379999999
+2023,4,EMEA,France Market,Automation Platform,0.0,13.0,16405987.530000001,16405987.530000001
+2023,4,EMEA,France Market,Automation Platform,0.0,14.0,16262325.93,16262325.93
+2023,4,EMEA,France Market,Automation Platform,0.0,15.0,16213325.93,16213325.93
+2023,4,EMEA,France Market,Data Platform,0.0,1.0,19352745.66,19352745.66
+2023,4,EMEA,France Market,Data Platform,0.0,2.0,19456871.46,19456871.46
+2023,4,EMEA,France Market,Data Platform,0.0,3.0,18913736.81,18913736.81
+2023,4,EMEA,France Market,Data Platform,0.0,4.0,19605033.009999998,19605033.009999998
+2023,4,EMEA,France Market,Data Platform,0.0,5.0,20054133.21,20054133.21
+2023,4,EMEA,France Market,Data Platform,0.0,6.0,20838394.61,20838394.61
+2023,4,EMEA,France Market,Data Platform,0.0,7.0,18588708.990000002,18588708.990000002
+2023,4,EMEA,France Market,Data Platform,0.0,8.0,19564693.37,19564693.37
+2023,4,EMEA,France Market,Data Platform,0.0,9.0,20293930.37,20293930.37
+2023,4,EMEA,France Market,Data Platform,0.0,10.0,21554725.18,21554725.18
+2023,4,EMEA,France Market,Data Platform,0.0,11.0,24042120.92,24042120.92
+2023,4,EMEA,France Market,Data Platform,0.0,12.0,23937983.32,23937983.32
+2023,4,EMEA,France Market,Data Platform,0.0,13.0,23609552.32,23609552.32
+2023,4,EMEA,France Market,Data Platform,0.0,14.0,25604552.32,25604552.32
+2023,4,EMEA,France Market,Data Platform,0.0,15.0,23447552.32,23447552.32
+2023,4,EMEA,France Market,Power TPS,0.0,1.0,0.0,0.0
+2023,4,EMEA,France Market,Power TPS,0.0,2.0,0.0,0.0
+2023,4,EMEA,France Market,Power TPS,0.0,3.0,0.0,0.0
+2023,4,EMEA,France Market,Power TPS,0.0,4.0,0.0,0.0
+2023,4,EMEA,France Market,Power TPS,0.0,5.0,0.0,0.0
+2023,4,EMEA,France Market,Power TPS,0.0,6.0,5000.0,5000.0
+2023,4,EMEA,France Market,Power TPS,0.0,7.0,5000.0,5000.0
+2023,4,EMEA,France Market,Power TPS,0.0,8.0,5000.0,5000.0
+2023,4,EMEA,France Market,Power TPS,0.0,9.0,5000.0,5000.0
+2023,4,EMEA,France Market,Power TPS,0.0,10.0,284714.3,284714.3
+2023,4,EMEA,France Market,Power TPS,0.0,11.0,5000.0,5000.0
+2023,4,EMEA,France Market,Power TPS,0.0,12.0,5000.0,5000.0
+2023,4,EMEA,France Market,Power TPS,0.0,13.0,5000.0,5000.0
+2023,4,EMEA,France Market,Power TPS,0.0,14.0,5000.0,5000.0
+2023,4,EMEA,France Market,Power TPS,0.0,15.0,6000.0,6000.0
+2023,4,EMEA,France Market,Storage TPS,0.0,1.0,3184298.0,3184298.0
+2023,4,EMEA,France Market,Storage TPS,0.0,2.0,3134298.0,3134298.0
+2023,4,EMEA,France Market,Storage TPS,0.0,3.0,3173368.08,3173368.08
+2023,4,EMEA,France Market,Storage TPS,0.0,4.0,3257368.08,3257368.08
+2023,4,EMEA,France Market,Storage TPS,0.0,5.0,3737368.08,3737368.08
+2023,4,EMEA,France Market,Storage TPS,0.0,6.0,3688368.08,3688368.08
+2023,4,EMEA,France Market,Storage TPS,0.0,7.0,2388368.08,2388368.08
+2023,4,EMEA,France Market,Storage TPS,0.0,8.0,2388368.08,2388368.08
+2023,4,EMEA,France Market,Storage TPS,0.0,9.0,2363368.08,2363368.08
+2023,4,EMEA,France Market,Storage TPS,0.0,10.0,2334442.08,2334442.08
+2023,4,EMEA,France Market,Storage TPS,0.0,11.0,2282010.08,2282010.08
+2023,4,EMEA,France Market,Storage TPS,0.0,12.0,2697625.08,2697625.08
+2023,4,EMEA,France Market,Storage TPS,0.0,13.0,2361275.64,2361275.64
+2023,4,EMEA,France Market,Storage TPS,0.0,14.0,2521275.64,2521275.64
+2023,4,EMEA,France Market,Storage TPS,0.0,15.0,2521275.64,2521275.64
+2023,4,EMEA,France Market,Z TPS,0.0,1.0,1317587.0,1317587.0
+2023,4,EMEA,France Market,Z TPS,0.0,2.0,5657587.0,5657587.0
+2023,4,EMEA,France Market,Z TPS,0.0,3.0,5657587.0,5657587.0
+2023,4,EMEA,France Market,Z TPS,0.0,4.0,5569587.0,5569587.0
+2023,4,EMEA,France Market,Z TPS,0.0,5.0,5569587.0,5569587.0
+2023,4,EMEA,France Market,Z TPS,0.0,6.0,5459587.0,5459587.0
+2023,4,EMEA,France Market,Z TPS,0.0,7.0,1919587.0,1919587.0
+2023,4,EMEA,France Market,Z TPS,0.0,8.0,1919587.0,1919587.0
+2023,4,EMEA,France Market,Z TPS,0.0,9.0,1919587.0,1919587.0
+2023,4,EMEA,France Market,Z TPS,0.0,10.0,1919587.0,1919587.0
+2023,4,EMEA,France Market,Z TPS,0.0,11.0,1619587.0,1619587.0
+2023,4,EMEA,France Market,Z TPS,0.0,12.0,1219587.0,1219587.0
+2023,4,EMEA,France Market,Z TPS,0.0,13.0,1322087.0,1322087.0
+2023,4,EMEA,France Market,Z TPS,0.0,14.0,1322087.0,1322087.0
+2023,4,EMEA,France Market,Z TPS,0.0,15.0,1322087.0,1322087.0
+2023,4,EMEA,Italy Market,Automation Platform,0.0,1.0,14176661.67,14176661.67
+2023,4,EMEA,Italy Market,Automation Platform,0.0,2.0,13078995.67,13078995.67
+2023,4,EMEA,Italy Market,Automation Platform,0.0,3.0,13537992.25,13537992.25
+2023,4,EMEA,Italy Market,Automation Platform,0.0,4.0,13658628.67,13658628.67
+2023,4,EMEA,Italy Market,Automation Platform,0.0,5.0,13736249.99,13736249.99
+2023,4,EMEA,Italy Market,Automation Platform,0.0,6.0,13851600.52,13851600.52
+2023,4,EMEA,Italy Market,Automation Platform,0.0,7.0,14153600.52,14153600.52
+2023,4,EMEA,Italy Market,Automation Platform,0.0,8.0,14411409.52,14411409.52
+2023,4,EMEA,Italy Market,Automation Platform,0.0,9.0,14502513.0,14502513.0
+2023,4,EMEA,Italy Market,Automation Platform,0.0,10.0,15070192.18,15070192.18
+2023,4,EMEA,Italy Market,Automation Platform,0.0,11.0,17451704.91,17451704.91
+2023,4,EMEA,Italy Market,Automation Platform,0.0,12.0,17956204.91,17956204.91
+2023,4,EMEA,Italy Market,Automation Platform,0.0,13.0,20121126.71,20121126.71
+2023,4,EMEA,Italy Market,Automation Platform,0.0,14.0,20061514.75,20061514.75
+2023,4,EMEA,Italy Market,Automation Platform,0.0,15.0,20033523.75,20033523.75
+2023,4,EMEA,Italy Market,Data Platform,0.0,1.0,16042526.17,16042526.17
+2023,4,EMEA,Italy Market,Data Platform,0.0,2.0,16525096.65,16525096.65
+2023,4,EMEA,Italy Market,Data Platform,0.0,3.0,17241796.65,17241796.65
+2023,4,EMEA,Italy Market,Data Platform,0.0,4.0,17376130.65,17376130.65
+2023,4,EMEA,Italy Market,Data Platform,0.0,5.0,17571760.65,17571760.65
+2023,4,EMEA,Italy Market,Data Platform,0.0,6.0,17627019.7,17627019.7
+2023,4,EMEA,Italy Market,Data Platform,0.0,7.0,17787019.7,17787019.7
+2023,4,EMEA,Italy Market,Data Platform,0.0,8.0,17716788.93,17716788.93
+2023,4,EMEA,Italy Market,Data Platform,0.0,9.0,17877688.93,17877688.93
+2023,4,EMEA,Italy Market,Data Platform,0.0,10.0,18154163.23,18154163.23
+2023,4,EMEA,Italy Market,Data Platform,0.0,11.0,20061383.71,20061383.71
+2023,4,EMEA,Italy Market,Data Platform,0.0,12.0,20106362.93,20106362.93
+2023,4,EMEA,Italy Market,Data Platform,0.0,13.0,24336780.24,24336780.24
+2023,4,EMEA,Italy Market,Data Platform,0.0,14.0,24276195.63,24276195.63
+2023,4,EMEA,Italy Market,Data Platform,0.0,15.0,24298866.82,24298866.82
+2023,4,EMEA,Italy Market,Public Cloud Platform,0.0,1.0,7980.23,7980.23
+2023,4,EMEA,Italy Market,Public Cloud Platform,0.0,2.0,7980.23,7980.23
+2023,4,EMEA,Italy Market,Public Cloud Platform,0.0,3.0,7980.23,7980.23
+2023,4,Americas,US Public Market,Power TPS,0.0,5.0,0.0,0.0
+2023,4,Americas,US Public Market,Power TPS,0.0,6.0,0.0,0.0
+2023,4,Americas,US Public Market,Power TPS,0.0,7.0,0.0,0.0
+2023,4,Americas,US Public Market,Power TPS,0.0,8.0,0.0,0.0
+2023,4,Americas,US Public Market,Power TPS,0.0,9.0,0.0,0.0
+2023,4,Americas,US Public Market,Power TPS,0.0,10.0,0.0,0.0
+2023,4,Americas,US Public Market,Power TPS,0.0,11.0,0.0,0.0
+2023,4,Americas,US Public Market,Power TPS,0.0,12.0,0.0,0.0
+2023,4,Americas,US Public Market,Power TPS,0.0,13.0,0.0,0.0
+2023,4,Americas,US Public Market,Power TPS,0.0,14.0,0.0,0.0
+2023,4,Americas,US Public Market,Power TPS,0.0,15.0,0.0,0.0
+2023,4,Americas,US Public Market,Storage TPS,0.0,1.0,4511000.0,4511000.0
+2023,4,Americas,US Public Market,Storage TPS,0.0,2.0,1840000.0,1840000.0
+2023,4,Americas,US Public Market,Storage TPS,0.0,3.0,2090000.0,2090000.0
+2023,4,Americas,US Public Market,Storage TPS,0.0,4.0,1640000.0,1640000.0
+2023,4,Americas,US Public Market,Storage TPS,0.0,5.0,1640000.0,1640000.0
+2023,4,Americas,US Public Market,Storage TPS,0.0,6.0,1640000.0,1640000.0
+2023,4,Americas,US Public Market,Storage TPS,0.0,7.0,1242380.51,1242380.51
+2023,4,Americas,US Public Market,Storage TPS,0.0,8.0,1242380.51,1242380.51
+2023,4,Americas,US Public Market,Storage TPS,0.0,9.0,1242380.51,1242380.51
+2023,4,Americas,US Public Market,Storage TPS,0.0,10.0,1630380.51,1630380.51
+2023,4,Americas,US Public Market,Storage TPS,0.0,11.0,2099859.51,2099859.51
+2023,4,Americas,US Public Market,Storage TPS,0.0,12.0,2099859.51,2099859.51
+2023,4,Americas,US Public Market,Storage TPS,0.0,13.0,1499381.51,1499381.51
+2023,4,Americas,US Public Market,Storage TPS,0.0,14.0,1499381.51,1499381.51
+2023,4,Americas,US Public Market,Storage TPS,0.0,15.0,1499381.51,1499381.51
+2023,4,Americas,US Public Market,Z TPS,0.0,1.0,2756000.0,2756000.0
+2023,4,Americas,US Public Market,Z TPS,0.0,2.0,2756000.0,2756000.0
+2023,4,Americas,US Public Market,Z TPS,0.0,3.0,2756000.0,2756000.0
+2023,4,Americas,US Public Market,Z TPS,0.0,4.0,1956000.0,1956000.0
+2023,4,Americas,US Public Market,Z TPS,0.0,5.0,1956000.0,1956000.0
+2023,4,Americas,US Public Market,Z TPS,0.0,6.0,1956000.0,1956000.0
+2023,4,Americas,US Public Market,Z TPS,0.0,7.0,1956000.0,1956000.0
+2023,4,Americas,US Public Market,Z TPS,0.0,8.0,1956000.0,1956000.0
+2023,4,Americas,US Public Market,Z TPS,0.0,9.0,5701898.22,5701898.22
+2023,4,Americas,US Public Market,Z TPS,0.0,10.0,5701898.22,5701898.22
+2023,4,Americas,US Public Market,Z TPS,0.0,11.0,33266125.009999998,33266125.009999998
+2023,4,Americas,US Public Market,Z TPS,0.0,12.0,35136511.45,35136511.45
+2023,4,Americas,US Public Market,Z TPS,0.0,13.0,11141397.45,11141397.45
+2023,4,Americas,US Public Market,Z TPS,0.0,14.0,11141397.45,11141397.45
+2023,4,Americas,US Public Market,Z TPS,0.0,15.0,11141397.45,11141397.45
+2023,4,Americas,US Top Market,Automation Platform,0.0,1.0,0.0,0.0
+2023,4,Americas,US Top Market,Automation Platform,0.0,2.0,0.0,0.0
+2023,4,Americas,US Top Market,Automation Platform,0.0,3.0,0.0,0.0
+2023,4,Americas,US Top Market,Automation Platform,0.0,4.0,0.0,0.0
+2023,4,Americas,US Top Market,Automation Platform,0.0,5.0,0.0,0.0
+2023,4,Americas,US Top Market,Automation Platform,0.0,6.0,0.0,0.0
+2023,4,Americas,US Top Market,Automation Platform,0.0,7.0,0.0,0.0
+2023,4,Americas,US Top Market,Automation Platform,0.0,8.0,0.0,0.0
+2023,4,Americas,US Top Market,Automation Platform,0.0,9.0,0.0,0.0
+2023,4,Americas,US Top Market,Automation Platform,0.0,10.0,0.0,0.0
+2023,4,Americas,US Top Market,Automation Platform,0.0,11.0,38578.18,38578.18
+2023,4,Americas,US Top Market,Automation Platform,0.0,12.0,38578.18,38578.18
+2023,4,Americas,US Top Market,Automation Platform,0.0,13.0,38578.18,38578.18
+2023,4,Americas,US Top Market,Automation Platform,0.0,14.0,38578.18,38578.18
+2023,4,Americas,US Top Market,Automation Platform,0.0,15.0,38578.18,38578.18
+2023,4,Americas,US Top Market,Data Platform,0.0,1.0,0.0,0.0
+2023,4,Americas,US Top Market,Data Platform,0.0,2.0,0.0,0.0
+2023,4,Americas,US Top Market,Data Platform,0.0,3.0,178.0,178.0
+2023,4,Americas,US Top Market,Data Platform,0.0,4.0,178.0,178.0
+2023,4,Americas,US Top Market,Data Platform,0.0,5.0,178.0,178.0
+2023,4,Americas,US Top Market,Data Platform,0.0,6.0,178.0,178.0
+2023,4,Americas,US Top Market,Data Platform,0.0,7.0,455.0,455.0
+2023,4,Americas,US Top Market,Data Platform,0.0,8.0,455.0,455.0
+2023,4,Americas,US Top Market,Data Platform,0.0,9.0,455.0,455.0
+2023,4,Americas,US Top Market,Data Platform,0.0,10.0,455.0,455.0
+2023,4,Americas,US Top Market,Data Platform,0.0,11.0,633.0,633.0
+2023,4,Americas,US Top Market,Data Platform,0.0,12.0,633.0,633.0
+2023,4,Americas,US Top Market,Data Platform,0.0,13.0,633.0,633.0
+2023,4,Americas,US Top Market,Data Platform,0.0,14.0,633.0,633.0
+2023,4,Americas,US Top Market,Data Platform,0.0,15.0,633.0,633.0
+2023,4,Americas,US Top Market,Storage TPS,0.0,1.0,0.0,0.0
+2023,4,Americas,US Top Market,Storage TPS,0.0,2.0,0.0,0.0
+2023,4,Americas,US Top Market,Storage TPS,0.0,3.0,0.0,0.0
+2023,4,Americas,US Top Market,Storage TPS,0.0,4.0,0.0,0.0
+2023,4,Americas,US Top Market,Storage TPS,0.0,5.0,0.0,0.0
+2023,4,Americas,US Top Market,Storage TPS,0.0,6.0,0.0,0.0
+2023,4,Americas,US Top Market,Storage TPS,0.0,7.0,0.0,0.0
+2023,4,Americas,US Top Market,Storage TPS,0.0,8.0,0.0,0.0
+2023,4,Americas,US Top Market,Storage TPS,0.0,9.0,0.0,0.0
+2023,4,Americas,US Top Market,Storage TPS,0.0,10.0,0.0,0.0
+2023,4,Americas,US Top Market,Storage TPS,0.0,11.0,0.0,0.0
+2023,4,Americas,US Top Market,Storage TPS,0.0,12.0,0.0,0.0
+2023,4,Americas,US Top Market,Storage TPS,0.0,13.0,0.0,0.0
+2023,4,Americas,US Top Market,Storage TPS,0.0,14.0,0.0,0.0
+2023,4,Americas,US Top Market,Storage TPS,0.0,15.0,0.0,0.0
+2023,4,Americas,US Top Market,Z TPS,0.0,1.0,0.0,0.0
+2023,4,Americas,US Top Market,Z TPS,0.0,2.0,0.0,0.0
+2023,4,Americas,US Top Market,Z TPS,0.0,3.0,0.0,0.0
+2023,4,Americas,US Top Market,Z TPS,0.0,4.0,0.0,0.0
+2023,4,Americas,US Top Market,Z TPS,0.0,5.0,0.0,0.0
+2023,4,Americas,US Top Market,Z TPS,0.0,6.0,0.0,0.0
+2023,4,Americas,US Top Market,Z TPS,0.0,7.0,0.0,0.0
+2023,4,Americas,US Top Market,Z TPS,0.0,8.0,0.0,0.0
+2023,4,Americas,US Top Market,Z TPS,0.0,9.0,0.0,0.0
+2023,4,Americas,US Top Market,Z TPS,0.0,10.0,0.0,0.0
+2023,4,Americas,US Top Market,Z TPS,0.0,11.0,0.0,0.0
+2023,4,Americas,US Top Market,Z TPS,0.0,12.0,0.0,0.0
+2023,4,Americas,US Top Market,Z TPS,0.0,13.0,0.0,0.0
+2023,4,Americas,US Top Market,Z TPS,0.0,14.0,0.0,0.0
+2023,4,Americas,US Top Market,Z TPS,0.0,15.0,0.0,0.0
+2023,4,EMEA,DACH Market,Automation Platform,0.0,1.0,43148873.38,43148873.38
+2023,4,EMEA,DACH Market,Automation Platform,0.0,2.0,45869445.55,45869445.55
+2023,4,EMEA,DACH Market,Automation Platform,0.0,3.0,47101062.55,47101062.55
+2023,4,EMEA,DACH Market,Automation Platform,0.0,4.0,46338456.92,46338456.92
+2023,4,EMEA,DACH Market,Automation Platform,0.0,5.0,46308516.63,46308516.63
+2023,4,EMEA,DACH Market,Automation Platform,0.0,6.0,48200014.34,48200014.34
+2023,4,EMEA,DACH Market,Automation Platform,0.0,7.0,54978429.67,54978429.67
+2023,4,EMEA,DACH Market,Automation Platform,0.0,8.0,56475971.93,56475971.93
+2023,4,EMEA,DACH Market,Automation Platform,0.0,9.0,57896538.93,57896538.93
+2023,4,EMEA,DACH Market,Automation Platform,0.0,10.0,67025170.21,67025170.21
+2023,4,EMEA,DACH Market,Automation Platform,0.0,11.0,56588495.150000006,56588495.150000006
+2023,4,EMEA,DACH Market,Automation Platform,0.0,12.0,81743815.53,81743815.53
+2023,4,EMEA,DACH Market,Automation Platform,0.0,13.0,81408991.04,81408991.04
+2023,4,EMEA,DACH Market,Automation Platform,0.0,14.0,81508859.87,81508859.87
+2023,4,EMEA,DACH Market,Automation Platform,0.0,15.0,81422033.06,81422033.06
+2023,4,EMEA,DACH Market,Data Platform,0.0,1.0,38059029.019999996,38059029.019999996
+2023,4,EMEA,DACH Market,Data Platform,0.0,2.0,53049076.55,53049076.55
+2023,4,EMEA,DACH Market,Data Platform,0.0,3.0,54646195.99,54646195.99
+2023,4,EMEA,DACH Market,Data Platform,0.0,4.0,56062359.03,56062359.03
+2023,4,EMEA,DACH Market,Data Platform,0.0,5.0,67654406.28,67654406.28
+2023,4,EMEA,DACH Market,Data Platform,0.0,6.0,69833136.28,69833136.28
+2023,4,EMEA,DACH Market,Data Platform,0.0,7.0,76836989.89,76836989.89
+2023,4,EMEA,DACH Market,Data Platform,0.0,8.0,80646416.86,80646416.86
+2023,4,EMEA,DACH Market,Data Platform,0.0,9.0,82138537.11,82138537.11
+2023,4,EMEA,DACH Market,Data Platform,0.0,10.0,99755548.28999999,99755548.28999999
+2023,4,EMEA,DACH Market,Data Platform,0.0,11.0,124514653.53,124514653.53
+2023,4,EMEA,DACH Market,Data Platform,0.0,12.0,124277315.09,124277315.09
+2023,4,EMEA,DACH Market,Data Platform,0.0,13.0,125485270.1,125485270.1
+2023,4,EMEA,DACH Market,Data Platform,0.0,14.0,125776296.78,125776296.78
+2023,4,EMEA,DACH Market,Data Platform,0.0,15.0,125771154.26,125771154.26
+2023,4,EMEA,DACH Market,Power TPS,0.0,1.0,0.0,0.0
+2023,4,EMEA,DACH Market,Power TPS,0.0,2.0,0.0,0.0
+2023,4,EMEA,DACH Market,Power TPS,0.0,3.0,0.0,0.0
+2023,4,EMEA,DACH Market,Power TPS,0.0,4.0,0.0,0.0
+2023,4,EMEA,DACH Market,Power TPS,0.0,5.0,0.0,0.0
+2023,4,EMEA,DACH Market,Power TPS,0.0,6.0,0.0,0.0
+2023,4,EMEA,DACH Market,Power TPS,0.0,7.0,0.0,0.0
+2023,4,EMEA,DACH Market,Power TPS,0.0,8.0,0.0,0.0
+2023,4,EMEA,DACH Market,Power TPS,0.0,9.0,0.0,0.0
+2023,4,EMEA,DACH Market,Power TPS,0.0,10.0,0.0,0.0
+2023,4,EMEA,DACH Market,Power TPS,0.0,11.0,0.0,0.0
+2023,4,EMEA,DACH Market,Power TPS,0.0,12.0,3085.0,3085.0
+2023,4,EMEA,DACH Market,Power TPS,0.0,13.0,3085.0,3085.0
+2023,4,EMEA,DACH Market,Power TPS,0.0,14.0,3085.0,3085.0
+2023,4,EMEA,DACH Market,Power TPS,0.0,15.0,3085.0,3085.0
+2023,4,EMEA,DACH Market,Public Cloud Platform,0.0,1.0,9000.0,9000.0
+2023,4,EMEA,DACH Market,Public Cloud Platform,0.0,2.0,28200.0,28200.0
+2023,4,EMEA,DACH Market,Public Cloud Platform,0.0,3.0,28200.0,28200.0
+2023,4,EMEA,DACH Market,Public Cloud Platform,0.0,4.0,28200.0,28200.0
+2023,4,EMEA,DACH Market,Public Cloud Platform,0.0,5.0,28200.0,28200.0
+2023,4,EMEA,Italy Market,Public Cloud Platform,0.0,4.0,6963.139999999999,6963.139999999999
+2023,4,EMEA,Italy Market,Public Cloud Platform,0.0,5.0,6963.139999999999,6963.139999999999
+2023,4,EMEA,Italy Market,Public Cloud Platform,0.0,6.0,6963.139999999999,6963.139999999999
+2023,4,EMEA,Italy Market,Public Cloud Platform,0.0,7.0,6963.139999999999,6963.139999999999
+2023,4,EMEA,Italy Market,Public Cloud Platform,0.0,8.0,6963.139999999999,6963.139999999999
+2023,4,EMEA,Italy Market,Public Cloud Platform,0.0,9.0,5043.139999999999,5043.139999999999
+2023,4,EMEA,Italy Market,Public Cloud Platform,0.0,10.0,5043.139999999999,5043.139999999999
+2023,4,EMEA,Italy Market,Public Cloud Platform,0.0,11.0,5043.139999999999,5043.139999999999
+2023,4,EMEA,Italy Market,Public Cloud Platform,0.0,12.0,1440.0,1440.0
+2023,4,EMEA,Italy Market,Public Cloud Platform,0.0,13.0,1440.0,1440.0
+2023,4,EMEA,Italy Market,Public Cloud Platform,0.0,14.0,1440.0,1440.0
+2023,4,EMEA,Italy Market,Public Cloud Platform,0.0,15.0,1440.0,1440.0
+2023,4,EMEA,Italy Market,Storage TPS,0.0,1.0,5520000.0,5520000.0
+2023,4,EMEA,Italy Market,Storage TPS,0.0,2.0,6790000.0,6790000.0
+2023,4,EMEA,Italy Market,Storage TPS,0.0,3.0,6794711.2,6794711.2
+2023,4,EMEA,Italy Market,Storage TPS,0.0,4.0,6794711.2,6794711.2
+2023,4,EMEA,Italy Market,Storage TPS,0.0,5.0,6856511.2,6856511.2
+2023,4,EMEA,Italy Market,Storage TPS,0.0,6.0,6936511.2,6936511.2
+2023,4,EMEA,Italy Market,Storage TPS,0.0,7.0,7135733.2,7135733.2
+2023,4,EMEA,Italy Market,Storage TPS,0.0,8.0,7215733.2,7215733.2
+2023,4,EMEA,Italy Market,Storage TPS,0.0,9.0,7218531.33,7218531.33
+2023,4,EMEA,Italy Market,Storage TPS,0.0,10.0,7269531.33,7269531.33
+2023,4,EMEA,Italy Market,Storage TPS,0.0,11.0,8679531.33,8679531.33
+2023,4,EMEA,Italy Market,Storage TPS,0.0,12.0,9425531.33,9425531.33
+2023,4,EMEA,Italy Market,Storage TPS,0.0,13.0,10172431.06,10172431.06
+2023,4,EMEA,Italy Market,Storage TPS,0.0,14.0,10111480.9,10111480.9
+2023,4,EMEA,Italy Market,Storage TPS,0.0,15.0,10111480.9,10111480.9
+2023,4,EMEA,Italy Market,Z TPS,0.0,1.0,2690000.0,2690000.0
+2023,4,EMEA,Italy Market,Z TPS,0.0,2.0,4123250.0,4123250.0
+2023,4,EMEA,Italy Market,Z TPS,0.0,3.0,11282250.0,11282250.0
+2023,4,EMEA,Italy Market,Z TPS,0.0,4.0,11104000.0,11104000.0
+2023,4,EMEA,Italy Market,Z TPS,0.0,5.0,11104000.0,11104000.0
+2023,4,EMEA,Italy Market,Z TPS,0.0,6.0,11104000.0,11104000.0
+2023,4,EMEA,Italy Market,Z TPS,0.0,7.0,11104000.0,11104000.0
+2023,4,EMEA,Italy Market,Z TPS,0.0,8.0,11104000.0,11104000.0
+2023,4,EMEA,Italy Market,Z TPS,0.0,9.0,11104000.0,11104000.0
+2023,4,EMEA,Italy Market,Z TPS,0.0,10.0,11162000.0,11162000.0
+2023,4,EMEA,Italy Market,Z TPS,0.0,11.0,10904000.0,10904000.0
+2023,4,EMEA,Italy Market,Z TPS,0.0,12.0,12262000.0,12262000.0
+2023,4,EMEA,Italy Market,Z TPS,0.0,13.0,12775000.0,12775000.0
+2023,4,EMEA,Italy Market,Z TPS,0.0,14.0,12375000.0,12375000.0
+2023,4,EMEA,Italy Market,Z TPS,0.0,15.0,12375000.0,12375000.0
+2023,4,EMEA,Middle East/Africa Market,Automation Platform,0.0,1.0,26203406.13,26203406.13
+2023,4,EMEA,Middle East/Africa Market,Automation Platform,0.0,2.0,32642036.93,32642036.93
+2023,4,EMEA,Middle East/Africa Market,Automation Platform,0.0,3.0,33833936.61,33833936.61
+2023,4,EMEA,Middle East/Africa Market,Automation Platform,0.0,4.0,33398135.16,33398135.16
+2023,4,EMEA,Middle East/Africa Market,Automation Platform,0.0,5.0,32570350.17,32570350.17
+2023,4,EMEA,Middle East/Africa Market,Automation Platform,0.0,6.0,36168119.81,36168119.81
+2023,4,EMEA,Middle East/Africa Market,Automation Platform,0.0,7.0,35570489.81,35570489.81
+2023,4,EMEA,Middle East/Africa Market,Automation Platform,0.0,8.0,36332428.68,36332428.68
+2023,4,EMEA,Middle East/Africa Market,Automation Platform,0.0,9.0,35721156.95,35721156.95
+2023,4,EMEA,Middle East/Africa Market,Automation Platform,0.0,10.0,34821360.69,34821360.69
+2023,4,EMEA,Middle East/Africa Market,Automation Platform,0.0,11.0,35825007.16,35825007.16
+2023,4,EMEA,Middle East/Africa Market,Automation Platform,0.0,12.0,34583297.92,34583297.92
+2023,4,EMEA,Middle East/Africa Market,Automation Platform,0.0,13.0,36639841.96,36639841.96
+2023,4,EMEA,Middle East/Africa Market,Automation Platform,0.0,14.0,39947267.11,39947267.11
+2023,4,EMEA,Middle East/Africa Market,Automation Platform,0.0,15.0,41130628.3,41130628.3
+2023,4,EMEA,Middle East/Africa Market,Data Platform,0.0,1.0,20664114.54,20664114.54
+2023,4,EMEA,Middle East/Africa Market,Data Platform,0.0,2.0,21396174.53,21396174.53
+2023,4,EMEA,Middle East/Africa Market,Data Platform,0.0,3.0,21583453.24,21583453.24
+2023,4,EMEA,Middle East/Africa Market,Data Platform,0.0,4.0,21361799.62,21361799.62
+2023,4,EMEA,Middle East/Africa Market,Data Platform,0.0,5.0,21552967.240000002,21552967.240000002
+2023,4,EMEA,Middle East/Africa Market,Data Platform,0.0,6.0,21877741.77,21877741.77
+2023,4,EMEA,Middle East/Africa Market,Data Platform,0.0,7.0,23721317.27,23721317.27
+2023,4,EMEA,Middle East/Africa Market,Data Platform,0.0,8.0,23611993.93,23611993.93
+2023,4,EMEA,Middle East/Africa Market,Data Platform,0.0,9.0,24188312.86,24188312.86
+2023,4,EMEA,Middle East/Africa Market,Data Platform,0.0,10.0,25608895.0,25608895.0
+2023,4,EMEA,Middle East/Africa Market,Data Platform,0.0,11.0,23206302.75,23206302.75
+2023,4,EMEA,Middle East/Africa Market,Data Platform,0.0,12.0,24499246.03,24499246.03
+2023,4,EMEA,Middle East/Africa Market,Data Platform,0.0,13.0,24218862.73,24218862.73
+2023,4,EMEA,Middle East/Africa Market,Data Platform,0.0,14.0,25068953.45,25068953.45
+2023,4,EMEA,Middle East/Africa Market,Data Platform,0.0,15.0,26266998.96,26266998.96
+2023,4,EMEA,Middle East/Africa Market,Power TPS,0.0,1.0,100000.0,100000.0
+2023,4,EMEA,Middle East/Africa Market,Power TPS,0.0,2.0,100000.0,100000.0
+2023,4,EMEA,Middle East/Africa Market,Power TPS,0.0,3.0,100000.0,100000.0
+2023,4,EMEA,Middle East/Africa Market,Power TPS,0.0,4.0,100000.0,100000.0
+2023,4,EMEA,Middle East/Africa Market,Power TPS,0.0,5.0,100000.0,100000.0
+2023,4,EMEA,Middle East/Africa Market,Power TPS,0.0,6.0,100000.0,100000.0
+2023,4,EMEA,Middle East/Africa Market,Power TPS,0.0,7.0,100000.0,100000.0
+2023,4,EMEA,Middle East/Africa Market,Power TPS,0.0,8.0,100000.0,100000.0
+2023,4,EMEA,Middle East/Africa Market,Power TPS,0.0,9.0,100000.0,100000.0
+2023,4,EMEA,Middle East/Africa Market,Power TPS,0.0,10.0,100000.0,100000.0
+2023,4,EMEA,Middle East/Africa Market,Power TPS,0.0,11.0,100000.0,100000.0
+2023,4,EMEA,Middle East/Africa Market,Power TPS,0.0,12.0,100000.0,100000.0
+2023,4,EMEA,Middle East/Africa Market,Power TPS,0.0,13.0,100000.0,100000.0
+2023,4,EMEA,Middle East/Africa Market,Power TPS,0.0,14.0,100000.0,100000.0
+2023,4,EMEA,Middle East/Africa Market,Power TPS,0.0,15.0,100000.0,100000.0
+2023,4,EMEA,Middle East/Africa Market,Public Cloud Platform,0.0,1.0,0.0,0.0
+2023,4,EMEA,Middle East/Africa Market,Storage TPS,0.0,1.0,5560000.0,5560000.0
+2023,4,EMEA,Middle East/Africa Market,Storage TPS,0.0,2.0,5901581.18,5901581.18
+2023,4,EMEA,Middle East/Africa Market,Storage TPS,0.0,3.0,5405158.18,5405158.18
+2023,4,EMEA,Middle East/Africa Market,Storage TPS,0.0,4.0,5840158.18,5840158.18
+2023,4,EMEA,Middle East/Africa Market,Storage TPS,0.0,5.0,6394168.01,6394168.01
+2023,4,EMEA,Middle East/Africa Market,Storage TPS,0.0,6.0,6804168.01,6804168.01
+2023,4,EMEA,Middle East/Africa Market,Storage TPS,0.0,7.0,6537270.01,6537270.01
+2023,4,EMEA,Middle East/Africa Market,Storage TPS,0.0,8.0,6546299.21,6546299.21
+2023,4,EMEA,Middle East/Africa Market,Storage TPS,0.0,9.0,5798786.66,5798786.66
+2023,4,EMEA,Middle East/Africa Market,Storage TPS,0.0,10.0,5750764.59,5750764.59
+2023,4,EMEA,Middle East/Africa Market,Storage TPS,0.0,11.0,4581393.55,4581393.55
+2023,4,EMEA,Middle East/Africa Market,Storage TPS,0.0,12.0,4094893.55,4094893.55
+2023,4,EMEA,Middle East/Africa Market,Storage TPS,0.0,13.0,4968962.18,4968962.18
+2023,4,EMEA,Middle East/Africa Market,Storage TPS,0.0,14.0,4552790.46,4552790.46
+2023,4,EMEA,Middle East/Africa Market,Storage TPS,0.0,15.0,4552790.46,4552790.46
+2023,4,EMEA,Middle East/Africa Market,Z TPS,0.0,1.0,1302132.0,1302132.0
+2023,4,EMEA,Middle East/Africa Market,Z TPS,0.0,2.0,1602132.0,1602132.0
+2023,4,EMEA,Middle East/Africa Market,Z TPS,0.0,3.0,1602132.0,1602132.0
+2023,4,EMEA,Middle East/Africa Market,Z TPS,0.0,4.0,2139515.46,2139515.46
+2023,4,EMEA,Middle East/Africa Market,Z TPS,0.0,5.0,1907996.26,1907996.26
+2023,4,EMEA,Middle East/Africa Market,Z TPS,0.0,6.0,1907996.26,1907996.26
+2023,4,EMEA,Middle East/Africa Market,Z TPS,0.0,7.0,2387996.26,2387996.26
+2023,4,EMEA,Middle East/Africa Market,Z TPS,0.0,8.0,2536968.76,2536968.76
+2023,4,EMEA,Middle East/Africa Market,Z TPS,0.0,9.0,2266442.29,2266442.29
+2023,4,EMEA,Middle East/Africa Market,Z TPS,0.0,10.0,2711728.1799999997,2711728.1799999997
+2023,4,EMEA,Middle East/Africa Market,Z TPS,0.0,11.0,2784713.33,2784713.33
+2023,4,EMEA,Middle East/Africa Market,Z TPS,0.0,12.0,2784713.33,2784713.33
+2023,4,EMEA,Middle East/Africa Market,Z TPS,0.0,13.0,2543181.88,2543181.88
+2023,4,EMEA,Middle East/Africa Market,Z TPS,0.0,14.0,2388356.16,2388356.16
+2023,4,EMEA,Middle East/Africa Market,Z TPS,0.0,15.0,2388356.16,2388356.16
+2023,4,EMEA,"Northern, Central and Eastern Europe Market",Automation Platform,0.0,1.0,39048038.96,39048038.96
+2023,4,EMEA,"Northern, Central and Eastern Europe Market",Automation Platform,0.0,2.0,39360067.43,39360067.43
+2023,4,EMEA,"Northern, Central and Eastern Europe Market",Automation Platform,0.0,3.0,41033352.6,41033352.6
+2023,4,EMEA,"Northern, Central and Eastern Europe Market",Automation Platform,0.0,4.0,42197803.45,42197803.45
+2023,4,EMEA,"Northern, Central and Eastern Europe Market",Automation Platform,0.0,5.0,41637936.56,41637936.56

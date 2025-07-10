@@ -1,0 +1,86 @@
+If we’re building an AI chatbot to analyze your sales pipeline, we’d want it to provide fast,
+actionable insights and support decision-making. Here’s are some valuable questions the chatbot
+should be able to answer:
+
+
+
+
+Pipeline Overview
+
+   •   "What is the total value of deals currently in the pipeline?"
+   •   "Show me pipeline by region / industry / lead source / deal size."
+   •   "How many deals are in each sales stage?"
+   •   "What's the average deal size this quarter?"
+   •   "What is the win rate across the team?"
+   •   "What’s the forecasted revenue this month/quarter/year?"
+   •   "Compare the forecasted revenue to the target (budget) this month/quarter/year?"
+   •   "What actions can I take to improve pipeline generation/conversion?"
+   •   "Are we on track to hit revenue targets?"
+   •   "What’s the current forecast vs actual sales?"
+   •   All above questions should be segment-able by geo, UTLs, route, etc
+
+
+
+
+Deal Progress & Status
+
+   •   "Which deals are stuck or overdue in the pipeline?" – Aged pipeline
+   •   "Which opportunities have gone the longest without activity?"
+   •   "Which deals are expected to close this week/month?"
+   •   "Which deals are at risk of being lost?"
+
+
+
+
+Rep-Level Performance (Is this even available)?
+
+   •   "How is [Rep Name] performing compared to their quota?"
+   •   "Which reps have the highest close rate?"
+   •   "Which rep has the most deals in late stages?"
+   •   "How many calls or emails did [Rep Name] make this week?"
+
+
+
+
+Velocity & Efficiency
+
+   •   "What is the average sales cycle length by stage?"
+   •   "What is the historical pipeline to revenue conversion do I need to make budget?"
+   •   "How long do deals typically stay in [Stage Name]?"
+   •   "Where do most deals drop off in the funnel?"
+Conversion & Funnel Analysis
+
+   •   "What’s the conversion rate from lead to opportunity?"
+   •   "Where are we losing the most deals in the funnel?"
+   •   "Which lead sources result in the highest conversions?"
+   •   "Which enterprise deals are closing in the next 30 days?"
+   •   "Which deals were created from inbound marketing campaigns?"
+
+
+
+
+Predictive & Prescriptive Insights
+
+   •   "Which deals are most likely to close this quarter?"
+   •   "Which reps/teams/brand might miss their quota based on current pipeline?"
+   •   "What actions should I take to improve my close rate?"
+
+
+
+
+Activity & Follow-up
+
+   •   "Which deals need follow-up this week?"
+   •   "When was the last touchpoint on [Deal Name]?"
+   •   "Which prospects haven’t been contacted in 10+ days?"
+   •   "How many people have we touched in x organization in the last 90 days and how"
+
+
+
+
+Real-Time Alerts
+
+   •   "Notify me when a high-value deal above $xM enters sales stage x."
+   •   "Alert me if a deal has been inactive for 30+ days."
+   •   "Ping me when a deal is marked as lost."
+

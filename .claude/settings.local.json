@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__ide__executeCode",
+      "Bash(python3:*)",
+      "Bash(chmod:*)",
+      "Bash(./setup_app.sh:*)",
+      "Bash(pip3 install:*)",
+      "Bash(ollama:*)",
+      "Bash(streamlit run:*)",
+      "Bash(pkill:*)",
+      "Bash(grep:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)",
+      "Bash(rm:*)",
+      "Bash(git init:*)"
+    ],
+    "deny": []
+  }
+}

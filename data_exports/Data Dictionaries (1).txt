@@ -1,0 +1,213 @@
+Opp Number – Unique alpha numerical code that identifies each opportunity created and progressed by the sales team on the CRM system.
+
+ 
+
+LI Detail Code – Unique alpha numerical code that identifies each product that is part of an opportunity.
+
+ 
+
+Opp Create Date – Date on which the opportunity record was created on the CRM system
+
+ 
+
+LI Create Date – Date on which the product was added as part of the opportunity
+
+ 
+
+Opp Name – Opportunity name as described on the CRM system by the sales team
+
+ 
+
+Geography Name/ Market Name/ Region Name/ Country/ Local Coverage Geography Name/ Local Coverage Market Name/ Local Coverage Sales Vertical Name/ Local Coverage Branch Name/ Local Coverage Sub Branch Name/ Local Coverage Type Name/ Local Coverage Type ID/ Local Coverage Name – Different Territory dimensions sourced from RDC, populated with appropriate values based on the Customer number selected by the sales team while creating the opportunity in the CRM system
+
+ 
+
+UT Lvl 10 Name/ UT Lvl 15 Name/ UT Lvl 17 Name/ UT Lvl 20 Name/ UT Lvl 30 Name/ UT Lvl 30 code – Unified Taxonomy hierarchy from Fedcat, populated with appropriate values based on the Product (UT Lvl 30) as selected by the sales team while creating the opportunity in the CRM system
+
+ 
+
+Customer Name/ Customer Number – An identifier/ name associated with a customer at a specific location. Also known as the CMR (Customer Master Record) or ICN (IBM Customer Number)
+
+ 
+
+Revenue Type – Specifies the type of line item within an opportunity as Transactional (One time charge) or Signings TCV (revenue recognized by IBM over a period of time) or Signings ACV (Annual Contract Value – revenue recognized by IBM for the year)
+
+Oppty Value – Shows the value of the opportunity by line item
+
+ 
+
+FLM Judgement Indicator – An indicator on CRM system showing the commitment made by the FLM to close the opportunity within the quarter
+
+ 
+
+Call – Shows the value for opportunities by line item that have been committed by the FLMs to be closed within the quarter (determined by FLM Judgement Indicator)
+
+ 
+
+Upside – Shows the value for Opportunities by line item which are in Negotiate and Propose sales stage but are not committed by the FLM (which does not have the FLM Judgement Indicator)
+
+PPV – PERFORM Pipeline Value produces the end of quarter transactional revenue/ signings assessment depending on the UT and is sourced from CAO. Although PPV is scaled at opportunity line-item level and thus can show which opportunities are low “contributors”, its primary usage is more meaningful at the aggregation level of a set of opportunities for a given sales unit. Updated weekly on Monday based on Saturday CoB pipeline data.
+
+ 
+
+Won – Shows the value of opportunities by line item that have a sales stage of Won
+
+ 
+
+IQR – In Quarter Revenue generated from the opportunity as updated by the sales team on the opportunity in CRM
+
+ 
+
+Mon1/ Mon2/ Mon3 Signings Rev – Shows the month wise split of the revenue generated from the opportunity as updated by the sales team on the opportunity in CRM
+
+ 
+
+ISC Sales Stage – Values which define the valid sales cycles or phases through which an opportunity moves during its life cycle. Applicable to the total opportunity. Opportunity Owner updates the sales stage as the opportunity progress through the sales cycle
+
+ 
+
+Sales Forecast Category Name – Indicates the likelihood that the opportunity will be won. Applies to the total opportunity and is dependent on the ISC Sales Stage in which the opportunity is in.
+
+ 
+
+Opp Win/ Loss Date – Same as Closed Date on the EPM FM package. Reflects the first time stamp (date) when the opportunity was moved to either a Won/ Lost sales stage on CRM system.
+
+ 
+
+Relative Sales Forecast Quarter – Represents the quarter mnemonic relative to the forecast date of the opportunity as entered by the sales team on CRM
+
+ 
+
+Quarter in Year – Shows the absolute quarter and year for which the opportunity has been forecasted to be closed by the sales team
+
+ 
+
+Week in Quarter – Shows the absolute sales week and quarter for which the opportunity has been forecasted to be closed by the sales team
+
+ 
+
+Opp Forecast Date – Same as Close Date on the EPM FM package. Reflects the date on which the opportunity is forecasted to be closed by the sales team on CRM
+
+ 
+
+Forecast Month – Shows the month in quarter relative to the Opp Forecast Date
+
+ 
+
+Global Industry Group/ Industry Group – Industry groupings as defined within IBM for the Signature and Strategic accounts. Defined based on Local Coverage Type id
+
+ 
+
+Traditional Industry/ Sector Name – Industry and Sectors that represents the IBM operating GTM structure for Technology units and overall IBM (Consulting does not follow this structure for their operational purposes)
+
+ 
+
+Global Buying Group/ Buying Group – An IBM Buying Group Client is a collection of IBM Customer Master Records (CMR) that are combined together because they share a common go-to-market strategy and represent the “IBM view” of a customer
+
+ 
+
+Global Client – Customer oriented internal business name for grouping on a worldwide basis typically by aggregating multiple country level that all  – report to – a worldwide HQ Client.
+
+EDS Directive: The Client Organization has the authority and the responsibility for the following:
+
+    Select the name for the Client
+
+    Maintain all names selected for the Client
+
+    Ensure compliance for all names selected
+
+    Engage the change management process if a change is required.
+
+IBM Client Name: The name of the client will be defaulted at generation time as follows:
+
+    If the client is based on an INAC / Super INAC, the name of the INAC / Super INAC is to be used.
+
+    If the client is based on an enterprise number, use the name associated with the enterprise number.
+
+    In the U.S. and in some countries, this name is readily available in a reference table.
+
+    In other countries, the enterprise number points back to a reference CMR. In that case, the name of this CMR would be used.
+
+    If the client is based on the DUNS Ultimate, the business name corresponding to this DUNS number will be used.
+
+    If the client is based on an Org ID (or URN), the legal name of this organization will be used or the business name if the legal name is not available.
+
+    If the IBM Client Name must be changed, then, the following must be adhered to; The IBM Client Name should reflect the common name for the Client’s top representation in the country. The IBM Client Name should not contain references to IBM resources or organizations. There is no naming relationship between Client Name and the Global Client Name.
+
+IBM Global Client Name: The Global Client Name will be entered manually at the time of Global Client creation. The Global Client Name should be unique. The IBM Global Client Name is unique within the IBM Global Client. It is not necessary to have global clients for every client.
+
+ 
+
+Domestic Client – Customer oriented business name for grouping on a domestic (country) basis. Typically multiple domestic entities report to – a worldwide global HQ Client.  The name is based on: (1) the Dun & Bradstreet Domestic Ultimate DUNS name when the hierarchy is based on DUNS, or (2) the legal name of the CMR if there is no associated DUNS data.  Names are automatic and no manual changes are allowed.
+
+ 
+
+Client Type Name/ Client Sub type Name – Shows the client segmentation as per IBM’s GTM strategy. Based on Local Coverage Type ID.
+
+ 
+
+Opp Age – Number of days that an opportunity has been in an open sales stage or until it is won/ lost. If the opportunity is in an open sales stage, then it is the difference between the Current Date and Opp Create Date. If the opportunity is won/ lost, then it is the difference between the Closed Date and the Opp Create Date
+
+ 
+
+Opportunity Source Name – Identifies the source from which the opportunity was identified
+
+ 
+
+Opp Owner/ Opp Owner Email – Shows the name/ email id of the Opportunity Owner. Currently this field gets populated with data only when the Opportunity owner is an IBM employee
+
+ 
+
+Product Family Name – Displays the broad classification of the type of product
+
+ 
+
+Classification – Displays the type of contract
+
+ 
+
+Term – Displays the term of the contract
+
+
+Objective/Budget($M): Budget is a goal to set to sales leaders/Sellers
+
+   How are we doing against our budget? 
+   How are we performing in each geo and etc..
+
+Budget YoY%: YoY is used to compare the budget from one period to the same period in the previous year. 
+     A positive YoY% indicates growth.
+     A negative YoY% indicates decline.
+    Zero YoY% means no change from the previous year
+PPV Cov% : PERFORM Pipeline Value- PPV stands for end-of-quarter sales assessment for each Brand and Market at IBM. It is created by the Chief Analytics Office's Finance and Planning Team on a weekly basis, providing evaluations for both the Current Quarter (CQ) and the Next Quarter (NQ).. It is not recommended to view PPV at the Opportunity Line-Item Level. Instead, this scaling is best used to rollup a PPV for slides of the business other than the standard UT15 x Market such as: PPV by Coverage ID, Country, etc.
+ Calculation : PPV/Budget
+Helps measure sales effectiveness
+Highlights gaps
+
+PPV (B/W): PERFORM Pipeline Value produces the end of quarter transactional revenue/ signings assessment depending on the UT and is sourced from CAO. Although It is not recommended to view PPV at the Opportunity Line-Item Level. Instead, this scaling is best used to rollup a PPV for slides of the business other than the standard UT15 x Market such as: PPV by Coverage ID, Country, etc.     
+     Calculation : PPV-Budget
+     Qualify+ ($M): Shows the value of opportunities by line item that have a sales stages of Design,propose,negotiate,Qualify,closing.
+
+Sales stage-Closing,Design, Negotiate, Propose, QUalify
+
+
+ Qualify+ WtW: (Week-to-Week) is a metric used to track changes or performance comparisons between one week and the previous week.
+       Calculation WtW=Current week-Prior Week
+Qualify +YoY%: YoY is used to compare the Qualify+ Value from one period to the same period in the previous year. 
+     A positive YoY% indicates growth.
+     A negative YoY% indicates decline.
+    Zero YoY% means no change from the previous year
+
+Actual Multiplier for the Week: Multiplier is used to estimate how much pipeline coverage is needed to hit a sales target in the CW
+    Calculation: (Qualify+ / Budget)
+
+Tracks: The logic for the tracks is 4x of the budget as of week1 of any given quarter.(in other words we can measure the pipeline health, are we above/below the track)
+To build the track running up to week1, we take the 4x(Budget) value minus the pipeline as of week-13 and then we divide  that value by 14 to make a linear pipeline track. In other words, equal amount of pipeline increment is expected per week. However, the starting point at week -13 is a baseline for the tracks built up.
+Wk01 multiplier= WK1 Target/Budget
+B/(W) Weekly Track= Qualify+ CW-Qualify+ Track_CW
+% Weekly Track= Qualify+ CW/Qualify+ Track_CW
+Gap: How to Identify the Gap:
+Scenario: Americas  budget of $1387 million, with a target YtY growth of 28%. However, Qual+ has declined by -9%YtY. With weekly track of 87%(548M Gap) with 2.6x of multiplier, based on historical yield, we need 4.0x multiplier to attain the target.
+
+
+
+

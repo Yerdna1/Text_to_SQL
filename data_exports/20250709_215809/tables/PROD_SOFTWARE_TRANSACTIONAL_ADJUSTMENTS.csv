@@ -1,0 +1,1001 @@
+YEAR,QUARTER,BOOKING_STREAMS_SUBCATEGORY_NAME,BOOKING_STREAMS_NAME,GEOGRAPHY_NAME,MARKET_NAME,COUNTRY_NAME,UT15_NAME,UT17_NAME,UT20_NAME,UT30_NAME,TRANSACTIONAL_ADJUSTMENT
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,Storage TPS,,,,-674967.4
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,SPGI Market,SPGI Plan,Storage TPS,,,,1387539.3
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,Latin America Market,Latin America Market Plan,Automation Platform,,,,49372.96
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,SPGI Market,SPGI Plan,Storage TPS,,,,-88854.37
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,UKI Market,UK/Ireland Plan,Automation Platform,,,,-340468.89
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Greater China Group Market,Greater China Group Market Plan,Data Platform,,,,-495417.17
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,UKI Market,UK/Ireland Plan,Automation Platform,,,,-570495.72
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,ASEAN Market,Asean Plan,Automation Platform,,,,228076.8
+2025,1,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,81318.13
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,APAC,ASEAN Market,Asean Plan,Automation Platform,,,,183000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Latin America Market,Latin America Market Plan,Automation Platform,,,,-2503800.04
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Federal Market,U.S. Federal Plan,Automation Platform,,,,-688004.21
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,ASEAN Market,Asean Plan,Automation Platform,,,,-626672.45
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Japan,Japan Market,Japan Plan,Storage TPS,,,,-16000.0
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Variance,Z TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Data Platform,,,,-700066.86
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Public Cloud Platform,,,,-67186.15
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Korea Market,Korea Plan,Storage TPS,,,,-49777.36
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Korea Market,Korea Plan,Automation Platform,,,,-260733.09
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,UKI Market,UK/Ireland Plan,Automation Platform,,,,1040171.55
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,APAC Top Countries,APAC Plan,Storage TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Data Platform,,,,-485667.17
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Greater China Group Market,Greater China Group Market Plan,Z TPS,,,,-423.28
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Variance,Data Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Latin America Market,Latin America Market Plan,Automation Platform,,,,-4818.22
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,US Financial Service Market,U.S. Financial Plan,Data Platform,,,,-188000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Greater China Group Market,Greater China Group Market Plan,Z TPS,,,,223332.12
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,DACH Market,DACH Plan,Data Platform,,,,-1391589.74
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,France Market,France Plan,Data Platform,,,,4010000.0
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,Latin America Market,Latin America Market Plan,Data Platform,,,,-20735.25
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Power TPS,,,,-1604.39
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Storage TPS,,,,686925.7
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,ASEAN Market,Asean Plan,Automation Platform,,,,126500.44
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Storage TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Z TPS,,,,1000.0
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,Canadian Market,Canada Plan,Z TPS,,,,-115875.03
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,DACH Market,DACH Plan,Z TPS,,,,40685.28
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Data Platform,,,,-182578.5
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Italy Market,Italy Plan,Z TPS,,,,63655.53
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,-339376.86
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Americas Top Countries,Americas Plan,Data Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Japan,Japan Market,Japan Plan,Data Platform,,,,2701327.55
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Z TPS,,,,-6435.1
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Latin America Market,Latin America Market Plan,IBM Software Top (AUO),,,,-18.62
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,India/South Asia Market,India & South Asia Plan,Power TPS,,,,-23.39
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Automation Platform,,,,-261318.74
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Storage TPS,,,,-6730.73
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Automation Platform,,,,-541179.22
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Power TPS,,,,-2157.06
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,US Top Market,U.S. Other Plan,Power TPS,,,,-730000.57
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,APAC Top Countries,APAC Plan,Data Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Greater China Group Market,Greater China Group Market Plan,Automation Platform,,,,117841.94
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Canadian Market,Canada Plan,Automation Platform,,,,-257911.93
+2025,1,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,Greater China Group Market,Greater China Group Market Plan,Automation Platform,,,,742.82
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,US Industry Market,US Industry Plan,Automation Platform,,,,1164170.42
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Italy Market,Italy Plan,Data Platform,,,,464623.82
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,DACH Market,DACH Plan,Automation Platform,,,,652617.35
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,Power TPS,,,,-6289.79
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Italy Market,Italy Plan,Z TPS,,,,-6804.69
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,ASEAN Market,Asean Plan,Automation Platform,,,,242359.92
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,India/South Asia Market,India & South Asia Plan,Data Platform,,,,-144787.19
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Power TPS,,,,-9000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Italy Market,Italy Plan,Storage TPS,,,,287227.79
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,APAC,India/South Asia Market,India & South Asia Plan,Automation Platform,,,,-2000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,APAC Top Countries,APAC Plan,Data Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,IBM Software Top (AUO),,,,-8210.57
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,India/South Asia Market,India & South Asia Plan,Storage TPS,,,,-54006.12
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Greater China Group Market,Greater China Group Market Plan,Automation Platform,,,,-341113.93
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Canadian Market,Canada Plan,Z TPS,,,,231939.86
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,US Industry Market,US Industry Plan,Power TPS,,,,2478.74
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,SPGI Market,SPGI Plan,Data Platform,,,,-387565.19
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Americas Top Countries,Americas Plan,Power TPS,,,,0.0
+2025,4,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,Canadian Market,Canada Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,-138813.61
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Z TPS,,,,-17155.51
+2025,4,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,ASEAN Market,Asean Plan,Data Platform,,,,188655.55
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,Americas Top Countries,Americas Plan,Power TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,UKI Market,UK/Ireland Plan,Z TPS,,,,-98104.92
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Latin America Market,Latin America Market Plan,Automation Platform,,,,861784.62
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Storage TPS,,,,-30000.0
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,US Top Market,U.S. Other Plan,Power TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Top Market,U.S. Variance,Data Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,UKI Market,UK/Ireland Plan,Automation Platform,,,,1898936.54
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,Z TPS,,,,-2290454.21
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Americas Top Countries,Americas Plan,Data Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,ASEAN Market,Asean Plan,Data Platform,,,,188655.55
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Latin America Market,Latin America Market Plan,Automation Platform,,,,861784.62
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,DACH Market,DACH Plan,Automation Platform,,,,-224139.88
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,US Top Market,U.S. Other Plan,Automation Platform,,,,-7520000.01
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,India/South Asia Market,India & South Asia Plan,Power TPS,,,,-4582.08
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,UKI Market,UK/Ireland Plan,Automation Platform,,,,1898936.54
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Automation Platform,,,,-23433.58
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Top Market,U.S. Variance,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Italy Market,Italy Plan,Storage TPS,,,,287227.79
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Italy Market,Italy Plan,Automation Platform,,,,-221135.03
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,ASEAN Market,Asean Plan,Automation Platform,,,,-849511.12
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Storage TPS,,,,-17987.99
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Canadian Market,Canada Plan,Z TPS,,,,231939.86
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Americas Top Countries,Americas Plan,Power TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Korea Market,Korea Plan,Storage TPS,,,,-93048.73
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Greater China Group Market,Greater China Group Market Plan,Storage TPS,,,,124925.23
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,UKI Market,UK/Ireland Plan,Data Platform,,,,-414000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,US Industry Market,US Industry Plan,Storage TPS,,,,383346.67
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,-961000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Z TPS,,,,-2221.16
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Financial Service Market,U.S. Financial Plan,Z TPS,,,,10629000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Japan,Japan Market,Japan Plan,Storage TPS,,,,245473.1
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,India/South Asia Market,India & South Asia Plan,Storage TPS,,,,-54448.79
+2025,1,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,Canadian Market,Canada Plan,Automation Platform,,,,87962.61
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,Canadian Market,Canada Plan,Automation Platform,,,,-82219.74
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Americas Top Countries,Americas Plan,Storage TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,France Market,France Plan,Power TPS,,,,-4648.03
+2025,1,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,44695.29
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Public Market,U.S. Public Plan,Automation Platform,,,,-530000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,-1685490.23
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Data Platform,,,,-387662.65
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,India/South Asia Market,India & South Asia Plan,Data Platform,,,,370955.22
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Power TPS,,,,-32590.45
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,APAC Top Countries,APAC Plan,Storage TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,Greater China Group Market,Greater China Group Market Plan,Automation Platform,,,,4085.51
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,SPGI Market,SPGI Plan,Power TPS,,,,1369.45
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,India/South Asia Market,India & South Asia Plan,Storage TPS,,,,-45142.61
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,245824.1
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Plan,Z TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,UKI Market,UK/Ireland Plan,Data Platform,,,,636654.71
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,SPGI Market,SPGI Plan,Data Platform,,,,-59986.12
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Canadian Market,Canada Plan,Storage TPS,,,,279278.53
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Top Market,U.S. Variance,Data Platform,,,,-52000.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,EMEA Top Countries,EMEA Plan,Storage TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Z TPS,,,,-3316.49
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,269469.87
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Z TPS,,,,10884.74
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Data Platform,,,,-275010.7
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US National Market,US National Plan,Data Platform,,,,-13581.4
+2025,1,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,ASEAN Market,Asean Plan,Storage TPS,,,,155426.91
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Top Countries Plan,Automation Platform,,,,1567466.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Industry Market,US Industry Plan,Automation Platform,,,,8019000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Greater China Group Market,Greater China Group Market Plan,Data Platform,,,,103341.82
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Japan,Japan Market,Japan Plan,Automation Platform,,,,2937994.77
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Storage TPS,,,,-293753.97
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,UKI Market,UK/Ireland Plan,Z TPS,,,,506160.61
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Industry Market,US Industry Plan,Storage TPS,,,,63000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Americas Top Countries,Americas Plan,Storage TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Greater China Group Market,Greater China Group Market Plan,Power TPS,,,,-4370.71
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,Americas Top Countries,Americas Plan,Storage TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Financial Service Market,U.S. Financial Plan,Data Platform,,,,-1789000.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Industry Market,US Industry Plan,Z TPS,,,,547000.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,France Market,France Plan,Storage TPS,,,,-41765.03
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Latin America Market,Latin America Market Plan,Z TPS,,,,322989.22
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,APAC Top Countries,APAC Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,SPGI Market,SPGI Plan,Storage TPS,,,,201000.0
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,Canadian Market,Canada Plan,Data Platform,,,,-189829.87
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Americas Top Countries,Americas Plan,Z TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Latin America Market,Latin America Market Plan,Automation Platform,,,,-513000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,US Industry Market,US Industry Plan,Data Platform,,,,2746501.48
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Latin America Market,Latin America Market Plan,Data Platform,,,,-810000.01
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Power TPS,,,,-9162.81
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,UKI Market,UK/Ireland Plan,Power TPS,,,,-2788.32
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Americas Top Countries,Americas Plan,Power TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Canadian Market,Canada Plan,IBM Software Top (AUO),,,,-5200000.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,UKI Market,UK/Ireland Plan,Storage TPS,,,,233000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Storage TPS,,,,-7695.98
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Japan,Japan Market,Japan Plan,Power TPS,,,,363700.84
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Z TPS,,,,-6126.96
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,Canadian Market,Canada Plan,Automation Platform,,,,483794.35
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,India/South Asia Market,India & South Asia Plan,Storage TPS,,,,260748.52
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,US Top Market,U.S. Other Plan,Storage TPS,,,,-3217.94
+2025,4,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Power TPS,,,,-13000.0
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,Latin America Market,Latin America Market Plan,Power TPS,,,,-8.61
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Z TPS,,,,-77283.07
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Plan,Data Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Americas Top Countries,Americas Plan,Data Platform,,,,-1376.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Data Platform,,,,-524809.7
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,US Industry Market,US Industry Plan,Z TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Rate Buy Down Est,Americas,US Top Market,U.S. Variance,Data Platform,,,,-0.01
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Data Platform,,,,-357153.82
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,Canadian Market,Canada Plan,Storage TPS,,,,-15294.01
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,SPGI Market,SPGI Plan,Automation Platform,,,,-221047.43
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Latin America Market,Latin America Market Plan,Storage TPS,,,,-383000.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Canadian Market,Canada Plan,Storage TPS,,,,-11000.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,ASEAN Market,Asean Plan,Data Platform,,,,-279330.19
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Automation Platform,,,,296255.5
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Top Countries Plan,Storage TPS,,,,563644.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,France Market,France Plan,Data Platform,,,,-190634.13
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,APAC Top Countries,APAC Plan,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Korea Market,Korea Plan,Data Platform,,,,4497.87
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,Canadian Market,Canada Plan,Automation Platform,,,,-148687.97
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Korea Market,Korea Plan,Storage TPS,,,,-20687.73
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Financial Service Market,U.S. Financial Plan,Automation Platform,,,,-8632000.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,Italy Market,Italy Plan,Storage TPS,,,,44000.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,UKI Market,UK/Ireland Plan,Storage TPS,,,,-105662.87
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Japan,Japan Market,Japan Plan,Z TPS,,,,1556437.16
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Americas Top Countries,Americas Plan,Data Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,US Top Market,U.S. Other Plan,Data Platform,,,,-6573168.8
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Automation Platform,,,,-479430.97
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,APAC Top Countries,APAC Plan,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Z TPS,,,,-14312.08
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Latin America Market,Latin America Market Plan,Power TPS,,,,5482.05
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,ASEAN Market,Asean Plan,Power TPS,,,,-1812.54
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,SPGI Market,SPGI Plan,Data Platform,,,,-486.32
+2025,1,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,ASEAN Market,Asean Plan,Automation Platform,,,,23000.08
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,ASEAN Market,Asean Plan,Storage TPS,,,,-126573.88
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Data Platform,,,,-327359.71
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Greater China Group Market,Greater China Group Market Plan,Data Platform,,,,-184462.88
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,270000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,ASEAN Market,Asean Plan,Automation Platform,,,,-276557.05
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Storage TPS,,,,-242000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,269469.88
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,US Top Market,U.S. Other Plan,Data Platform,,,,-6630000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,US Top Market,U.S. Other Plan,Automation Platform,,,,-14349412.39
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Canadian Market,Canada Plan,Data Platform,,,,-168057.64
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,SPGI Market,SPGI Plan,Power TPS,,,,2913.29
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,India/South Asia Market,India & South Asia Plan,Data Platform,,,,-175457.46
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Data Platform,,,,-940369.86
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,India/South Asia Market,India & South Asia Plan,Data Platform,,,,-3143.99
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Z TPS,,,,-176567.73
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,Korea Market,Korea Plan,Automation Platform,,,,-2518.41
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,APAC Top Countries,APAC Plan,Storage TPS,,,,9909.47
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Power TPS,,,,-256.94
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Automation Platform,,,,-877570.39
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,France Market,France Plan,Storage TPS,,,,-554000.0
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,Americas Top Countries,Americas Plan,Z TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Storage TPS,,,,-101099.31
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Americas Top Countries,Americas Plan,Data Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Canadian Market,Canada Plan,Automation Platform,,,,517136.61
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,-721868.07
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,France Market,France Plan,Storage TPS,,,,-124268.07
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,Latin America Market,Latin America Market Plan,Data Platform,,,,-6339.74
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,France Market,France Plan,Power TPS,,,,543.19
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Data Platform,,,,-291792.54
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Automation Platform,,,,-307991.97
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Italy Market,Italy Plan,Power TPS,,,,1587.22
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Plan,Z TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,SPGI Market,SPGI Plan,Z TPS,,,,847023.71
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Data Platform,,,,-516861.17
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,UKI Market,UK/Ireland Plan,Power TPS,,,,-3057.9
+2025,4,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Automation Platform,,,,-295083.91
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,APAC,ASEAN Market,Asean Plan,Z TPS,,,,-6000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,ASEAN Market,Asean Plan,Power TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,APAC Top Countries,APAC Plan,Z TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Storage TPS,,,,-244442.94
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,France Market,France Plan,Z TPS,,,,-735.78
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,France Market,France Plan,Data Platform,,,,255315.54
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Data Platform,,,,-261782.89
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Public Market,U.S. Public Plan,Data Platform,,,,-4043000.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Storage TPS,,,,-56596.66
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Storage TPS,,,,-33697.98
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,DACH Market,DACH Plan,Storage TPS,,,,664022.85
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Storage TPS,,,,-93055.9
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,India/South Asia Market,India & South Asia Plan,Automation Platform,,,,-686687.44
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Power TPS,,,,-1803.99
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Canadian Market,Canada Plan,Storage TPS,,,,-652.41
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Automation Platform,,,,-720150.73
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Storage TPS,,,,245000.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Storage TPS,,,,-132286.32
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Z TPS,,,,-15677.99
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Plan,Storage TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,DACH Market,DACH Plan,Power TPS,,,,1530.44
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Public Cloud Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,447249.73
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Public Market,U.S. Public Plan,Storage TPS,,,,361000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Storage TPS,,,,396419.73
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Automation Platform,,,,-229104.86
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Plan,Z TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,576996.12
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Canadian Market,Canada Plan,Data Platform,,,,-391199.67
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,France Market,France Plan,Power TPS,,,,832.78
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,SPGI Market,SPGI Plan,Power TPS,,,,-164.91
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,France Market,France Plan,Automation Platform,,,,325141.5
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Japan,Japan Market,Japan Plan,Data Platform,,,,-2542.8
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,India/South Asia Market,India & South Asia Plan,Data Platform,,,,-215055.95
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,DACH Market,DACH Plan,Z TPS,,,,-203000.0
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,DACH Market,DACH Plan,Power TPS,,,,-3388.95
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Latin America Market,Latin America Market Plan,Z TPS,,,,403000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,SPGI Market,SPGI Plan,Z TPS,,,,114745.01
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Italy Market,Italy Plan,Data Platform,,,,-248316.39
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,UKI Market,UK/Ireland Plan,Automation Platform,,,,-989616.82
+2025,4,Transactional Adjustments,Transactional Adjustments Other/Top,Japan,Japan Market,Japan Plan,Storage TPS,,,,245473.1
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,ASEAN Market,Asean Plan,Data Platform,,,,-406443.29
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Canadian Market,Canada Plan,Automation Platform,,,,-113869.91
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,UKI Market,UK/Ireland Plan,Automation Platform,,,,-886697.97
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,Americas Top Countries,Americas Plan,Power TPS,,,,0.0
+2025,4,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Z TPS,,,,-14312.08
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,ASEAN Market,Asean Plan,Power TPS,,,,-186.07
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,India/South Asia Market,India & South Asia Plan,Data Platform,,,,370955.23
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Data Platform,,,,-280797.88
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,APAC Top Countries,APAC Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Canadian Market,Canada Plan,Z TPS,,,,1168000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Plan,Data Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,APAC Top Countries,APAC Plan,Data Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,EMEA Top Countries,EMEA Plan,Data Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Plan,Power TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,APAC Top Countries,APAC Plan,Power TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,Automation Platform,,,,-3628586.6
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,245824.1
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,1085390.51
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Financial Service Market,U.S. Financial Plan,Data Platform,,,,-28529.85
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Americas Top Countries,Americas Plan,Z TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Z TPS,,,,-8654.45
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Top Market,U.S. Variance,Data Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,ASEAN Market,ASEANZK Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,APAC Top Countries,APAC Plan,Data Platform,,,,-16103.86
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Italy Market,Italy Plan,Automation Platform,,,,902484.6
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,ASEAN Market,Asean Plan,Z TPS,,,,47214.65
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Automation Platform,,,,-1118886.9
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,Canadian Market,Canada Plan,Automation Platform,,,,483794.35
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Partner Service Market,US Build/Service Partnerss Plan,Automation Platform,,,,-1646.88
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Power TPS,,,,-1.58
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,Greater China Group Market,Greater China Group Market Plan,Automation Platform,,,,4085.51
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Italy Market,Italy Plan,Z TPS,,,,309465.32
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Latin America Market,Latin America Market Plan,Data Platform,,,,949940.16
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Canadian Market,Canada Plan,Storage TPS,,,,-1811.9
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Americas Top Countries,Americas Plan,Z TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Public Market,U.S. Public Plan,Z TPS,,,,2105000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Greater China Group Market,Greater China Group Market Plan,Z TPS,,,,45537.12
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,Canadian Market,Canada Plan,Automation Platform,,,,-550753.16
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Power TPS,,,,1410.49
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Greater China Group Market,Greater China Group Market Plan,Power TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,ASEAN Market,Asean Plan,Automation Platform,,,,-410116.42
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,EMEA Top Countries,EMEA Plan,Data Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,Greater China Group Market,Greater China Group Market Plan,Automation Platform,,,,-71117.93
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Italy Market,Italy Plan,Data Platform,,,,-248357.78
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,UKI Market,UK/Ireland Plan,Storage TPS,,,,-94313.83
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Korea Market,Korea Plan,Storage TPS,,,,-50109.36
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,DACH Market,DACH Plan,Data Platform,,,,1887000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Storage TPS,,,,-11415.83
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,DACH Market,DACH Plan,Z TPS,,,,846228.33
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,Italy Market,Italy Plan,Automation Platform,,,,29956.84
+2025,4,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Storage TPS,,,,-32463.36
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Latin America Market,Latin America Market Plan,Data Platform,,,,1025000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,APAC Top Countries,APAC Plan,Z TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,France Market,France Plan,Automation Platform,,,,325141.5
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,US Financial Service Market,U.S. Financial Plan,Z TPS,,,,-500000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,SPGI Market,SPGI Plan,Z TPS,,,,847023.71
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Z TPS,,,,-7622.08
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,SPGI Market,SPGI Plan,Storage TPS,,,,-188134.39
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Partner Service Market,US Build/Service Partnerss Plan,Automation Platform,,,,-264.04
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Data Platform,,,,-277217.2
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Latin America Market,Latin America Market Plan,Z TPS,,,,16363.77
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,ASEAN Market,Asean Plan,Data Platform,,,,-424831.19
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,Americas Top Countries,Americas Plan,Z TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Canadian Market,Canada Plan,Automation Platform,,,,493235.74
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,Latin America Market,Latin America Market Plan,Automation Platform,,,,49372.96
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Data Platform,,,,-462206.12
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Korea Market,Korea Plan,Data Platform,,,,-98776.02
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,France Market,France Plan,Power TPS,,,,543.19
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,Italy Market,Italy Plan,Z TPS,,,,-1000.0
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,ASEAN Market,Asean Plan,Automation Platform,,,,126500.44
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,SPGI Market,SPGI Plan,Storage TPS,,,,-112206.11
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,France Market,France Plan,Automation Platform,,,,-11544.76
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,ASEAN Market,Asean Plan,Automation Platform,,,,-334392.38
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Power TPS,,,,-3102.99
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,US Top Market,U.S. Other Plan,Z TPS,,,,-82056.34
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Storage TPS,,,,-1675108.41
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Power TPS,,,,1646.36
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Storage TPS,,,,-1127.23
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Data Platform,,,,45312.61
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,EMEA Top Countries,EMEA Plan,Z TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Plan,Power TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,UKI Market,UK/Ireland Plan,Power TPS,,,,-1943.06
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,UKI Market,UK/Ireland Plan,Power TPS,,,,359.52
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,APAC Top Countries,APAC Plan,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,France Market,France Plan,Storage TPS,,,,524764.66
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Korea Market,Korea Plan,Data Platform,,,,-154648.61
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,UKI Market,UK/Ireland Plan,Data Platform,,,,-265321.68
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,DACH Market,DACH Plan,Z TPS,,,,-17464.85
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Italy Market,Italy Plan,Data Platform,,,,622270.33
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,DACH Market,DACH Plan,Automation Platform,,,,652617.35
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Japan,Japan Market,Japan Plan,Data Platform,,,,199000.0
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,Power TPS,,,,-5094.56
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,ASEAN Market,Asean Plan,Automation Platform,,,,242359.92
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Storage TPS,,,,-170117.26
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Z TPS,,,,181582.61
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,UKI Market,UK/Ireland Plan,Automation Platform,,,,1040171.55
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Italy Market,Italy Plan,Power TPS,,,,-12461.91
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Storage TPS,,,,92971.65
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Top Countries Plan,Z TPS,,,,66922.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Data Platform,,,,45312.61
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,Latin America Market,Latin America Market Plan,Storage TPS,,,,-264600.71
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Canadian Market,Canada Plan,Automation Platform,,,,-200000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,EMEA Top Countries,EMEA Plan,Z TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,UKI Market,UK/Ireland Plan,Power TPS,,,,359.52
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Americas Top Countries,Americas Plan,Z TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Latin America Market,Latin America Market Plan,Storage TPS,,,,-840000.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,214000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,India/South Asia Market,India & South Asia Plan,Automation Platform,,,,-1195448.64
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,DACH Market,DACH Plan,Data Platform,,,,1954284.96
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,SPGI Market,SPGI Plan,Z TPS,,,,-6230.95
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Power TPS,,,,-2335.99
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Variance,Z TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,France Market,France Plan,Z TPS,,,,-36837.97
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,EMEA Top Countries,EMEA Plan,Storage TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US National Market,US National Plan,Automation Platform,,,,-777701.35
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Storage TPS,,,,-42283.07
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,US Public Market,U.S. Public Plan,Storage TPS,,,,-71662.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Canadian Market,Canada Plan,Data Platform,,,,-231507.11
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,SPGI Market,SPGI Plan,Storage TPS,,,,1387539.3
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Plan,Storage TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,SPGI Market,SPGI Plan,Power TPS,,,,-86.88
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Storage TPS,,,,-22482.11
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,India/South Asia Market,India & South Asia Plan,Data Platform,,,,-638030.82
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Automation Platform,,,,-564222.35
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,Canadian Market,Canada Plan,Storage TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,DACH Market,DACH Plan,Storage TPS,,,,921104.57
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Industry Market,US Industry Plan,Z TPS,,,,-1219000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,India/South Asia Market,India & South Asia Plan,Power TPS,,,,-21.23
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Greater China Group Market,Greater China Group Market Plan,Automation Platform,,,,117841.94
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Storage TPS,,,,-1464.09
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Plan,Public Cloud Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Automation Platform,,,,-265182.25
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Latin America Market,Latin America Market Plan,Automation Platform,,,,-642000.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Automation Platform,,,,-710488.4
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Storage TPS,,,,-206184.17
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,US Industry Market,US Industry Plan,Automation Platform,,,,1530490.23
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Storage TPS,,,,-2591.67
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,Latin America Market,Latin America Market Plan,Data Platform,,,,-426082.99
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Power TPS,,,,-1200.78
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,ASEAN Market,Asean Plan,Data Platform,,,,-351198.07
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,-252533.52
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Italy Market,Italy Plan,Power TPS,,,,576.09
+2025,1,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,France Market,France Plan,Automation Platform,,,,27981.33
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Korea Market,Korea Plan,Data Platform,,,,-191101.44
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,India/South Asia Market,India & South Asia Plan,Automation Platform,,,,219470.71
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Americas Top Countries,Americas Plan,Z TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,India/South Asia Market,India & South Asia Plan,Automation Platform,,,,-120201.54
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,US Public Market,U.S. Public Plan,Data Platform,,,,-580000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Canadian Market,Canada Plan,Automation Platform,,,,517136.61
+2025,1,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,US Top Market,U.S. Other Plan,Automation Platform,,,,1256617.74
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,ASEAN Market,Asean Plan,Data Platform,,,,-260035.92
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Power TPS,,,,-3254.86
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Storage TPS,,,,-33474.91
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,France Market,France Plan,Automation Platform,,,,-22000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Data Platform,,,,-948266.59
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Korea Market,Korea Plan,Automation Platform,,,,-297452.06
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Storage TPS,,,,269469.88
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,Automation Platform,,,,-2124755.05
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Data Platform,,,,-413225.76
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,France Market,France Plan,Automation Platform,,,,153897.29
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,APAC Top Countries,APAC Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,2576.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,France Market,France Plan,Automation Platform,,,,711288.76
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Variance,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,SPGI Market,SPGI Plan,Storage TPS,,,,-1870.09
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Greater China Group Market,Greater China Group Market Plan,Storage TPS,,,,-41496.26
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Automation Platform,,,,-161000.0
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,Latin America Market,Latin America Market Plan,Automation Platform,,,,-4965.73
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Power TPS,,,,-9215.69
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Z TPS,,,,-5786.12
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Data Platform,,,,-562815.07
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Automation Platform,,,,-337460.82
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,India/South Asia Market,India & South Asia Plan,Storage TPS,,,,-35762.93
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Plan,Z TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,APAC Top Countries,APAC Plan,Z TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,SPGI Market,SPGI Plan,Automation Platform,,,,-144044.25
+2025,1,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,Korea Market,Korea Plan,Automation Platform,,,,40483.31
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Data Platform,,,,-860768.58
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Power TPS,,,,-819.05
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Data Platform,,,,-524756.37
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Storage TPS,,,,-7495.94
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Italy Market,Italy Plan,Power TPS,,,,576.09
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Canadian Market,Canada Plan,Storage TPS,,,,-40000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,APAC Top Countries,APAC Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,France Market,France Plan,Z TPS,,,,-4219.68
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,EMEA Top Countries,EMEA Plan,Data Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Americas Top Countries,Americas Plan,Storage TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Data Platform,,,,-2222.97
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Power TPS,,,,-157.7
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,DACH Market,DACH Plan,Automation Platform,,,,926039.46
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Storage TPS,,,,362000.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Storage TPS,,,,-74000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,-1271006.83
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Plan,Storage TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Rate Buy Down Est,Americas,US Financial Service Market,U.S. Financial Plan,Data Platform,,,,0.01
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Canadian Market,Canada Plan,Power TPS,,,,-440.03
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Financial Service Market,U.S. Financial Plan,Storage TPS,,,,-1000000.0
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,APAC Top Countries,APAC Plan,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Automation Platform,,,,69360.04
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,SPGI Market,SPGI Plan,Storage TPS,,,,609000.0
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Storage TPS,,,,-228679.08
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Z TPS,,,,-130629.65
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,India/South Asia Market,India & South Asia Plan,Z TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Data Platform,,,,889860.73
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Americas Top Countries,Americas Plan,Power TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,SPGI Market,SPGI Plan,Storage TPS,,,,-80562.83
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,-1004254.55
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Power TPS,,,,-8116.37
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Z TPS,,,,-31918.91
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,France Market,France Plan,Automation Platform,,,,-103945.4
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,France Market,France Plan,Z TPS,,,,378.58
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Public Cloud Platform,,,,-1000.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Greater China Group Market,Greater China Group Market Plan,Data Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,APAC Top Countries,APAC Plan,Data Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Data Platform,,,,-417920.94
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,DACH Market,DACH Plan,Storage TPS,,,,-1559911.73
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Plan,Data Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,UKI Market,UK/Ireland Plan,Automation Platform,,,,-110000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Plan,Power TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,APAC Top Countries,APAC Plan,Storage TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,India/South Asia Market,India & South Asia Plan,Data Platform,,,,78980.92
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Greater China Group Market,Greater China Group Market Plan,Storage TPS,,,,117841.94
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,SPGI Market,SPGI Plan,Automation Platform,,,,2575467.02
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Z TPS,,,,611686.32
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,US Industry Market,US Industry Plan,Storage TPS,,,,383346.67
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Canadian Market,Canada Plan,Automation Platform,,,,368000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Japan,Japan Market,Japan Plan,Storage TPS,,,,330655.27
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Data Platform,,,,-336000.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,DACH Market,DACH Plan,Data Platform,,,,-499018.02
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Power TPS,,,,-143.8
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Financial Service Market,U.S. Financial Plan,Z TPS,,,,4346000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Storage TPS,,,,-47882.57
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,-1263220.34
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,Americas Top Countries,Americas Plan,Power TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,-148354.84
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Latin America Market,Latin America Market Plan,Z TPS,,,,333339.48
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Top Countries Plan,Automation Platform,,,,2569800.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,US Industry Market,US Industry Plan,Data Platform,,,,2661686.35
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Greater China Group Market,Greater China Group Market Plan,Power TPS,,,,-58.19
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Canadian Market,Canada Plan,Data Platform,,,,-1582000.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,France Market,France Plan,Data Platform,,,,22000.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,DACH Market,DACH Plan,Power TPS,,,,-441.18
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Z TPS,,,,-8304.79
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,Data Platform,,,,-3135870.83
+2025,4,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,ASEAN Market,Asean Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Italy Market,Italy Plan,Data Platform,,,,-146583.98
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,APAC Top Countries,APAC Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Korea Market,Korea Plan,Automation Platform,,,,-240983.08
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Americas Top Countries,Americas Plan,Storage TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,DACH Market,DACH Plan,Data Platform,,,,-1124.52
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Italy Market,Italy Plan,Automation Platform,,,,902484.6
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Italy Market,Italy Plan,Storage TPS,,,,-65734.16
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Public Cloud Platform,,,,-3750.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,ASEAN Market,Asean Plan,Z TPS,,,,47214.65
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,France Market,France Plan,Data Platform,,,,-5.96
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Storage TPS,,,,83055.26
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US National Market,US National Plan,Automation Platform,,,,-2962000.0
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,-356443.78
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Storage TPS,,,,-22004.27
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,576996.12
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Americas Top Countries,Americas Plan,Z TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Latin America Market,Latin America Market Plan,Storage TPS,,,,-492.4
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,APAC Top Countries,APAC Plan,Data Platform,,,,0.0
+2025,4,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,APAC Top Countries,APAC Plan,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Automation Platform,,,,-851964.24
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Japan,Japan Market,Japan Plan,Z TPS,,,,932652.0
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,Latin America Market,Latin America Market Plan,Automation Platform,,,,-556073.21
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Latin America Market,Latin America Market Plan,Power TPS,,,,5482.05
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,Americas Top Countries,Americas Plan,Storage TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Automation Platform,,,,-338808.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,APAC Top Countries,APAC Plan,Z TPS,,,,302.37
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,Storage TPS,,,,-346904.09
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,SPGI Market,SPGI Plan,Automation Platform,,,,-349340.0
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,Canadian Market,Canada Plan,Power TPS,,,,-257.74
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,ASEAN Market,Asean Plan,Z TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Storage TPS,,,,-23709.1
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Automation Platform,,,,-802391.91
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Top Market,U.S. Other Plan,Automation Platform,,,,52360.13
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Data Platform,,,,350163.25
+2025,4,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,India/South Asia Market,India & South Asia Plan,Automation Platform,,,,-285826.8
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Americas Top Countries,Americas Plan,Power TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,SPGI Market,SPGI Plan,Data Platform,,,,-106367.41
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,APAC,ASEAN Market,Asean Plan,Z TPS,,,,-3000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Korea Market,Korea Plan,Z TPS,,,,-83.16
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,SPGI Market,SPGI Plan,Storage TPS,,,,-117590.86
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Canadian Market,Canada Plan,Data Platform,,,,165359.98
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Canadian Market,Canada Plan,Power TPS,,,,13968.74
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Storage TPS,,,,-189368.43
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Public Market,U.S. Public Plan,Data Platform,,,,-814000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Public Cloud Platform,,,,-14950.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Public Market,U.S. Public Plan,Automation Platform,,,,2713000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,EMEA Top Countries,EMEA Plan,Storage TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Latin America Market,Latin America Market Plan,Storage TPS,,,,744526.46
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Z TPS,,,,-140000.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,UKI Market,UK/Ireland Plan,Data Platform,,,,2303000.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Public Market,U.S. Public Plan,Z TPS,,,,493000.0
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,France Market,France Plan,Automation Platform,,,,153897.29
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Greater China Group Market,Greater China Group Market Plan,Data Platform,,,,107060.91
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Z TPS,,,,-11620.11
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,DACH Market,DACH Plan,Z TPS,,,,-3088.43
+2025,4,Transactional Adjustments,Transactional Adjustments Other/Top,Japan,Japan Market,Japan Plan,Automation Platform,,,,2690375.72
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,ASEAN Market,Asean Plan,Storage TPS,,,,-11359.89
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Data Platform,,,,-364771.62
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,UKI Market,UK/Ireland Plan,Z TPS,,,,506160.61
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Plan,Data Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,US Top Market,U.S. Other Plan,Automation Platform,,,,6911397.54
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Plan,Power TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,APAC Top Countries,APAC Plan,Storage TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,Americas Top Countries,Americas Plan,Data Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Korea Market,Korea Plan,Data Platform,,,,73772.86
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,Italy Market,Italy Plan,Data Platform,,,,26000.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,APAC,ASEAN Market,Asean Plan,Data Platform,,,,3000.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Japan,Japan Market,Japan Plan,Z TPS,,,,4000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Automation Platform,,,,-160931.27
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Federal Market,U.S. Federal Plan,Automation Platform,,,,-431876.86
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Korea Market,Korea Plan,Storage TPS,,,,66989.02
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Canadian Market,Canada Plan,Data Platform,,,,161859.35
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Canadian Market,Canada Plan,Power TPS,,,,11661.52
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Automation Platform,,,,-750894.71
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,ASEAN Market,Asean Plan,Z TPS,,,,-476.5
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Top Countries Plan,Storage TPS,,,,161617.0
+2025,4,Transactional Adjustments,Transactional Adjustments Other/Top,Japan,Japan Market,Japan Plan,Z TPS,,,,978584.88
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Storage TPS,,,,-2712.14
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Industry Market,US Industry Plan,Data Platform,,,,-260000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,EMEA Top Countries,EMEA Plan,Storage TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Italy Market,Italy Plan,Automation Platform,,,,-218875.01
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Financial Service Market,U.S. Financial Plan,Automation Platform,,,,-77889.34
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,Data Platform,,,,-3752288.99
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Korea Market,Korea Plan,Z TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Greater China Group Market,Greater China Group Market Plan,Power TPS,,,,-110.7
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,SPGI Market,SPGI Plan,Data Platform,,,,-74000.0
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,Korea Market,Korea Plan,Automation Platform,,,,222658.23
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,DACH Market,DACH Plan,Automation Platform,,,,-228000.0
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,India/South Asia Market,India & South Asia Plan,Automation Platform,,,,219470.71
+2025,4,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Latin America Market,Latin America Market Plan,Automation Platform,,,,-1094038.39
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,France Market,France Plan,Automation Platform,,,,-87562.5
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,DACH Market,DACH Plan,Automation Platform,,,,-256692.04
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,Canadian Market,Canada Plan,Power TPS,,,,-142.52
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,US Top Market,U.S. Other Plan,Automation Platform,,,,6911397.54
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,-174760.8
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,ASEAN Market,Asean Plan,Storage TPS,,,,-32935.33
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Korea Market,Korea Plan,Storage TPS,,,,634.67
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Plan,Power TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,Italy Market,Italy Plan,Data Platform,,,,-483000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Latin America Market,Latin America Market Plan,Power TPS,,,,-23169.47
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Korea Market,Korea Plan,Power TPS,,,,-12305.03
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Korea Market,Korea Plan,Data Platform,,,,-40799.98
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,UKI Market,UK/Ireland Plan,Storage TPS,,,,-50000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Japan,Japan Market,Japan Plan,Z TPS,,,,978584.88
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Korea Market,Korea Plan,Storage TPS,,,,-74079.98
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,SPGI Market,SPGI Plan,Automation Platform,,,,-341775.3
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,US Industry Market,US Industry Plan,Z TPS,,,,2270355.09
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,SPGI Market,SPGI Plan,Data Platform,,,,1773551.23
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Italy Market,Italy Plan,Automation Platform,,,,-196922.8
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Latin America Market,Latin America Market Plan,Storage TPS,,,,-50000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Storage TPS,,,,314142.79
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Storage TPS,,,,-85116.4
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Greater China Group Market,Greater China Group Market Plan,Storage TPS,,,,-72565.11
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,Latin America Market,Latin America Market Plan,Z TPS,,,,-6244.82
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,Latin America Market,Latin America Market Plan,Power TPS,,,,-33.27
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Industry Market,US Industry Plan,Storage TPS,,,,-3385000.0
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Canadian Market,Canada Plan,Z TPS,,,,-746514.58
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,DACH Market,DACH Plan,Storage TPS,,,,-27000.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Financial Service Market,U.S. Financial Plan,Data Platform,,,,-257000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Latin America Market,Latin America Market Plan,Data Platform,,,,-454515.41
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Latin America Market,Latin America Market Plan,Data Platform,,,,950000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Data Platform,,,,40479.55
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,India/South Asia Market,India & South Asia Plan,Automation Platform,,,,-811631.02
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Automation Platform,,,,-1179668.58
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US National Market,US National Plan,Storage TPS,,,,1000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,EMEA Top Countries,EMEA Plan,Z TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Power TPS,,,,-1.86
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,UKI Market,UK/Ireland Plan,Power TPS,,,,420.6
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Power TPS,,,,-3639.22
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,ASEAN Market,ASEANZK Plan,Data Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Italy Market,Italy Plan,Automation Platform,,,,1482260.29
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Storage TPS,,,,-117579.37
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Latin America Market,Latin America Market Plan,Storage TPS,,,,-147.93
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,ASEAN Market,Asean Plan,Z TPS,,,,36717.39
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Data Platform,,,,-447000.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,France Market,France Plan,Automation Platform,,,,-171461.82
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Greater China Group Market,Greater China Group Market Plan,Storage TPS,,,,-126617.23
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,US Industry Market,US Industry Plan,Z TPS,,,,2214173.22
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,DACH Market,DACH Plan,Automation Platform,,,,-428633.9
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,SPGI Market,SPGI Plan,Data Platform,,,,1177769.05
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,Automation Platform,,,,-2939054.07
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Public Cloud Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Americas Top Countries,Americas Plan,Z TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,SPGI Market,SPGI Plan,Automation Platform,,,,-135512.42
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Top Countries Plan,Power TPS,,,,5463.0
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,Italy Market,Italy Plan,Data Platform,,,,-1436.45
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,295000.0
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,Canadian Market,Canada Plan,Storage TPS,,,,-27658.02
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Latin America Market,Latin America Market Plan,Data Platform,,,,-1684076.33
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,India/South Asia Market,India & South Asia Plan,Storage TPS,,,,-7130.7
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,SPGI Market,SPGI Plan,Automation Platform,,,,-540774.44
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,India/South Asia Market,India & South Asia Plan,Storage TPS,,,,260748.52
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Industry Market,US Industry Plan,Automation Platform,,,,-1441581.02
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,India/South Asia Market,India & South Asia Plan,Automation Platform,,,,523363.66
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,India/South Asia Market,India & South Asia Plan,Automation Platform,,,,-348273.2
+2025,1,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,India/South Asia Market,India & South Asia Plan,Automation Platform,,,,39903.77
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,DACH Market,DACH Plan,Power TPS,,,,5948.98
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,ASEAN Market,Asean Plan,Automation Platform,,,,-190690.21
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,APAC,APAC Top Countries,APAC Plan,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,-391624.98
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Automation Platform,,,,-616930.1
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Industry Market,US Industry Plan,Automation Platform,,,,1446000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Automation Platform,,,,-562886.6
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,France Market,France Plan,Data Platform,,,,259800.64
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,UKI Market,UK/Ireland Plan,Storage TPS,,,,730235.6
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Z TPS,,,,-80958.42
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,SPGI Market,SPGI Plan,Power TPS,,,,-690.77
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,Italy Market,Italy Plan,Automation Platform,,,,-798321.87
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,SPGI Market,SPGI Plan,Data Platform,,,,-95972.19
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Public Market,U.S. Public Plan,Automation Platform,,,,-268745.76
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Power TPS,,,,-2151.05
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,France Market,France Plan,Z TPS,,,,349890.9
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Top Market,U.S. Variance,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,US Public Market,U.S. Public Plan,Z TPS,,,,-1211000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,APAC Top Countries,APAC Plan,Data Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Z TPS,,,,-286182.44
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,Italy Market,Italy Plan,Automation Platform,,,,749000.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Italy Market,Italy Plan,Power TPS,,,,-2531.86
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US National Market,US National Plan,Data Platform,,,,1730000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Power TPS,,,,-356.01
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,India/South Asia Market,India & South Asia Plan,Storage TPS,,,,-60558.84
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Data Platform,,,,757756.0
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Americas Top Countries,Americas Plan,IBM Software Top (AUO),,,,-440.02
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Z TPS,,,,-23000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Greater China Group Market,Greater China Group Market Plan,Automation Platform,,,,-314417.21
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,DACH Market,DACH Plan,Storage TPS,,,,-329537.98
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Z TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,APAC Top Countries,APAC Plan,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,Latin America Market,Latin America Market Plan,Z TPS,,,,-3869.88
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,Canadian Market,Canada Plan,Z TPS,,,,-64075.23
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,DACH Market,DACH Plan,Z TPS,,,,846228.33
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Italy Market,Italy Plan,Z TPS,,,,309465.32
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Latin America Market,Latin America Market Plan,Data Platform,,,,702454.85
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Top Countries Plan,Data Platform,,,,0.0
+2025,4,Transactional Adjustments,Transactional Adjustments Other/Top,Japan,Japan Market,Japan Plan,Data Platform,,,,2453708.5
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Power TPS,,,,-31443.18
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,ASEAN Market,Asean Plan,Z TPS,,,,400000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Greater China Group Market,Greater China Group Market Plan,Z TPS,,,,45537.12
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,ASEAN Market,Asean Plan,Storage TPS,,,,-324525.13
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Storage TPS,,,,314142.79
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,France Market,France Plan,Power TPS,,,,-7116.61
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Z TPS,,,,-204197.13
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Korea Market,Korea Plan,Power TPS,,,,-3838.02
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Industry Market,US Industry Plan,Automation Platform,,,,-1756921.06
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Data Platform,,,,-1001312.34
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Top Countries Plan,Data Platform,,,,703241.0
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Public Market,U.S. Public Plan,Data Platform,,,,-5894.12
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Z TPS,,,,-58363.65
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Data Platform,,,,-214113.89
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,APAC Top Countries,APAC Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Canadian Market,Canada Plan,Z TPS,,,,78000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Americas Top Countries,Americas Plan,Storage TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Data Platform,,,,-401041.6
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,APAC Top Countries,APAC Plan,Data Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Data Platform,,,,-701360.65
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Latin America Market,Latin America Market Plan,Z TPS,,,,322989.22
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,US Top Market,U.S. Other Plan,Storage TPS,,,,-560000.0
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,Americas,Canadian Market,Canada Plan,Power TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,APAC Top Countries,APAC Plan,Data Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,US Industry Market,US Industry Plan,Data Platform,,,,2746501.48
+2025,4,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Data Platform,,,,-289498.02
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Latin America Market,Latin America Market Plan,Z TPS,,,,-3373.08
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,India/South Asia Market,India & South Asia Plan,Data Platform,,,,-352005.48
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,-556095.94
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Z TPS,,,,-161544.99
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,US Industry Market,US Industry Plan,Z TPS,,,,2214173.22
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,SPGI Market,SPGI Plan,Automation Platform,,,,-84700.22
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,SPGI Market,SPGI Plan,Data Platform,,,,1177769.05
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Americas Top Countries,Americas Plan,Data Platform,,,,0.0
+2025,4,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Japan,Japan Market,Japan Plan,Automation Platform,,,,-1064412.13
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,SPGI Market,SPGI Plan,Data Platform,,,,-1251000.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,APAC Top Countries,APAC Plan,Storage TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,SPGI Market,SPGI Plan,Automation Platform,,,,14198.79
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,SPGI Market,SPGI Plan,Automation Platform,,,,2575467.02
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Z TPS,,,,611686.32
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,US Industry Market,US Industry Plan,Storage TPS,,,,344434.56
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Automation Platform,,,,-1112533.13
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,DACH Market,DACH Plan,Automation Platform,,,,926039.46
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Japan,Japan Market,Japan Plan,Power TPS,,,,25022.24
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,DACH Market,DACH Plan,Data Platform,,,,1959818.71
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Data Platform,,,,-31962.29
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,US Top Market,U.S. Other Plan,Power TPS,,,,-1300055.66
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,France Market,France Plan,Automation Platform,,,,-91727.9
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Financial Service Market,U.S. Financial Plan,Storage TPS,,,,-1990000.0
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Korea Market,Korea Plan,Automation Platform,,,,-918607.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Storage TPS,,,,92971.65
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Top Countries Plan,Z TPS,,,,3083.0
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Plan,Z TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,SPGI Market,SPGI Plan,Z TPS,,,,-87.63
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,India/South Asia Market,India & South Asia Plan,Automation Platform,,,,-297979.25
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Data Platform,,,,-15062.88
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,SPGI Market,SPGI Plan,Data Platform,,,,-162765.82
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Automation Platform,,,,-1216263.03
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Power TPS,,,,-2388.25
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,DACH Market,DACH Plan,Automation Platform,,,,737450.01
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Industry Market,US Industry Plan,Data Platform,,,,-11699.08
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Storage TPS,,,,-182193.61
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Power TPS,,,,-1115.63
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Z TPS,,,,221883.27
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Canadian Market,Canada Plan,Automation Platform,,,,-280980.2
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,DACH Market,DACH Plan,Data Platform,,,,1959818.71
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Z TPS,,,,209711.89
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,DACH Market,DACH Plan,Storage TPS,,,,-1774000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,SPGI Market,SPGI Plan,Automation Platform,,,,4395798.57
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Z TPS,,,,1191.64
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,EMEA Top Countries,EMEA Plan,Data Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Data Platform,,,,-555476.18
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Latin America Market,Latin America Market Plan,Storage TPS,,,,-786.66
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,US Top Market,U.S. Other Plan,Z TPS,,,,-226488.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,France Market,France Plan,Automation Platform,,,,-5100000.0
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Variance,Storage TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Greater China Group Market,Greater China Group Market Plan,Automation Platform,,,,117841.95
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,Power TPS,,,,-8210.57
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,US Industry Market,US Industry Plan,Automation Platform,,,,1530490.23
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Italy Market,Italy Plan,Data Platform,,,,464623.82
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Data Platform,,,,-2381.48
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,ASEAN Market,Asean Plan,Automation Platform,,,,242359.92
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Automation Platform,,,,-449663.32
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,UKI Market,UK/Ireland Plan,Storage TPS,,,,-108245.96
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Greater China Group Market,Greater China Group Market Plan,Storage TPS,,,,124925.23
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Japan,Japan Market,Japan Plan,Automation Platform,,,,-581885.89
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Top Countries Plan,Power TPS,,,,4214.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,India/South Asia Market,India & South Asia Plan,Z TPS,,,,14003.87
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Z TPS,,,,-302.37
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,ASEAN Market,Asean Plan,Storage TPS,,,,242359.92
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Z TPS,,,,-2978.15
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,France Market,France Plan,Storage TPS,,,,524764.66
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Korea Market,Korea Plan,Automation Platform,,,,634.68
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Japan,Japan Market,Japan Plan,Automation Platform,,,,5375674.58
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Federal Market,U.S. Federal Plan,Automation Platform,,,,-1000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,US Industry Market,US Industry Plan,Power TPS,,,,4219.49
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,France Market,France Plan,Data Platform,,,,-73634.15
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,APAC Top Countries,APAC Plan,Data Platform,,,,0.0
+2025,4,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Storage TPS,,,,-19000.0
+2025,1,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,Italy Market,Italy Plan,Automation Platform,,,,5446.7
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,UKI Market,UK/Ireland Plan,Data Platform,,,,-305248.64
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,DACH Market,DACH Plan,Automation Platform,,,,-955698.54
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,Z TPS,,,,-1487476.09
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,UKI Market,UK/Ireland Plan,Storage TPS,,,,641029.66
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Data Platform,,,,-240000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,EMEA Top Countries,EMEA Plan,Storage TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Financial Service Market,U.S. Financial Plan,Automation Platform,,,,-1888000.0
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US National Market,US National Plan,Automation Platform,,,,-1682880.51
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,Data Platform,,,,-4632614.88
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Latin America Market,Latin America Market Plan,Storage TPS,,,,1089108.97
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,Italy Market,Italy Plan,Storage TPS,,,,-266000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Latin America Market,Latin America Market Plan,Power TPS,,,,-24951.78
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,Italy Market,Italy Plan,Automation Platform,,,,29956.84
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Z TPS,,,,-1263.39
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Americas Top Countries,Americas Plan,Storage TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Power TPS,,,,-641.43
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Top Market,U.S. Variance,Automation Platform,,,,-110000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Korea Market,Korea Plan,Storage TPS,,,,-69506.03
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,-620770.88
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Storage TPS,,,,396419.73
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Automation Platform,,,,-680604.77
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Korea Market,Korea Plan,Storage TPS,,,,66989.02
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Canadian Market,Canada Plan,Data Platform,,,,165359.98
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Storage TPS,,,,-9262.7
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Canadian Market,Canada Plan,Power TPS,,,,13968.74
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Data Platform,,,,-1494356.14
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,Latin America Market,Latin America Market Plan,Automation Platform,,,,-1593344.0
+2025,4,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Data Platform,,,,-501971.18
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Automation Platform,,,,333236.85
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Canadian Market,Canada Plan,Data Platform,,,,-250000.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,UKI Market,UK/Ireland Plan,Z TPS,,,,265000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,SPGI Market,SPGI Plan,Power TPS,,,,-482.36
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Latin America Market,Latin America Market Plan,Power TPS,,,,-18.62
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Public Market,U.S. Public Plan,Storage TPS,,,,12000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,APAC Top Countries,APAC Plan,Storage TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,France Market,France Plan,Z TPS,,,,1370000.0
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Z TPS,,,,1465000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,SPGI Market,SPGI Plan,Storage TPS,,,,2230362.68
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,Storage TPS,,,,-546704.78
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,UKI Market,UK/Ireland Plan,Data Platform,,,,429250.37
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Canadian Market,Canada Plan,Storage TPS,,,,261969.73
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Power TPS,,,,-893.28
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Z TPS,,,,-37064.04
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,SPGI Market,SPGI Plan,Power TPS,,,,-738.45
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Italy Market,Italy Plan,Automation Platform,,,,-125386.47
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,France Market,France Plan,Power TPS,,,,-1971.5
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Plan,Storage TPS,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,APAC Top Countries,APAC Plan,Storage TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Japan,Japan Market,Japan Plan,Automation Platform,,,,2109128.9
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Federal Market,U.S. Federal Plan,Data Platform,,,,-7942.72
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,UKI Market,UK/Ireland Plan,Z TPS,,,,24617.04
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Italy Market,Italy Plan,Storage TPS,,,,-65122.82
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Data Platform,,,,757756.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Z TPS,,,,10884.74
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Z TPS,,,,-3929.18
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,India/South Asia Market,India & South Asia Plan,Z TPS,,,,14003.87
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,France Market,France Plan,Z TPS,,,,349890.9
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,EMEA,Italy Market,Italy Plan,Automation Platform,,,,-442260.97
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,Latin America Market,Latin America Market Plan,Storage TPS,,,,-923.69
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,India/South Asia Market,India & South Asia Plan,Z TPS,,,,-47.67
+2025,2,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,447249.73
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,ASEAN Market,Asean Plan,Storage TPS,,,,155426.91
+2025,4,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Power TPS,,,,-3810.45
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Korea Market,Korea Plan,Automation Platform,,,,634.67
+2025,4,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Automation Platform,,,,-543018.8
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,UKI Market,UK/Ireland Plan,Data Platform,,,,429250.37
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Public Cloud Platform,,,,-11625.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,DACH Market,DACH Plan,Data Platform,,,,-1593001.99
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,Canadian Market,Canada Plan,Storage TPS,,,,-18591.28
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,US Top Market,U.S. Other Plan,Data Platform,,,,-9356692.09
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Data Platform,,,,-156614.39
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,Americas Top Countries,Americas Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Canadian Market,Canada Plan,Storage TPS,,,,261969.73
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Korea Market,Korea Plan,Automation Platform,,,,-421962.86
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Data Platform,,,,-763442.7
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Greater China Group Market,Greater China Group Market Plan,Z TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Automation Platform,,,,333236.85
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,269469.88
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Japan,Japan Market,Japan Plan,Automation Platform,,,,-185000.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Z TPS,,,,-96796.42
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Public Market,U.S. Public Plan,Automation Platform,,,,-846110.16
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Greater China Group Market,Greater China Group Market Plan,Data Platform,,,,-431354.93
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,APAC Top Countries,APAC Plan,Storage TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,SPGI Market,SPGI Plan,Power TPS,,,,1369.45
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US National Market,US National Plan,Automation Platform,,,,93000.0
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Latin America Market,Latin America Market Plan,Automation Platform,,,,-1359999.99
+2025,1,Transactional Adjustments,Transactional Adjustment Base,Americas,US Industry Market,US Industry Plan,Z TPS,,,,-510000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,ASEAN Market,Asean Plan,Automation Platform,,,,-678641.43
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Automation Platform,,,,-471036.12
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,France Market,France Plan,Data Platform,,,,-141776.6
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Power TPS,,,,-1621.46
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,Americas Top Countries,Americas Plan,Storage TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Automation Platform,,,,-941926.41
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,UKI Market,UK/Ireland Plan,Automation Platform,,,,-117839.72
+2025,1,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Top Market,U.S. Variance,Automation Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,APAC,Korea Market,Korea Plan,Data Platform,,,,-254764.68
+2025,4,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Z TPS,,,,-126952.38
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Plan,Data Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Variance,Data Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,US National Market,US National Plan,Data Platform,,,,-225000.0
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,Latin America Market,Latin America Market Plan,Automation Platform,,,,-406106.71
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,Italy Market,Italy Plan,Automation Platform,,,,-70000.0
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,Canadian Market,Canada Plan,Automation Platform,,,,-548006.15
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US National Market,US National Plan,Data Platform,,,,-253000.0
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,EMEA,SPGI Market,SPGI Plan,Z TPS,,,,1845000.0
+2025,1,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,Greater China Group Market,Greater China Group Market Plan,Automation Platform,,,,-103988.63
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,ASEAN Market,Asean Plan,Data Platform,,,,-233759.87
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,DACH Market,DACH Plan,Z TPS,,,,-559.76
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,UKI Market,UK/Ireland Plan,Power TPS,,,,-12568.07
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,Latin America Market,Latin America Market Plan,Z TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,Americas,US Financial Service Market,U.S. Financial Plan,Automation Platform,,,,-365373.1
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Latin America Market,Latin America Market Plan,Storage TPS,,,,744526.46
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Storage TPS,,,,-32463.36
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,Italy Market,Italy Plan,Power TPS,,,,-1265.48
+2025,2,Transactional Adjustments,Transactional Adjustment RedHat Carve-Out,APAC,ASEAN Market,Asean Plan,Data Platform,,,,-2299.86
+2025,3,Transactional Adjustments,Transactional Adjustment Base,Americas,Americas Top Countries,Americas Plan,Storage TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Data Platform,,,,167840.46
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,UKI Market,UK/Ireland Plan,Data Platform,,,,-161824.82
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Australia/New Zealand Market,Australia/New Zealand Plan,Data Platform,,,,-117128.09
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,DACH Market,DACH Plan,Storage TPS,,,,-368377.78
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,DACH Market,DACH Plan,Power TPS,,,,5948.98
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,SPGI Market,SPGI Plan,Public Cloud Platform,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Storage TPS,,,,-333541.52
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,India/South Asia Market,India & South Asia Plan,Automation Platform,,,,-251776.67
+2025,3,Transactional Adjustments,Transactional Adjustments Gross To Net,Japan,Japan Market,Japan Plan,Power TPS,,,,-3810.45
+2025,1,Transactional Adjustments,Transactional Adjustment Acquisitions,EMEA,Middle East/Africa Market,Middle East and Africa Market Plan,Automation Platform,,,,12610.92
+2025,3,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,France Market,France Plan,Data Platform,,,,259800.64
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,SPGI Market,SPGI Plan,Z TPS,,,,-228.06
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,UKI Market,UK/Ireland Plan,Storage TPS,,,,641029.66
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,EMEA Top Countries,EMEA Plan,Storage TPS,,,,0.0
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,DACH Market,DACH Plan,Automation Platform,,,,-670626.19
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,US Top Market,U.S. Other Plan,Z TPS,,,,-2827818.5
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,India/South Asia Market,India & South Asia Plan,Z TPS,,,,13349.34
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,DACH Market,DACH Plan,Power TPS,,,,-3675.55
+2025,2,Transactional Adjustments,Transactional Adjustment Subscription,Americas,US Top Market,U.S. Variance,Storage TPS,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,"Northern, Central and Eastern Europe Market","Northern, Central and Eastern Europe Plan",Public Cloud Platform,,,,-42361.6
+2025,1,Transactional Adjustments,Transactional Adjustments Gross To Net,Americas,US Top Market,U.S. Other Plan,Z TPS,,,,-20000.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,EMEA Top Countries,EMEA Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,EMEA,France Market,France Plan,Storage TPS,,,,714489.75
+2025,2,Transactional Adjustments,Transactional Adjustments Gross To Net,EMEA,DACH Market,DACH Plan,Storage TPS,,,,-254703.22
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),APAC,Korea Market,Korea Plan,Automation Platform,,,,-1141377.73
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Korea Market,Korea Plan,Automation Platform,,,,634.67
+2025,3,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Power TPS,,,,-23000.0
+2025,2,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),Japan,Japan Market,Japan Plan,Z TPS,,,,-33000.0
+2025,3,Transactional Adjustments,Transactional Adjustment Acquisitions,APAC,Korea Market,Korea Plan,Automation Platform,,,,222658.23
+2025,1,Transactional Adjustments,Transactional Adjustments GtN Partner Plus (VAR),EMEA,EMEA Top Countries,EMEA Plan,Data Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustment Base,Americas,Americas Top Countries,Americas Plan,Data Platform,,,,0.0
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,APAC Top Countries,APAC Plan,Automation Platform,,,,0.0
+2025,1,Transactional Adjustments,Transactional Adjustments Other/Top,Americas,Latin America Market,Latin America Market Plan,Power TPS,,,,26587.5
+2025,2,Transactional Adjustments,Transactional Adjustments Other/Top,APAC,Korea Market,Korea Plan,Data Platform,,,,4497.86
