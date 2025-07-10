@@ -1341,41 +1341,59 @@ def main():
         # Data Dictionary Upload
         st.subheader("📚 Data Dictionary")
         
-        if TKINTER_AVAILABLE:
-            col1, col2 = st.columns([3, 1])
-            with col1:
+        # Default dictionary path (can be overridden by environment variable)
+        DEFAULT_DICT_PATH = os.environ.get(
+            "DEFAULT_DICT_PATH", 
+            "/Volumes/DATA/Python/IBM_analyza/IBM_COMPLETE_ALL_COLUMNS_Dictionary_20250710.xlsx"
+        )
+        
+        # Checkbox to use default file
+        use_default = st.checkbox(
+            "Use default data dictionary",
+            value=os.path.exists(DEFAULT_DICT_PATH),
+            help=f"Use the default file: {os.path.basename(DEFAULT_DICT_PATH)}"
+        )
+        
+        if use_default and os.path.exists(DEFAULT_DICT_PATH):
+            st.session_state.selected_dict_path = DEFAULT_DICT_PATH
+            st.success(f"✅ Using default dictionary: {os.path.basename(DEFAULT_DICT_PATH)}")
+            dict_file = None  # No need for upload
+        else:
+            if TKINTER_AVAILABLE:
+                col1, col2 = st.columns([3, 1])
+                with col1:
+                    dict_file = st.file_uploader(
+                        "Upload IBM_COMPLETE_ALL_COLUMNS_Dictionary.xlsx",
+                        type=['xlsx'],
+                        help="Upload the complete data dictionary Excel file"
+                    )
+                with col2:
+                    st.write("")  # Add some space
+                    if st.button("📂 Browse", key="browse_dict"):
+                        selected_file = browse_for_file(
+                            title="Select Data Dictionary Excel File",
+                            filetypes=[("Excel files", "*.xlsx"), ("All files", "*.*")]
+                        )
+                        if selected_file:
+                            st.session_state.selected_dict_path = selected_file
+                            st.success(f"Selected: {os.path.basename(selected_file)}")
+            else:
                 dict_file = st.file_uploader(
                     "Upload IBM_COMPLETE_ALL_COLUMNS_Dictionary.xlsx",
                     type=['xlsx'],
                     help="Upload the complete data dictionary Excel file"
                 )
-            with col2:
-                st.write("")  # Add some space
-                if st.button("📂 Browse", key="browse_dict"):
-                    selected_file = browse_for_file(
-                        title="Select Data Dictionary Excel File",
-                        filetypes=[("Excel files", "*.xlsx"), ("All files", "*.*")]
-                    )
-                    if selected_file:
-                        st.session_state.selected_dict_path = selected_file
-                        st.success(f"Selected: {os.path.basename(selected_file)}")
-        else:
-            dict_file = st.file_uploader(
-                "Upload IBM_COMPLETE_ALL_COLUMNS_Dictionary.xlsx",
-                type=['xlsx'],
-                help="Upload the complete data dictionary Excel file"
-            )
-            st.info("💡 **Alternative**: You can also specify a file path below:")
-            manual_dict_path = st.text_input(
-                "Or enter full path to Excel file",
-                placeholder="/path/to/your/dictionary.xlsx",
-                help="Enter the complete file path to your data dictionary Excel file"
-            )
-            if manual_dict_path and os.path.exists(manual_dict_path) and manual_dict_path.endswith('.xlsx'):
-                st.session_state.selected_dict_path = manual_dict_path
-                st.success(f"✅ Valid Excel file: {os.path.basename(manual_dict_path)}")
-            elif manual_dict_path:
-                st.error("❌ File not found or not an Excel file")
+                st.info("💡 **Alternative**: You can also specify a file path below:")
+                manual_dict_path = st.text_input(
+                    "Or enter full path to Excel file",
+                    placeholder="/path/to/your/dictionary.xlsx",
+                    help="Enter the complete file path to your data dictionary Excel file"
+                )
+                if manual_dict_path and os.path.exists(manual_dict_path) and manual_dict_path.endswith('.xlsx'):
+                    st.session_state.selected_dict_path = manual_dict_path
+                    st.success(f"✅ Valid Excel file: {os.path.basename(manual_dict_path)}")
+                elif manual_dict_path:
+                    st.error("❌ File not found or not an Excel file")
         
         # Display selected file path if browsed
         if hasattr(st.session_state, 'selected_dict_path'):
@@ -1412,12 +1430,29 @@ def main():
         
         with tab1:
             st.write("**Load from directory containing CSV files:**")
-            if TKINTER_AVAILABLE:
+            
+            # Default MQT data path (can be overridden by environment variable)
+            DEFAULT_MQT_PATH = os.environ.get(
+                "DEFAULT_MQT_PATH",
+                "/Volumes/DATA/Python/IBM_analyza/data_exports/20250709_215809/tables/"
+            )
+            
+            # Checkbox to use default path
+            use_default_mqt = st.checkbox(
+                "Use default MQT data path",
+                value=os.path.exists(DEFAULT_MQT_PATH),
+                help=f"Use the default path: {DEFAULT_MQT_PATH}"
+            )
+            
+            if use_default_mqt and os.path.exists(DEFAULT_MQT_PATH):
+                data_path = DEFAULT_MQT_PATH
+                st.success(f"✅ Using default MQT path: {data_path}")
+            elif TKINTER_AVAILABLE:
                 col1, col2, col3 = st.columns([4, 1, 1])
                 with col1:
                     data_path = st.text_input(
                         "Path to MQT CSV files",
-                        value="/Volumes/DATA/Python/IBM_analyza/data_exports/20250709_215809/tables/",
+                        value=DEFAULT_MQT_PATH if not use_default_mqt else "",
                         help="Directory containing MQT CSV files"
                     )
                 with col2:
@@ -1437,7 +1472,7 @@ def main():
                 with col1:
                     data_path = st.text_input(
                         "Path to MQT CSV files",
-                        value="/Volumes/DATA/Python/IBM_analyza/data_exports/20250709_215809/tables/",
+                        value=DEFAULT_MQT_PATH if not use_default_mqt else "",
                         help="Directory containing MQT CSV files"
                     )
                 with col2:
