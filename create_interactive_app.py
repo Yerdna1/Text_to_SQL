@@ -14,11 +14,25 @@ import plotly.express as px
 import plotly.graph_objects as go
 from typing import Dict, List, Tuple
 import re
+import webbrowser
+import subprocess
+import platform
 
-# Set default environment variables
-os.environ.setdefault("GEMINI_API_KEY", "AIzaSyC3Ppu2KDF9-pSNzC2A5jvQH7wn7c9o3cE")
-os.environ.setdefault("DEEPSEEK_API_KEY", "sk-0574945ee88a427f8dd55bb40ea804eb")
-os.environ.setdefault("OPENROUTER_API_KEY", "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")
+# Optional tkinter import for file dialogs
+try:
+    import tkinter as tk
+    from tkinter import filedialog
+    TKINTER_AVAILABLE = True
+except ImportError:
+    TKINTER_AVAILABLE = False
+
+# Load environment variables from .env file
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    # If python-dotenv is not installed, continue without it
+    pass
 
 # For local LLM - we'll use Ollama with CodeLlama or similar
 try:
@@ -362,8 +376,7 @@ class LLMConnector:
     def generate_sql(self, question: str, schema_info: str, data_dictionary: str) -> Dict:
         """Generate SQL query from natural language question"""
         
-        if not self.connected:
-            return self.fallback_sql_generation(question, schema_info)
+   
         
         prompt = f"""
 You are an expert IBM DB2 SQL analyst for IBM Sales Pipeline Analytics. Generate a precise IBM DB2 SQL query based on the user's question.
@@ -376,16 +389,16 @@ DATA DICTIONARY KNOWLEDGE BASE:
 
 USER QUESTION: {question}
 
-CRITICAL DB2 SYNTAX REQUIREMENTS:
-1. Generate ONLY IBM DB2 compatible SQL syntax
-2. Use DB2 date functions: CURRENT_DATE, MONTH(), YEAR(), DATE()
-3. For current month filtering use: MONTH(CURRENT_DATE) and YEAR(CURRENT_DATE)
-4. Use DB2 string functions: SUBSTR(), LENGTH(), UPPER()
-5. Use DB2 aggregation with DECIMAL() for financial calculations
+CRITICAL SQL SYNTAX REQUIREMENTS (SQLite Compatible):
+1. Generate SQLite compatible SQL syntax that simulates DB2 behavior
+2. Use SQLite date functions: date('now'), strftime('%m', date('now')), strftime('%Y', date('now'))
+3. For current month filtering use: strftime('%m', column_name) = strftime('%m', date('now'))
+4. Use SQLite string functions: substr(), length(), upper()
+5. Use ROUND() or CAST() for financial calculations instead of DECIMAL()
 6. Use NULLIF() for division by zero protection
 7. Use WITH clauses (CTEs) for complex queries
-8. Date comparisons: DATE(column_name) = CURRENT_DATE
-9. Month filtering: MONTH(column_name) = MONTH(CURRENT_DATE) AND YEAR(column_name) = YEAR(CURRENT_DATE)
+8. Date comparisons: date(column_name) = date('now')
+9. Format financial values: ROUND(value, 2) or CAST(value AS DECIMAL(15,2))
 
 BUSINESS CONTEXT:
 - PPV_AMT = AI-based revenue forecast (use for forecasting)
@@ -394,14 +407,14 @@ BUSINESS CONTEXT:
 - Exclude Won/Lost deals for active pipeline
 - Use MQT table names (PROD_MQT_CONSULTING_PIPELINE, etc.)
 
-EXAMPLE DB2 PATTERNS:
-- Current month: WHERE MONTH(OPPORTUNITY_CREATE_DATE) = MONTH(CURRENT_DATE) AND YEAR(OPPORTUNITY_CREATE_DATE) = YEAR(CURRENT_DATE)
-- Financial format: DECIMAL(SUM(PPV_AMT), 15, 2) / 1000000.0 AS FORECASTED_REVENUE_M
+EXAMPLE SQLITE PATTERNS:
+- Current month: WHERE strftime('%m', OPPORTUNITY_CREATE_DATE) = strftime('%m', date('now')) AND strftime('%Y', OPPORTUNITY_CREATE_DATE) = strftime('%Y', date('now'))
+- Financial format: ROUND(SUM(PPV_AMT) / 1000000.0, 2) AS FORECASTED_REVENUE_M
 - Safe division: NULLIF(SUM(BUDGET_AMT), 0)
 
-IMPORTANT: Return ONLY a valid JSON object with IBM DB2 SQL:
+IMPORTANT: Return ONLY a valid JSON object with SQLite-compatible SQL:
 {{
-    "sql_query": "SELECT DECIMAL(SUM(PPV_AMT), 15, 2) / 1000000.0 AS FORECASTED_REVENUE_M FROM PROD_MQT_CONSULTING_PIPELINE WHERE ...",
+    "sql_query": "SELECT ROUND(SUM(PPV_AMT) / 1000000.0, 2) AS FORECASTED_REVENUE_M FROM PROD_MQT_CONSULTING_PIPELINE WHERE ...",
     "explanation": "Used PPV_AMT for AI-based revenue forecast with DB2 DECIMAL formatting...",
     "tables_used": ["PROD_MQT_CONSULTING_PIPELINE"],
     "columns_used": ["PPV_AMT", "OPPORTUNITY_CREATE_DATE", "SALES_STAGE"],
@@ -426,11 +439,11 @@ IMPORTANT: Return ONLY a valid JSON object with IBM DB2 SQL:
             elif self.provider == "openrouter":
                 return self._generate_with_openai_compatible(prompt, question, schema_info, "OpenRouter")
             else:
-                return self.fallback_sql_generation(question, schema_info)
+                return {"error": "Unsupported provider"}
                 
         except Exception as e:
             st.error(f"LLM Error: {e}")
-            return self.fallback_sql_generation(question, schema_info)
+            return {"error": str(e)}
     
     def _generate_with_gemini(self, prompt: str, question: str, schema_info: str) -> Dict:
         """Generate SQL using Google Gemini API"""
@@ -449,7 +462,7 @@ IMPORTANT: Return ONLY a valid JSON object with IBM DB2 SQL:
             
         except Exception as e:
             st.error(f"Gemini API Error: {e}")
-            return self.fallback_sql_generation(question, schema_info)
+            return {"error": f"Gemini API Error: {e}"}
     
     def _generate_with_ollama(self, prompt: str, question: str, schema_info: str) -> Dict:
         """Generate SQL using Ollama local LLM"""
@@ -467,11 +480,11 @@ IMPORTANT: Return ONLY a valid JSON object with IBM DB2 SQL:
                 result = response.json()
                 return json.loads(result.get('response', '{}'))
             else:
-                return self.fallback_sql_generation(question, schema_info)
+                return {"error": f"Ollama HTTP error: {response.status_code}"}
                 
         except Exception as e:
             st.error(f"Ollama Error: {e}")
-            return self.fallback_sql_generation(question, schema_info)
+            return {"error": f"Ollama Error: {e}"}
     
     def _generate_with_openai(self, prompt: str, question: str, schema_info: str) -> Dict:
         """Generate SQL using OpenAI API"""
@@ -487,7 +500,7 @@ IMPORTANT: Return ONLY a valid JSON object with IBM DB2 SQL:
             
         except Exception as e:
             st.error(f"OpenAI Error: {e}")
-            return self.fallback_sql_generation(question, schema_info)
+            return {"error": f"OpenAI Error: {e}"}
     
     def _generate_with_anthropic(self, prompt: str, question: str, schema_info: str) -> Dict:
         """Generate SQL using Anthropic Claude API"""
@@ -509,7 +522,7 @@ IMPORTANT: Return ONLY a valid JSON object with IBM DB2 SQL:
             
         except Exception as e:
             st.error(f"Anthropic Error: {e}")
-            return self.fallback_sql_generation(question, schema_info)
+            return {"error": f"Anthropic Error: {e}"}
     
     def _generate_with_openai_compatible(self, prompt: str, question: str, schema_info: str, provider_name: str) -> Dict:
         """Generate SQL using OpenAI-compatible APIs (DeepSeek, Mistral)"""
@@ -532,103 +545,75 @@ IMPORTANT: Return ONLY a valid JSON object with IBM DB2 SQL:
             
         except Exception as e:
             st.error(f"{provider_name} Error: {e}")
-            return self.fallback_sql_generation(question, schema_info)
+            return {"error": f"{provider_name} Error: {e}"}
     
-    def fallback_sql_generation(self, question: str, schema_info: str) -> Dict:
-        """Fallback rule-based SQL generation when LLM is not available"""
+
+  
+def browse_for_directory(title="Select Directory"):
+    """Open a directory browser dialog"""
+    if not TKINTER_AVAILABLE:
+        st.warning("⚠️ File browser not available. Please enter path manually.")
+        return None
         
-        question_lower = question.lower()
+    try:
+        # Hide the main tkinter window
+        root = tk.Tk()
+        root.withdraw()
+        root.wm_attributes('-topmost', 1)
         
-        # Advanced pattern matching for common questions - DB2 syntax
-        if "forecasted revenue" in question_lower or "forecast" in question_lower:
-            if "this month" in question_lower or "monthly" in question_lower:
-                return {
-                    "sql_query": "SELECT DECIMAL(SUM(PPV_AMT), 15, 2) / 1000000.0 AS FORECASTED_REVENUE_M FROM PROD_MQT_CONSULTING_PIPELINE WHERE SALES_STAGE NOT IN ('Won', 'Lost') AND MONTH(OPPORTUNITY_CREATE_DATE) = MONTH(CURRENT_DATE) AND YEAR(OPPORTUNITY_CREATE_DATE) = YEAR(CURRENT_DATE)",
-                    "explanation": "Used PPV_AMT (AI-based revenue forecast) to calculate this month's forecasted revenue in millions using DB2 date functions",
-                    "tables_used": ["PROD_MQT_CONSULTING_PIPELINE"],
-                    "columns_used": ["PPV_AMT", "OPPORTUNITY_CREATE_DATE", "SALES_STAGE"],
-                    "visualization_type": "table",
-                    "confidence": 0.9
-                }
-            else:
-                return {
-                    "sql_query": "SELECT DECIMAL(SUM(PPV_AMT), 15, 2) / 1000000.0 AS FORECASTED_REVENUE_M FROM PROD_MQT_CONSULTING_PIPELINE WHERE SALES_STAGE NOT IN ('Won', 'Lost')",
-                    "explanation": "Used PPV_AMT (AI-based revenue forecast) to calculate total forecasted revenue in millions using DB2 DECIMAL formatting",
-                    "tables_used": ["PROD_MQT_CONSULTING_PIPELINE"],
-                    "columns_used": ["PPV_AMT", "SALES_STAGE"],
-                    "visualization_type": "table",
-                    "confidence": 0.9
-                }
+        # Open directory dialog
+        directory = filedialog.askdirectory(title=title)
+        root.destroy()
         
-        elif "this month" in question_lower or "monthly" in question_lower:
-            return {
-                "sql_query": "SELECT MONTH(OPPORTUNITY_CREATE_DATE) AS MONTH, DECIMAL(SUM(PPV_AMT), 15, 2) / 1000000.0 AS FORECASTED_REVENUE_M FROM PROD_MQT_CONSULTING_PIPELINE WHERE SALES_STAGE NOT IN ('Won', 'Lost') AND YEAR(OPPORTUNITY_CREATE_DATE) = YEAR(CURRENT_DATE) GROUP BY MONTH(OPPORTUNITY_CREATE_DATE) ORDER BY MONTH",
-                "explanation": "Monthly forecasted revenue using PPV_AMT for current year with DB2 date functions, excluding closed deals",
-                "tables_used": ["PROD_MQT_CONSULTING_PIPELINE"],
-                "columns_used": ["PPV_AMT", "OPPORTUNITY_CREATE_DATE", "SALES_STAGE"],
-                "visualization_type": "line_chart",
-                "confidence": 0.8
-            }
+        return directory if directory else None
+    except Exception as e:
+        st.error(f"Could not open directory browser: {e}")
+        return None
+
+def browse_for_file(title="Select File", filetypes=[("Excel files", "*.xlsx"), ("All files", "*.*")]):
+    """Open a file browser dialog"""
+    if not TKINTER_AVAILABLE:
+        st.warning("⚠️ File browser not available. Please use the upload widget instead.")
+        return None
         
-        elif "total pipeline" in question_lower or "pipeline value" in question_lower:
-            return {
-                "sql_query": "SELECT DECIMAL(SUM(OPPORTUNITY_VALUE), 15, 2) / 1000000.0 AS TOTAL_PIPELINE_M, DECIMAL(SUM(PPV_AMT), 15, 2) / 1000000.0 AS FORECASTED_PIPELINE_M FROM PROD_MQT_CONSULTING_PIPELINE WHERE SALES_STAGE NOT IN ('Won', 'Lost')",
-                "explanation": "Used OPPORTUNITY_VALUE and PPV_AMT to show both opportunity value and AI-forecasted value using DB2 DECIMAL formatting",
-                "tables_used": ["PROD_MQT_CONSULTING_PIPELINE"],
-                "columns_used": ["OPPORTUNITY_VALUE", "PPV_AMT", "SALES_STAGE"],
-                "visualization_type": "table",
-                "confidence": 0.8
-            }
+    try:
+        # Hide the main tkinter window
+        root = tk.Tk()
+        root.withdraw()
+        root.wm_attributes('-topmost', 1)
         
-        elif "by geography" in question_lower or "geography" in question_lower:
-            return {
-                "sql_query": "SELECT GEOGRAPHY, DECIMAL(SUM(OPPORTUNITY_VALUE), 15, 2) / 1000000.0 AS PIPELINE_VALUE_M, DECIMAL(SUM(PPV_AMT), 15, 2) / 1000000.0 AS FORECASTED_M FROM PROD_MQT_CONSULTING_PIPELINE WHERE SALES_STAGE NOT IN ('Won', 'Lost') GROUP BY GEOGRAPHY ORDER BY FORECASTED_M DESC",
-                "explanation": "Pipeline and forecasted values by geography in millions using DB2 formatting, sorted by forecast",
-                "tables_used": ["PROD_MQT_CONSULTING_PIPELINE"],
-                "columns_used": ["GEOGRAPHY", "OPPORTUNITY_VALUE", "PPV_AMT", "SALES_STAGE"],
-                "visualization_type": "bar_chart",
-                "confidence": 0.8
-            }
+        # Open file dialog
+        file_path = filedialog.askopenfilename(title=title, filetypes=filetypes)
+        root.destroy()
         
-        elif "win rate" in question_lower:
-            return {
-                "sql_query": "SELECT GEOGRAPHY, DECIMAL((SUM(CASE WHEN SALES_STAGE = 'Won' THEN 1 ELSE 0 END) * 100.0), 5, 2) / NULLIF(COUNT(*), 0) AS WIN_RATE FROM PROD_MQT_CONSULTING_PIPELINE GROUP BY GEOGRAPHY ORDER BY WIN_RATE DESC",
-                "explanation": "Win rate percentage by geography using DB2 DECIMAL formatting and NULLIF for safe division, sorted by highest win rate",
-                "tables_used": ["PROD_MQT_CONSULTING_PIPELINE"],
-                "columns_used": ["GEOGRAPHY", "SALES_STAGE"],
-                "visualization_type": "bar_chart",
-                "confidence": 0.8
-            }
-        
-        elif "sales stage" in question_lower or "stage" in question_lower:
-            return {
-                "sql_query": "SELECT SALES_STAGE, COUNT(*) AS DEAL_COUNT, DECIMAL(SUM(OPPORTUNITY_VALUE), 15, 2) / 1000000.0 AS TOTAL_VALUE_M FROM PROD_MQT_CONSULTING_PIPELINE GROUP BY SALES_STAGE ORDER BY TOTAL_VALUE_M DESC",
-                "explanation": "Deal count and total value by sales stage in millions using DB2 DECIMAL formatting",
-                "tables_used": ["PROD_MQT_CONSULTING_PIPELINE"],
-                "columns_used": ["SALES_STAGE", "OPPORTUNITY_VALUE"],
-                "visualization_type": "bar_chart",
-                "confidence": 0.8
-            }
-        
-        elif "client" in question_lower or "customer" in question_lower:
-            return {
-                "sql_query": "SELECT CLIENT_NAME, COUNT(*) AS OPPORTUNITIES, DECIMAL(SUM(OPPORTUNITY_VALUE), 15, 2) / 1000000.0 AS TOTAL_VALUE_M FROM PROD_MQT_CONSULTING_PIPELINE WHERE SALES_STAGE NOT IN ('Won', 'Lost') GROUP BY CLIENT_NAME ORDER BY TOTAL_VALUE_M DESC FETCH FIRST 10 ROWS ONLY",
-                "explanation": "Top 10 clients by total opportunity value in millions using DB2 FETCH FIRST syntax, excluding closed deals",
-                "tables_used": ["PROD_MQT_CONSULTING_PIPELINE"],
-                "columns_used": ["CLIENT_NAME", "OPPORTUNITY_VALUE", "SALES_STAGE"],
-                "visualization_type": "bar_chart",
-                "confidence": 0.8
-            }
-        
-        else:
-            return {
-                "sql_query": "SELECT SALES_STAGE, COUNT(*) AS COUNT, DECIMAL(SUM(OPPORTUNITY_VALUE), 15, 2) / 1000000.0 AS VALUE_M, DECIMAL(SUM(PPV_AMT), 15, 2) / 1000000.0 AS FORECAST_M FROM PROD_MQT_CONSULTING_PIPELINE GROUP BY SALES_STAGE ORDER BY VALUE_M DESC",
-                "explanation": "Pipeline overview showing deal count, value and forecast by sales stage using DB2 DECIMAL formatting",
-                "tables_used": ["PROD_MQT_CONSULTING_PIPELINE"],
-                "columns_used": ["SALES_STAGE", "OPPORTUNITY_VALUE", "PPV_AMT"],
-                "visualization_type": "table",
-                "confidence": 0.5
-            }
+        return file_path if file_path else None
+    except Exception as e:
+        st.error(f"Could not open file browser: {e}")
+        return None
+
+def open_url_in_browser(url):
+    """Open URL in default browser"""
+    try:
+        webbrowser.open(url)
+        return True
+    except Exception as e:
+        st.error(f"Could not open browser: {e}")
+        return False
+
+def open_file_explorer(path):
+    """Open file explorer at specified path"""
+    try:
+        system = platform.system()
+        if system == "Darwin":  # macOS
+            subprocess.run(["open", path])
+        elif system == "Windows":
+            subprocess.run(["explorer", path])
+        elif system == "Linux":
+            subprocess.run(["xdg-open", path])
+        return True
+    except Exception as e:
+        st.error(f"Could not open file explorer: {e}")
+        return False
 
 class ParallelSQLGenerator:
     """Generates SQL queries with multiple LLMs in parallel and compares results"""
@@ -817,9 +802,9 @@ class DatabaseManager:
         self.schema_info = ""
     
     def load_mqt_tables(self, data_path: str):
-        """Load all MQT tables from Excel/CSV files"""
+        """Load all MQT tables from Excel/CSV files in directory"""
         
-        st.info("📁 Loading MQT tables...")
+        st.info("📁 Loading MQT tables from directory...")
         progress_bar = st.progress(0)
         
         # Find all MQT files
@@ -849,6 +834,46 @@ class DatabaseManager:
         
         self.generate_schema_info()
         st.success(f"✅ Loaded {len(self.tables_loaded)} MQT tables")
+    
+    def load_uploaded_files(self, uploaded_files):
+        """Load MQT tables from uploaded files"""
+        
+        st.info("📤 Loading uploaded MQT files...")
+        progress_bar = st.progress(0)
+        
+        for idx, uploaded_file in enumerate(uploaded_files):
+            try:
+                # Determine file type and read accordingly
+                if uploaded_file.name.endswith('.csv'):
+                    df = pd.read_csv(uploaded_file)
+                elif uploaded_file.name.endswith(('.xlsx', '.xls')):
+                    df = pd.read_excel(uploaded_file)
+                else:
+                    st.warning(f"⚠️ Unsupported file type: {uploaded_file.name}")
+                    continue
+                
+                # Create table name from file name
+                table_name = uploaded_file.name.replace('.csv', '').replace('.xlsx', '').replace('.xls', '')
+                
+                # Clean column names
+                df.columns = [col.upper().replace(' ', '_') for col in df.columns]
+                
+                # Load to database
+                df.to_sql(table_name, self.conn, if_exists='replace', index=False)
+                
+                self.tables_loaded[table_name] = {
+                    'rows': len(df),
+                    'columns': list(df.columns),
+                    'file': uploaded_file.name
+                }
+                
+                progress_bar.progress((idx + 1) / len(uploaded_files))
+                
+            except Exception as e:
+                st.warning(f"⚠️ Could not load {uploaded_file.name}: {e}")
+        
+        self.generate_schema_info()
+        st.success(f"✅ Loaded {len(self.tables_loaded)} tables from uploaded files")
     
     def generate_schema_info(self):
         """Generate schema information for LLM"""
@@ -967,8 +992,16 @@ def main():
         layout="wide"
     )
     
-    st.title("🤖 IBM Sales Pipeline Analytics Chat")
-    st.markdown("*Natural Language to SQL with Local LLM*")
+    # Header with GitHub link
+    col1, col2 = st.columns([4, 1])
+    with col1:
+        st.title("🤖 IBM Sales Pipeline Analytics Chat")
+        st.markdown("*Natural Language to SQL with Local LLM*")
+    with col2:
+        st.write("")  # Add space
+        if st.button("📂 View on GitHub", key="github_repo"):
+            if open_url_in_browser("https://github.com/Yerdna1/Text_to_SQL"):
+                st.success("✅ Repository opened")
     
     # Initialize session state
     if 'data_dict' not in st.session_state:
@@ -984,32 +1017,147 @@ def main():
         
         # Data Dictionary Upload
         st.subheader("📚 Data Dictionary")
-        dict_file = st.file_uploader(
-            "Upload IBM_COMPLETE_ALL_COLUMNS_Dictionary.xlsx",
-            type=['xlsx'],
-            help="Upload the complete data dictionary Excel file"
-        )
+        
+        if TKINTER_AVAILABLE:
+            col1, col2 = st.columns([3, 1])
+            with col1:
+                dict_file = st.file_uploader(
+                    "Upload IBM_COMPLETE_ALL_COLUMNS_Dictionary.xlsx",
+                    type=['xlsx'],
+                    help="Upload the complete data dictionary Excel file"
+                )
+            with col2:
+                st.write("")  # Add some space
+                if st.button("📂 Browse", key="browse_dict"):
+                    selected_file = browse_for_file(
+                        title="Select Data Dictionary Excel File",
+                        filetypes=[("Excel files", "*.xlsx"), ("All files", "*.*")]
+                    )
+                    if selected_file:
+                        st.session_state.selected_dict_path = selected_file
+                        st.success(f"Selected: {os.path.basename(selected_file)}")
+        else:
+            dict_file = st.file_uploader(
+                "Upload IBM_COMPLETE_ALL_COLUMNS_Dictionary.xlsx",
+                type=['xlsx'],
+                help="Upload the complete data dictionary Excel file"
+            )
+            st.info("💡 **Alternative**: You can also specify a file path below:")
+            manual_dict_path = st.text_input(
+                "Or enter full path to Excel file",
+                placeholder="/path/to/your/dictionary.xlsx",
+                help="Enter the complete file path to your data dictionary Excel file"
+            )
+            if manual_dict_path and os.path.exists(manual_dict_path) and manual_dict_path.endswith('.xlsx'):
+                st.session_state.selected_dict_path = manual_dict_path
+                st.success(f"✅ Valid Excel file: {os.path.basename(manual_dict_path)}")
+            elif manual_dict_path:
+                st.error("❌ File not found or not an Excel file")
+        
+        # Display selected file path if browsed
+        if hasattr(st.session_state, 'selected_dict_path'):
+            st.info(f"📁 Selected file: {st.session_state.selected_dict_path}")
+            if st.button("🗑️ Clear Selection", key="clear_dict"):
+                del st.session_state.selected_dict_path
         
         # Auto-load knowledge base if not already loaded
         if st.session_state.data_dict is None:
             with st.spinner("Loading comprehensive knowledge base..."):
+                excel_path = None
+                
                 if dict_file:
                     # Save uploaded file temporarily
                     temp_path = f"/tmp/{dict_file.name}"
                     with open(temp_path, "wb") as f:
                         f.write(dict_file.getbuffer())
-                    st.session_state.data_dict = DataDictionary(temp_path)
+                    excel_path = temp_path
+                elif hasattr(st.session_state, 'selected_dict_path'):
+                    # Use browsed file
+                    excel_path = st.session_state.selected_dict_path
+                
+                if excel_path:
+                    st.session_state.data_dict = DataDictionary(excel_path)
                 else:
                     # Load knowledge base without Excel file
                     st.session_state.data_dict = DataDictionary()
         
         # Data Path
         st.subheader("📁 MQT Tables")
-        data_path = st.text_input(
-            "Path to MQT CSV files",
-            value="/Volumes/DATA/Python/IBM_analyza/data_exports/20250709_215809/tables/",
-            help="Directory containing MQT CSV files"
-        )
+        
+        # Add tabs for different data loading methods
+        tab1, tab2 = st.tabs(["📁 Directory Path", "📤 Upload Files"])
+        
+        with tab1:
+            st.write("**Load from directory containing CSV files:**")
+            if TKINTER_AVAILABLE:
+                col1, col2, col3 = st.columns([4, 1, 1])
+                with col1:
+                    data_path = st.text_input(
+                        "Path to MQT CSV files",
+                        value="/Volumes/DATA/Python/IBM_analyza/data_exports/20250709_215809/tables/",
+                        help="Directory containing MQT CSV files"
+                    )
+                with col2:
+                    st.write("")  # Add space
+                    if st.button("📂 Browse", key="browse_data"):
+                        selected_dir = browse_for_directory("Select MQT CSV Files Directory")
+                        if selected_dir:
+                            st.session_state.selected_data_path = selected_dir
+                            st.success("✅ Selected")
+                with col3:
+                    st.write("")  # Add space  
+                    if st.button("🌐 Open", key="open_data") and data_path:
+                        if open_file_explorer(data_path):
+                            st.success("✅ Opened")
+            else:
+                col1, col2 = st.columns([4, 1])
+                with col1:
+                    data_path = st.text_input(
+                        "Path to MQT CSV files",
+                        value="/Volumes/DATA/Python/IBM_analyza/data_exports/20250709_215809/tables/",
+                        help="Directory containing MQT CSV files"
+                    )
+                with col2:
+                    st.write("")  # Add space  
+                    if st.button("🌐 Open", key="open_data") and data_path:
+                        if open_file_explorer(data_path):
+                            st.success("✅ Opened")
+        
+        with tab2:
+            st.write("**Upload MQT files directly:**")
+            st.info("💡 Upload your MQT data files here. Supports both CSV and Excel formats.")
+            
+            uploaded_files = st.file_uploader(
+                "Upload MQT CSV or Excel files",
+                type=['csv', 'xlsx', 'xls'],
+                accept_multiple_files=True,
+                help="Upload one or more CSV or Excel files containing MQT data. File names should contain 'MQT' for best results."
+            )
+            
+            if uploaded_files:
+                st.success(f"✅ {len(uploaded_files)} file(s) uploaded")
+                with st.expander("📁 Uploaded Files", expanded=True):
+                    for file in uploaded_files:
+                        file_type = "Excel" if file.name.endswith(('.xlsx', '.xls')) else "CSV"
+                        file_size = f"{file.size / (1024*1024):.1f} MB" if file.size > 1024*1024 else f"{file.size / 1024:.1f} KB"
+                        st.write(f"• **{file.name}** ({file_type}, {file_size})")
+                
+                # Store uploaded files in session state
+                st.session_state.uploaded_mqt_files = uploaded_files
+                
+                st.warning("⚠️ **Next step**: Click '📤 Load Uploaded Files' button below to process these files.")
+        
+        # Display selected directory if browsed
+        if hasattr(st.session_state, 'selected_data_path'):
+            st.info(f"📁 Selected directory: {st.session_state.selected_data_path}")
+            if st.button("🔄 Use Selected Path", key="use_selected_data"):
+                # Update the text input by rerunning with new session state
+                st.session_state.current_data_path = st.session_state.selected_data_path
+                st.rerun()
+        
+        # Use selected path if available
+        if hasattr(st.session_state, 'current_data_path'):
+            data_path = st.session_state.current_data_path
         
         # Show available MQT files
         if os.path.exists(data_path):
@@ -1023,14 +1171,28 @@ def main():
         else:
             st.error("❌ Path does not exist")
         
-        col1, col2 = st.columns(2)
+        # Load buttons
+        col1, col2, col3 = st.columns(3)
+        
         with col1:
-            if st.button("🔄 Load MQT Tables") and os.path.exists(data_path):
-                with st.spinner("Loading tables..."):
-                    st.session_state.db_manager = DatabaseManager()
-                    st.session_state.db_manager.load_mqt_tables(data_path)
+            # Load from directory (only show if path exists or uploaded files available)
+            load_dir_available = hasattr(st.session_state, 'current_data_path') or os.path.exists(data_path)
+            load_upload_available = hasattr(st.session_state, 'uploaded_mqt_files') and st.session_state.uploaded_mqt_files
+            
+            if st.button("🔄 Load from Directory", disabled=not load_dir_available):
+                if load_dir_available:
+                    with st.spinner("Loading tables from directory..."):
+                        st.session_state.db_manager = DatabaseManager()
+                        st.session_state.db_manager.load_mqt_tables(data_path)
         
         with col2:
+            if st.button("📤 Load Uploaded Files", disabled=not load_upload_available):
+                if load_upload_available:
+                    with st.spinner("Loading uploaded files..."):
+                        st.session_state.db_manager = DatabaseManager()
+                        st.session_state.db_manager.load_uploaded_files(st.session_state.uploaded_mqt_files)
+        
+        with col3:
             if st.button("🎯 Load Demo Data"):
                 with st.spinner("Creating demo data..."):
                     st.session_state.db_manager = DatabaseManager()
@@ -1147,12 +1309,20 @@ def main():
         
         if provider_choice == "gemini":
             st.info("🌟 Google Gemini - Latest AI models with superior reasoning!")
-            api_key = st.text_input(
-                "Gemini API Key",
-                value=os.environ.get("GEMINI_API_KEY", ""),
-                type="password",
-                help="Get your API key from: https://ai.google.dev/gemini-api"
-            )
+            
+            col1, col2 = st.columns([3, 1])
+            with col1:
+                api_key = st.text_input(
+                    "Gemini API Key",
+                    value=os.environ.get("GEMINI_API_KEY", ""),
+                    type="password",
+                    help="Get your API key from: https://ai.google.dev/gemini-api"
+                )
+            with col2:
+                st.write("")  # Add space
+                if st.button("🌐 Get API Key", key="gemini_api"):
+                    if open_url_in_browser("https://ai.google.dev/gemini-api"):
+                        st.success("✅ Opened in browser")
             model_choice = st.selectbox(
                 "Gemini Model",
                 ["gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.0-flash", "gemini-1.5-pro", "gemini-1.5-flash"],
@@ -1170,12 +1340,20 @@ def main():
         
         elif provider_choice == "deepseek":
             st.info("🚀 DeepSeek - Ultra-efficient reasoning models at 90% lower cost!")
-            api_key = st.text_input(
-                "DeepSeek API Key",
-                value=os.environ.get("DEEPSEEK_API_KEY", ""),
-                type="password",
-                help="Get your API key from: https://platform.deepseek.com"
-            )
+            
+            col1, col2 = st.columns([3, 1])
+            with col1:
+                api_key = st.text_input(
+                    "DeepSeek API Key",
+                    value=os.environ.get("DEEPSEEK_API_KEY", ""),
+                    type="password",
+                    help="Get your API key from: https://platform.deepseek.com"
+                )
+            with col2:
+                st.write("")  # Add space
+                if st.button("🌐 Get API Key", key="deepseek_api"):
+                    if open_url_in_browser("https://platform.deepseek.com"):
+                        st.success("✅ Opened in browser")
             model_choice = st.selectbox(
                 "DeepSeek Model",
                 ["deepseek-reasoner", "deepseek-chat"],
@@ -1259,12 +1437,20 @@ def main():
         
         elif provider_choice == "openrouter":
             st.info("🌐 OpenRouter - Access to 200+ models including latest GPT, Claude, and open source!")
-            api_key = st.text_input(
-                "OpenRouter API Key",
-                value=os.environ.get("OPENROUTER_API_KEY", ""),
-                type="password",
-                help="Get your API key from: https://openrouter.ai/keys"
-            )
+            
+            col1, col2 = st.columns([3, 1])
+            with col1:
+                api_key = st.text_input(
+                    "OpenRouter API Key",
+                    value=os.environ.get("OPENROUTER_API_KEY", ""),
+                    type="password",
+                    help="Get your API key from: https://openrouter.ai/keys"
+                )
+            with col2:
+                st.write("")  # Add space
+                if st.button("🌐 Get API Key", key="openrouter_api"):
+                    if open_url_in_browser("https://openrouter.ai/keys"):
+                        st.success("✅ Opened in browser")
             model_choice = st.selectbox(
                 "OpenRouter Model",
                 [
@@ -1312,6 +1498,12 @@ def main():
             st.success(f"✅ {len(st.session_state.db_manager.tables_loaded)} Tables Loaded")
         if st.session_state.llm_connector:
             st.success("✅ LLM Connected")
+        
+        # Browser capabilities status
+        if TKINTER_AVAILABLE:
+            st.success("✅ File Browser Available")
+        else:
+            st.warning("⚠️ File Browser Unavailable (tkinter missing)")
     
     # Main chat interface
     if all([st.session_state.data_dict, st.session_state.db_manager, st.session_state.llm_connector]):
