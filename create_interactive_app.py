@@ -930,26 +930,112 @@ def create_hover_tooltip(column: str, data_dict: DataDictionary) -> str:
     """Create hover tooltip for column explanations"""
     info = data_dict.get_column_info(column)
     
-    if not info:
-        return f"Column: {column}"
+    # If we have dictionary info, use it
+    if info and info.get('description') and info.get('description') != 'N/A':
+        tooltip = f"""
+**{column}**
+
+📊 **Category:** {info.get('category', 'N/A')}
+
+📝 **Description:** {info.get('description', 'No description available')}
+
+🇸🇰 **Slovak:** {info.get('slovak_description', 'N/A')}
+
+🔢 **Calculation:** {info.get('calculation', 'N/A')}
+
+💼 **Business Use:** {info.get('business_use', 'N/A')}
+
+📈 **Data Type:** {info.get('data_type', 'N/A')}
+
+💡 **Examples:** {info.get('example_values', 'N/A')}
+"""
+        return tooltip
     
+    # Generate intelligent explanation for computed/derived columns
+    column_lower = column.lower()
+    column_clean = column.replace('_', ' ').title()
+    
+    # Smart explanations based on column patterns
+    if 'number_of_countries' in column_lower or 'country_count' in column_lower:
+        description = "Count of distinct countries present in the dataset"
+        category = "Geographic Metrics"
+        business_use = "Used to understand geographic distribution and market reach"
+        
+    elif 'win_rate' in column_lower:
+        description = "Percentage of opportunities that resulted in won deals"
+        category = "Sales Performance"
+        business_use = "Key metric for measuring sales effectiveness and team performance"
+        
+    elif 'total_revenue' in column_lower or 'revenue_total' in column_lower:
+        description = "Sum of all revenue amounts"
+        category = "Financial Metrics"
+        business_use = "Primary indicator of business performance and growth"
+        
+    elif 'forecast' in column_lower and ('revenue' in column_lower or 'amt' in column_lower):
+        description = "AI-based predicted revenue using PPV_AMT calculations"
+        category = "Forecasting"
+        business_use = "Strategic planning and pipeline management"
+        
+    elif 'pipeline' in column_lower and 'value' in column_lower:
+        description = "Total value of active opportunities in the sales pipeline"
+        category = "Pipeline Metrics"
+        business_use = "Monitor potential future revenue and sales capacity"
+        
+    elif 'deal_count' in column_lower or 'opportunity_count' in column_lower:
+        description = "Number of sales opportunities or deals"
+        category = "Volume Metrics"
+        business_use = "Track sales activity and opportunity generation"
+        
+    elif 'average' in column_lower or 'avg' in column_lower:
+        description = f"Average value calculated from the underlying data"
+        category = "Statistical Metrics"
+        business_use = "Understand typical performance levels and benchmarks"
+        
+    elif column_lower.endswith('_m') or 'million' in column_lower:
+        description = f"Financial amount expressed in millions of dollars"
+        category = "Financial Metrics"
+        business_use = "High-level financial reporting and executive dashboards"
+        
+    elif 'rate' in column_lower or 'percentage' in column_lower:
+        description = f"Percentage calculation showing ratio or performance rate"
+        category = "Performance Metrics"
+        business_use = "Measure efficiency and success rates"
+        
+    elif 'geography' in column_lower or 'region' in column_lower:
+        description = "Geographic region or territory classification"
+        category = "Geographic Dimensions"
+        business_use = "Regional analysis and territory management"
+        
+    elif 'sales_stage' in column_lower or 'stage' in column_lower:
+        description = "Current stage in the sales process (e.g., Prospect, Qualified, Won, Lost)"
+        category = "Sales Process"
+        business_use = "Track deal progression and identify bottlenecks"
+        
+    elif 'client' in column_lower or 'customer' in column_lower:
+        description = "Client or customer name/identifier"
+        category = "Customer Dimensions"
+        business_use = "Customer analysis and relationship management"
+        
+    else:
+        # Generic explanation for unknown columns
+        description = f"Data column containing {column_clean.lower()} information"
+        category = "Data Field"
+        business_use = "Analysis and reporting purposes"
+    
+    # Format the tooltip
     tooltip = f"""
-    **{column}**
-    
-    📊 **Category:** {info.get('category', 'N/A')}
-    
-    📝 **Description:** {info.get('description', 'No description available')}
-    
-    🇸🇰 **Slovak:** {info.get('slovak_description', 'N/A')}
-    
-    🔢 **Calculation:** {info.get('calculation', 'N/A')}
-    
-    💼 **Business Use:** {info.get('business_use', 'N/A')}
-    
-    📈 **Data Type:** {info.get('data_type', 'N/A')}
-    
-    💡 **Examples:** {info.get('example_values', 'N/A')}
-    """
+**{column_clean}**
+
+📊 **Category:** {category}
+
+📝 **Description:** {description}
+
+💼 **Business Use:** {business_use}
+
+🔢 **Type:** {"Numeric" if any(word in column_lower for word in ['count', 'rate', 'total', 'avg', 'sum', 'amount', 'value']) else "Text/Category"}
+
+💡 **Note:** This is a computed column from your SQL query
+"""
     
     return tooltip
 
