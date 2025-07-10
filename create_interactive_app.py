@@ -27,12 +27,22 @@ try:
 except ImportError:
     TKINTER_AVAILABLE = False
 
-# Load environment variables from .env file
+# Load environment variables from .env file or Streamlit secrets
 try:
     from dotenv import load_dotenv
     load_dotenv()
 except ImportError:
     # If python-dotenv is not installed, continue without it
+    pass
+
+# For Streamlit Cloud deployment, also try to load from st.secrets
+try:
+    if hasattr(st, 'secrets') and 'env' in st.secrets:
+        for key, value in st.secrets.env.items():
+            if key not in os.environ:
+                os.environ[key] = value
+except Exception:
+    # Continue if secrets are not available
     pass
 
 # For local LLM - we'll use Ollama with CodeLlama or similar

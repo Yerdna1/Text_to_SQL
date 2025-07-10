@@ -4,6 +4,9 @@
 .env.production
 .env.staging
 
+# Streamlit secrets (for local development only)
+.streamlit/secrets.toml
+
 # Python
 __pycache__/
 *.py[cod]

@@ -1,0 +1,17 @@
+[global]
+
+# Set to false for cloud deployment
+developmentMode = false
+
+# Set to false to disable running on localhost
+runOnSave = false
+
+[server]
+# Server configuration for Streamlit Cloud
+headless = true
+enableCORS = false
+enableXsrfProtection = false
+
+[browser]
+# Browser configuration
+gatherUsageStats = false
