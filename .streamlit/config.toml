@@ -1,10 +1,6 @@
 [global]
-
 # Set to false for cloud deployment
 developmentMode = false
-
-# Set to false to disable running on localhost
-runOnSave = false
 
 [server]
 # Server configuration for Streamlit Cloud
@@ -15,3 +11,10 @@ enableXsrfProtection = false
 [browser]
 # Browser configuration
 gatherUsageStats = false
+
+[theme]
+# Optional: Add theme configuration
+primaryColor = "#1E90FF"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
