@@ -1022,14 +1022,174 @@ def create_visualization(df: pd.DataFrame, viz_type: str, columns_used: List[str
             else:
                 st.info("Pie chart requires both categorical and numeric columns. Showing table instead.")
                 st.dataframe(df, use_container_width=True)
+                
+        elif viz_type == "kpi" or viz_type == "metric":
+            # Create KPI/Metric dashboard with large numbers and visual indicators
+            st.subheader("📊 Key Performance Indicators")
+            
+            # Find numeric columns for KPIs
+            numeric_cols = df.select_dtypes(include=['int64', 'float64', 'int32', 'float32']).columns.tolist()
+            
+            if len(numeric_cols) > 0:
+                # If we have multiple rows, try to create a chart as well
+                if len(df) > 1:
+                    # Try to create a chart visualization
+                    categorical_cols = df.select_dtypes(include=['object', 'string', 'category']).columns.tolist()
+                    
+                    if len(categorical_cols) >= 1 and len(numeric_cols) >= 1:
+                        st.write("**Visual Chart:**")
+                        
+                        # Automatically choose best chart type
+                        if len(df) <= 10:  # Small dataset - use bar chart
+                            x_col = categorical_cols[0] if categorical_cols else df.index
+                            y_col = numeric_cols[0]
+                            
+                            fig = px.bar(df, x=x_col, y=y_col, 
+                                        title=f"{y_col} by {x_col}")
+                            fig.update_layout(height=400)
+                            st.plotly_chart(fig, use_container_width=True)
+                            
+                        else:  # Larger dataset - use line chart
+                            y_col = numeric_cols[0]
+                            fig = px.line(df, y=y_col, title=f"{y_col} Trend")
+                            fig.update_layout(height=400)
+                            st.plotly_chart(fig, use_container_width=True)
+                
+                # Show KPI metrics
+                st.write("**Key Metrics:**")
+                
+                # Calculate number of columns for layout
+                num_kpis = min(len(numeric_cols), 4)  # Max 4 KPIs per row
+                cols = st.columns(num_kpis)
+                
+                for idx, col in enumerate(numeric_cols[:4]):  # Show first 4 KPIs
+                    with cols[idx % num_kpis]:
+                        value = df[col].iloc[0] if len(df) == 1 else df[col].sum()
+                        
+                        # Format value based on column name
+                        if col.upper().endswith('_M') or 'MILLION' in col.upper():
+                            formatted_value = f"${value:.2f}M"
+                        elif 'RATE' in col.upper() or 'PERCENT' in col.upper():
+                            formatted_value = f"{value:.1f}%"
+                        elif 'AMT' in col.upper() or 'VALUE' in col.upper():
+                            formatted_value = f"${value:,.0f}"
+                        elif 'COUNT' in col.upper() or col.upper().endswith('_COUNT'):
+                            formatted_value = f"{value:,.0f}"
+                        else:
+                            formatted_value = f"{value:,.2f}"
+                        
+                        # Display as metric
+                        st.metric(
+                            label=col.replace('_', ' ').title(),
+                            value=formatted_value
+                        )
+                
+                # If more than 4 KPIs, show additional ones in a second row
+                if len(numeric_cols) > 4:
+                    st.write("")  # Add space
+                    remaining_kpis = numeric_cols[4:8]  # Next 4 KPIs
+                    cols2 = st.columns(len(remaining_kpis))
+                    
+                    for idx, col in enumerate(remaining_kpis):
+                        with cols2[idx]:
+                            value = df[col].iloc[0] if len(df) == 1 else df[col].sum()
+                            
+                            # Format value
+                            if col.upper().endswith('_M') or 'MILLION' in col.upper():
+                                formatted_value = f"${value:.2f}M"
+                            elif 'RATE' in col.upper() or 'PERCENT' in col.upper():
+                                formatted_value = f"{value:.1f}%"
+                            elif 'AMT' in col.upper() or 'VALUE' in col.upper():
+                                formatted_value = f"${value:,.0f}"
+                            elif 'COUNT' in col.upper() or col.upper().endswith('_COUNT'):
+                                formatted_value = f"{value:,.0f}"
+                            else:
+                                formatted_value = f"{value:,.2f}"
+                            
+                            st.metric(
+                                label=col.replace('_', ' ').title(),
+                                value=formatted_value
+                            )
+                
+                # Show data table below KPIs
+                if len(df) > 1:  # Only show table if there's more than one row
+                    st.write("")
+                    st.write("**Detailed Data:**")
+                    st.dataframe(df, use_container_width=True)
+                
+            else:
+                st.info("No numeric data available for KPI display. Showing table instead.")
+                st.dataframe(df, use_container_width=True)
             
         else:
-            # Default to table view with enhanced formatting
-            st.info(f"Showing data as table (visualization type: {viz_type})")
+            # Auto-detect best visualization for unknown types or fallback
+            numeric_cols = df.select_dtypes(include=['int64', 'float64', 'int32', 'float32']).columns.tolist()
+            categorical_cols = df.select_dtypes(include=['object', 'string', 'category']).columns.tolist()
+            
+            # Try to create an appropriate chart automatically
+            if len(df) > 1 and len(numeric_cols) >= 1:
+                if len(categorical_cols) >= 1:
+                    # We have both categorical and numeric data
+                    if len(df) <= 20:  # Small dataset - bar chart works well
+                        st.write("**Auto-generated Bar Chart:**")
+                        x_col = categorical_cols[0]
+                        y_col = numeric_cols[0]
+                        
+                        fig = px.bar(df, x=x_col, y=y_col, 
+                                    title=f"{y_col} by {x_col}")
+                        fig.update_layout(height=500)
+                        st.plotly_chart(fig, use_container_width=True)
+                        
+                    else:  # Larger dataset - try grouping for better visualization
+                        st.write("**Auto-generated Summary Chart:**")
+                        x_col = categorical_cols[0]
+                        y_col = numeric_cols[0]
+                        
+                        # Group and sum the data
+                        grouped_df = df.groupby(x_col)[y_col].sum().reset_index()
+                        
+                        if len(grouped_df) <= 10:
+                            fig = px.bar(grouped_df, x=x_col, y=y_col, 
+                                        title=f"Total {y_col} by {x_col}")
+                        else:
+                            fig = px.line(grouped_df, x=x_col, y=y_col, 
+                                         title=f"Total {y_col} by {x_col}")
+                        
+                        fig.update_layout(height=500)
+                        st.plotly_chart(fig, use_container_width=True)
+                        
+                elif len(numeric_cols) >= 2:
+                    # Multiple numeric columns - scatter or line plot
+                    st.write("**Auto-generated Trend Chart:**")
+                    x_col = numeric_cols[0]
+                    y_col = numeric_cols[1]
+                    
+                    fig = px.scatter(df, x=x_col, y=y_col, 
+                                    title=f"{y_col} vs {x_col}")
+                    fig.update_layout(height=500)
+                    st.plotly_chart(fig, use_container_width=True)
+                    
+                else:
+                    # Single numeric column - histogram or line trend
+                    st.write("**Auto-generated Distribution:**")
+                    y_col = numeric_cols[0]
+                    
+                    if len(df) > 10:
+                        fig = px.histogram(df, x=y_col, title=f"Distribution of {y_col}")
+                    else:
+                        fig = px.line(df, y=y_col, title=f"{y_col} Values")
+                    
+                    fig.update_layout(height=500)
+                    st.plotly_chart(fig, use_container_width=True)
+            else:
+                # Fallback message for unsupported visualization
+                st.info(f"Chart visualization not available for this data type (visualization type: {viz_type}). Showing formatted table instead.")
+            
+            # Always show formatted table as well
+            st.write("**Data Table:**")
             
             # Format numeric columns for better display
             formatted_df = df.copy()
-            numeric_cols = formatted_df.select_dtypes(include=['int64', 'float64', 'int32', 'float32']).columns
             
             for col in numeric_cols:
                 if col.upper().endswith('_M') or 'MILLION' in col.upper():
