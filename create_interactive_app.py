@@ -6,6 +6,7 @@ with Natural Language to SQL conversion using local LLM
 
 import streamlit as st
 import pandas as pd
+import numpy as np
 import sqlite3
 import os
 import json
@@ -960,27 +961,93 @@ def create_visualization(df: pd.DataFrame, viz_type: str, columns_used: List[str
         return
     
     try:
+        st.subheader("📊 Data Visualization")
+        
+        # Check if viz_type is valid and we have enough columns
         if viz_type == "bar_chart" and len(df.columns) >= 2:
-            fig = px.bar(df, x=df.columns[0], y=df.columns[1], 
-                        title=f"{df.columns[1]} by {df.columns[0]}")
-            st.plotly_chart(fig, use_container_width=True)
+            # Find the best columns for visualization
+            numeric_cols = df.select_dtypes(include=['int64', 'float64', 'int32', 'float32']).columns.tolist()
+            categorical_cols = df.select_dtypes(include=['object', 'string', 'category']).columns.tolist()
+            
+            if len(numeric_cols) >= 1 and len(categorical_cols) >= 1:
+                x_col = categorical_cols[0]
+                y_col = numeric_cols[0]
+                
+                fig = px.bar(df, x=x_col, y=y_col, 
+                            title=f"{y_col} by {x_col}")
+                fig.update_layout(height=500)
+                st.plotly_chart(fig, use_container_width=True)
+            else:
+                st.info("Bar chart requires both categorical and numeric columns. Showing table instead.")
+                st.dataframe(df, use_container_width=True)
             
         elif viz_type == "line_chart" and len(df.columns) >= 2:
-            fig = px.line(df, x=df.columns[0], y=df.columns[1],
-                         title=f"{df.columns[1]} trend over {df.columns[0]}")
-            st.plotly_chart(fig, use_container_width=True)
+            # Find numeric columns for line chart
+            numeric_cols = df.select_dtypes(include=['int64', 'float64', 'int32', 'float32']).columns.tolist()
+            
+            if len(numeric_cols) >= 2:
+                x_col = numeric_cols[0]
+                y_col = numeric_cols[1]
+                
+                fig = px.line(df, x=x_col, y=y_col,
+                             title=f"{y_col} trend over {x_col}")
+                fig.update_layout(height=500)
+                st.plotly_chart(fig, use_container_width=True)
+            elif len(numeric_cols) >= 1:
+                # Use index as x-axis if only one numeric column
+                y_col = numeric_cols[0]
+                fig = px.line(df, y=y_col, title=f"{y_col} trend")
+                fig.update_layout(height=500)
+                st.plotly_chart(fig, use_container_width=True)
+            else:
+                st.info("Line chart requires numeric columns. Showing table instead.")
+                st.dataframe(df, use_container_width=True)
             
         elif viz_type == "pie_chart" and len(df.columns) >= 2:
-            fig = px.pie(df, names=df.columns[0], values=df.columns[1],
-                        title=f"Distribution of {df.columns[1]}")
-            st.plotly_chart(fig, use_container_width=True)
+            # Find appropriate columns for pie chart
+            numeric_cols = df.select_dtypes(include=['int64', 'float64', 'int32', 'float32']).columns.tolist()
+            categorical_cols = df.select_dtypes(include=['object', 'string', 'category']).columns.tolist()
+            
+            if len(numeric_cols) >= 1 and len(categorical_cols) >= 1:
+                names_col = categorical_cols[0]
+                values_col = numeric_cols[0]
+                
+                # Aggregate data if needed
+                pie_data = df.groupby(names_col)[values_col].sum().reset_index()
+                
+                fig = px.pie(pie_data, names=names_col, values=values_col,
+                            title=f"Distribution of {values_col} by {names_col}")
+                fig.update_layout(height=500)
+                st.plotly_chart(fig, use_container_width=True)
+            else:
+                st.info("Pie chart requires both categorical and numeric columns. Showing table instead.")
+                st.dataframe(df, use_container_width=True)
             
         else:
-            # Default to table view
-            st.dataframe(df, use_container_width=True)
+            # Default to table view with enhanced formatting
+            st.info(f"Showing data as table (visualization type: {viz_type})")
+            
+            # Format numeric columns for better display
+            formatted_df = df.copy()
+            numeric_cols = formatted_df.select_dtypes(include=['int64', 'float64', 'int32', 'float32']).columns
+            
+            for col in numeric_cols:
+                if col.upper().endswith('_M') or 'MILLION' in col.upper():
+                    # Format as millions
+                    formatted_df[col] = formatted_df[col].apply(lambda x: f"${x:.2f}M" if pd.notnull(x) else "")
+                elif 'RATE' in col.upper() or 'PERCENT' in col.upper():
+                    # Format as percentage
+                    formatted_df[col] = formatted_df[col].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "")
+                elif 'AMT' in col.upper() or 'VALUE' in col.upper():
+                    # Format as currency
+                    formatted_df[col] = formatted_df[col].apply(lambda x: f"${x:,.0f}" if pd.notnull(x) else "")
+            
+            st.dataframe(formatted_df, use_container_width=True)
             
     except Exception as e:
         st.error(f"Visualization error: {e}")
+        st.write("Error details:", str(e))
+        # Fallback to simple table
         st.dataframe(df, use_container_width=True)
 
 def main():
