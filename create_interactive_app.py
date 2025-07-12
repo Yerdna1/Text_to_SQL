@@ -8,6 +8,14 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import sqlite3
+
+# DB2 connection support
+try:
+    import ibm_db
+    import ibm_db_dbi
+    DB2_AVAILABLE = True
+except ImportError:
+    DB2_AVAILABLE = False
 import os
 import json
 from datetime import datetime
@@ -74,6 +82,17 @@ try:
     OPENROUTER_AVAILABLE = True  # Uses requests, always available
 except ImportError:
     OPENROUTER_AVAILABLE = False
+
+# Import the agent orchestrator and receptionist
+try:
+    from sql_agent_orchestrator import SQLAgentOrchestrator, process_with_agents
+    from receptionist_agent import ReceptionistAgent, create_step_visualization
+    AGENTS_AVAILABLE = True
+    RECEPTIONIST_AVAILABLE = True
+except ImportError:
+    AGENTS_AVAILABLE = False
+    RECEPTIONIST_AVAILABLE = False
+    print("Warning: SQL Agent Orchestrator and Receptionist not available")
 
 class DataDictionary:
     """Manages the complete data dictionary and knowledge base including all documentation"""
@@ -387,10 +406,29 @@ class LLMConnector:
     def generate_sql(self, question: str, schema_info: str, data_dictionary: str) -> Dict:
         """Generate SQL query from natural language question"""
         
-   
+        # Always use DB2 syntax
+        syntax_requirements = """
+CRITICAL IBM DB2 SQL SYNTAX REQUIREMENTS:
+1. Generate PURE IBM DB2 SQL syntax ONLY
+2. Use DB2 date functions: CURRENT DATE, CURRENT TIMESTAMP, YEAR(date), MONTH(date), DAY(date)
+3. For current date filtering use: YEAR(column_name) = YEAR(CURRENT DATE)
+4. Use DB2 string functions: SUBSTR(), LENGTH(), UPPER()
+5. Use DECIMAL(value, precision, scale) for financial calculations
+6. Use NULLIF() for division by zero protection
+7. Use WITH clauses (CTEs) for complex queries
+8. Use FETCH FIRST n ROWS ONLY instead of LIMIT
+9. Format financial values: DECIMAL(SUM(value), 18, 2) or similar"""
+        
+        examples = """
+EXAMPLE IBM DB2 PATTERNS:
+- Current year: WHERE YEAR(column_name) = YEAR(CURRENT DATE)
+- Current quarter: WHERE QUARTER(column_name) = QUARTER(CURRENT DATE)
+- Financial format: DECIMAL(SUM(PPV_AMT) / 1000000, 18, 2) AS FORECASTED_REVENUE_M
+- Safe division: DECIMAL(value / NULLIF(divisor, 0), 18, 2)
+- Row limiting: FETCH FIRST 100 ROWS ONLY"""
         
         prompt = f"""
-You are an expert IBM DB2 SQL analyst for IBM Sales Pipeline Analytics. Generate a precise IBM DB2 SQL query based on the user's question.
+You are an expert SQL analyst for IBM Sales Pipeline Analytics. Generate a precise SQL query based on the user's question.
 
 SCHEMA INFORMATION:
 {schema_info}
@@ -400,16 +438,7 @@ DATA DICTIONARY KNOWLEDGE BASE:
 
 USER QUESTION: {question}
 
-CRITICAL SQL SYNTAX REQUIREMENTS (SQLite Compatible):
-1. Generate SQLite compatible SQL syntax that simulates DB2 behavior
-2. Use SQLite date functions: date('now'), strftime('%m', date('now')), strftime('%Y', date('now'))
-3. For current month filtering use: strftime('%m', column_name) = strftime('%m', date('now'))
-4. Use SQLite string functions: substr(), length(), upper()
-5. Use ROUND() or CAST() for financial calculations instead of DECIMAL()
-6. Use NULLIF() for division by zero protection
-7. Use WITH clauses (CTEs) for complex queries
-8. Date comparisons: date(column_name) = date('now')
-9. Format financial values: ROUND(value, 2) or CAST(value AS DECIMAL(15,2))
+{syntax_requirements}
 
 BUSINESS CONTEXT:
 - PPV_AMT = AI-based revenue forecast (use for forecasting)
@@ -418,17 +447,14 @@ BUSINESS CONTEXT:
 - Exclude Won/Lost deals for active pipeline
 - Use MQT table names (PROD_MQT_CONSULTING_PIPELINE, etc.)
 
-EXAMPLE SQLITE PATTERNS:
-- Current month: WHERE strftime('%m', OPPORTUNITY_CREATE_DATE) = strftime('%m', date('now')) AND strftime('%Y', OPPORTUNITY_CREATE_DATE) = strftime('%Y', date('now'))
-- Financial format: ROUND(SUM(PPV_AMT) / 1000000.0, 2) AS FORECASTED_REVENUE_M
-- Safe division: NULLIF(SUM(BUDGET_AMT), 0)
+{examples}
 
-IMPORTANT: Return ONLY a valid JSON object with SQLite-compatible SQL:
+IMPORTANT: Return ONLY a valid JSON object with proper SQL:
 {{
-    "sql_query": "SELECT ROUND(SUM(PPV_AMT) / 1000000.0, 2) AS FORECASTED_REVENUE_M FROM PROD_MQT_CONSULTING_PIPELINE WHERE ...",
-    "explanation": "Used PPV_AMT for AI-based revenue forecast with DB2 DECIMAL formatting...",
-    "tables_used": ["PROD_MQT_CONSULTING_PIPELINE"],
-    "columns_used": ["PPV_AMT", "OPPORTUNITY_CREATE_DATE", "SALES_STAGE"],
+    "sql_query": "SELECT ... FROM ... WHERE ...",
+    "explanation": "Explanation of the query approach...",
+    "tables_used": ["table_names"],
+    "columns_used": ["column_names"],
     "visualization_type": "table",
     "confidence": 0.9
 }}
@@ -808,9 +834,104 @@ class DatabaseManager:
     """Manages database connections and MQT table loading"""
     
     def __init__(self):
-        self.conn = sqlite3.connect(':memory:', check_same_thread=False)
+        self.conn = None
+        self.db_type = "SQLite"  # Default fallback
+        self.connection_string = ""
         self.tables_loaded = {}
         self.schema_info = ""
+        self._init_default_connection()
+    
+    def _init_default_connection(self):
+        """Initialize default SQLite connection"""
+        try:
+            self.conn = sqlite3.connect(':memory:', check_same_thread=False)
+            self.db_type = "SQLite"
+        except Exception as e:
+            st.error(f"Failed to initialize SQLite connection: {e}")
+    
+    def connect_to_db2(self, hostname: str, port: int, database: str, username: str, password: str, ssl: bool = True):
+        """Connect to IBM DB2 database"""
+        if not DB2_AVAILABLE:
+            st.error("❌ IBM DB2 driver not installed. Please install: pip install ibm-db")
+            return False
+        
+        try:
+            # Build DB2 connection string
+            protocol = "TCPIP"
+            ssl_param = "Security=SSL;" if ssl else ""
+            self.connection_string = f"DATABASE={database};HOSTNAME={hostname};PORT={port};PROTOCOL={protocol};UID={username};PWD={password};{ssl_param}"
+            
+            # Test connection
+            conn_handle = ibm_db.connect(self.connection_string, "", "")
+            if conn_handle:
+                self.conn = ibm_db_dbi.Connection(conn_handle)
+                self.db_type = "DB2"
+                st.success(f"✅ Connected to IBM DB2: {hostname}:{port}/{database}")
+                
+                # Get schema information
+                self._refresh_db2_schema()
+                return True
+            else:
+                st.error("❌ Failed to connect to DB2 database")
+                return False
+                
+        except Exception as e:
+            st.error(f"❌ DB2 Connection Error: {str(e)}")
+            return False
+    
+    def disconnect(self):
+        """Disconnect from current database"""
+        try:
+            if self.conn and self.db_type == "DB2":
+                self.conn.close()
+            elif self.conn and self.db_type == "SQLite":
+                self.conn.close()
+            self.conn = None
+            st.info("🔌 Database disconnected")
+        except Exception as e:
+            st.warning(f"Disconnect warning: {e}")
+    
+    def _refresh_db2_schema(self):
+        """Refresh schema information from DB2"""
+        try:
+            cursor = self.conn.cursor()
+            
+            # Get list of MQT tables
+            cursor.execute("""
+                SELECT TABSCHEMA, TABNAME, TYPE 
+                FROM SYSCAT.TABLES 
+                WHERE TABNAME LIKE '%MQT%' 
+                   OR TABNAME LIKE 'PROD_MQT%'
+                ORDER BY TABSCHEMA, TABNAME
+            """)
+            
+            tables = cursor.fetchall()
+            self.schema_info = f"Connected to DB2 - Found {len(tables)} MQT tables:\n"
+            
+            for schema, table, table_type in tables:
+                self.schema_info += f"- {schema}.{table} ({table_type})\n"
+                
+                # Get column information for each table
+                cursor.execute("""
+                    SELECT COLNAME, TYPENAME, LENGTH, SCALE 
+                    FROM SYSCAT.COLUMNS 
+                    WHERE TABSCHEMA = ? AND TABNAME = ?
+                    ORDER BY COLNO
+                """, (schema, table))
+                
+                columns = cursor.fetchall()
+                self.tables_loaded[f"{schema}.{table}"] = {
+                    "columns": [col[0] for col in columns],
+                    "rows": "Unknown",  # Would need COUNT query
+                    "schema": schema,
+                    "table": table
+                }
+            
+            cursor.close()
+            st.success(f"📊 Schema refreshed: {len(self.tables_loaded)} tables loaded")
+            
+        except Exception as e:
+            st.error(f"Schema refresh error: {e}")
     
     def load_mqt_tables(self, data_path: str):
         """Load all MQT tables from Excel/CSV files in directory"""
@@ -906,35 +1027,112 @@ class DatabaseManager:
         from datetime import datetime, timedelta
         
         # Create demo PROD_MQT_CONSULTING_PIPELINE data
-        demo_data = {
+        demo_data_consulting = {
             'OPPORTUNITY_ID': [f'OPP_{i:05d}' for i in range(1, 101)],
             'CLIENT_NAME': [random.choice(['IBM Corp', 'Microsoft', 'Oracle', 'SAP', 'Salesforce', 'Adobe', 'Cisco', 'Dell', 'HP Inc', 'VMware']) for _ in range(100)],
+            'ACCOUNT_NAME': [random.choice(['IBM Corp', 'Microsoft', 'Oracle', 'SAP', 'Salesforce', 'Adobe', 'Cisco', 'Dell', 'HP Inc', 'VMware']) for _ in range(100)],
             'GEOGRAPHY': [random.choice(['Americas', 'EMEA', 'APAC', 'Japan']) for _ in range(100)],
+            'MARKET': [random.choice(['Financial Services', 'Healthcare', 'Retail', 'Technology']) for _ in range(100)],
             'SALES_STAGE': [random.choice(['Qualify', 'Propose', 'Negotiate', 'Won', 'Lost']) for _ in range(100)],
             'OPPORTUNITY_VALUE': [random.randint(50000, 5000000) for _ in range(100)],
+            'OPEN_PIPELINE': [random.randint(50000, 5000000) for _ in range(100)],
+            'OPEN_PIPELINE_AMT': [random.randint(50000, 5000000) for _ in range(100)],
             'PPV_AMT': [random.randint(40000, 4500000) for _ in range(100)],
-            'OPPORTUNITY_CREATE_DATE': [(datetime.now() - timedelta(days=random.randint(1, 365))).strftime('%Y-%m-%d') for _ in range(100)]
+            'OPPORTUNITY_CREATE_DATE': [(datetime.now() - timedelta(days=random.randint(1, 365))).strftime('%Y-%m-%d') for _ in range(100)],
+            'CLOSE_DATE': [(datetime.now() + timedelta(days=random.randint(1, 180))).strftime('%Y-%m-%d') for _ in range(100)]
         }
         
-        df = pd.DataFrame(demo_data)
-        df.to_sql('PROD_MQT_CONSULTING_PIPELINE', self.conn, if_exists='replace', index=False)
+        df_consulting = pd.DataFrame(demo_data_consulting)
+        df_consulting.to_sql('PROD_MQT_CONSULTING_PIPELINE', self.conn, if_exists='replace', index=False)
+        
+        # Create demo PROD_MQT_SW_SAAS_OPPORTUNITY data
+        demo_data_saas = {
+            'OPPORTUNITY_NUMBER': [f'SAAS_{i:05d}' for i in range(1, 81)],
+            'ACCOUNT_NAME': [random.choice(['Amazon', 'Google', 'Netflix', 'Spotify', 'Slack', 'Zoom', 'Dropbox', 'Atlassian']) for _ in range(80)],
+            'OPEN_PIPELINE': [random.randint(30000, 3000000) for _ in range(80)],
+            'SALES_STAGE': [random.choice(['Qualify', 'Propose', 'Negotiate', 'Won', 'Lost']) for _ in range(80)],
+            'OPPORTUNITY_VALUE': [random.randint(30000, 3000000) for _ in range(80)]
+        }
+        
+        df_saas = pd.DataFrame(demo_data_saas)
+        df_saas.to_sql('PROD_MQT_SW_SAAS_OPPORTUNITY', self.conn, if_exists='replace', index=False)
+        
+        # Create demo PROD_MQT_CONSULTING_OPPORTUNITY data (alias table)
+        df_consulting_opp = df_consulting.copy()
+        df_consulting_opp.to_sql('PROD_MQT_CONSULTING_OPPORTUNITY', self.conn, if_exists='replace', index=False)
         
         self.tables_loaded['PROD_MQT_CONSULTING_PIPELINE'] = {
-            'rows': len(df),
-            'columns': list(df.columns),
+            'rows': len(df_consulting),
+            'columns': list(df_consulting.columns),
+            'file': 'demo_data'
+        }
+        
+        self.tables_loaded['PROD_MQT_SW_SAAS_OPPORTUNITY'] = {
+            'rows': len(df_saas),
+            'columns': list(df_saas.columns),
+            'file': 'demo_data'
+        }
+        
+        self.tables_loaded['PROD_MQT_CONSULTING_OPPORTUNITY'] = {
+            'rows': len(df_consulting_opp),
+            'columns': list(df_consulting_opp.columns),
             'file': 'demo_data'
         }
         
         self.generate_schema_info()
-        st.success(f"✅ Created demo data with {len(df)} sample opportunities")
+        total_rows = len(df_consulting) + len(df_saas)
+        st.success(f"✅ Created demo data with {total_rows} sample opportunities across 3 tables")
     
     def execute_query(self, sql_query: str) -> pd.DataFrame:
         """Execute SQL query and return results"""
         try:
+            # If using SQLite, convert DB2 syntax to SQLite
+            if self.db_type == "SQLite":
+                sql_query = self._convert_db2_to_sqlite(sql_query)
+            
             return pd.read_sql_query(sql_query, self.conn)
         except Exception as e:
             st.error(f"SQL Error: {e}")
             return pd.DataFrame()
+    
+    def _convert_db2_to_sqlite(self, query: str) -> str:
+        """Convert DB2 syntax to SQLite for testing"""
+        import re
+        
+        # Convert FETCH FIRST n ROWS ONLY to LIMIT n
+        query = re.sub(r'FETCH\s+FIRST\s+(\d+)\s+ROWS?\s+ONLY', r'LIMIT \1', query, flags=re.IGNORECASE)
+        
+        # Convert DECIMAL(value, precision, scale) to ROUND(value, scale)
+        decimal_pattern = r'DECIMAL\s*\(\s*([^,]+)\s*,\s*\d+\s*,\s*(\d+)\s*\)'
+        query = re.sub(decimal_pattern, r'ROUND(\1, \2)', query, flags=re.IGNORECASE)
+        
+        # Convert simple DECIMAL(expression) to ROUND(expression, 2)
+        simple_decimal_pattern = r'DECIMAL\s*\(\s*([^)]+)\s*\)'
+        query = re.sub(simple_decimal_pattern, r'ROUND(\1, 2)', query, flags=re.IGNORECASE)
+        
+        # Convert CURRENT DATE to date('now')
+        query = re.sub(r'CURRENT\s+DATE', "date('now')", query, flags=re.IGNORECASE)
+        
+        # Convert YEAR(column) to strftime('%Y', column) - but handle YEAR = value case
+        query = re.sub(r'YEAR\s*\(\s*([^)]+)\s*\)', r"strftime('%Y', \1)", query, flags=re.IGNORECASE)
+        
+        # Fix YEAR = value comparisons (like YEAR = 2024)
+        query = re.sub(r'AND\s+YEAR\s*=\s*', "AND strftime('%Y', date('now')) = ", query, flags=re.IGNORECASE)
+        query = re.sub(r'WHERE\s+YEAR\s*=\s*', "WHERE strftime('%Y', date('now')) = ", query, flags=re.IGNORECASE)
+        
+        # Convert MONTH(column) to strftime('%m', column)
+        query = re.sub(r'MONTH\s*\(\s*([^)]+)\s*\)', r"strftime('%m', \1)", query, flags=re.IGNORECASE)
+        
+        # Convert CAST(x AS DOUBLE) to CAST(x AS REAL) - SQLite uses REAL for floating point
+        query = re.sub(r'CAST\s*\(\s*([^)]+)\s+AS\s+DOUBLE\s*\)', r'CAST(\1 AS REAL)', query, flags=re.IGNORECASE)
+        
+        # Convert NULLIF function (SQLite has this, so keep it)
+        # No change needed for NULLIF
+        
+        # Remove DB2 comments that might cause issues
+        query = re.sub(r'—[^\n]*', '', query)  # Remove em-dash comments
+        
+        return query
 
 def create_hover_tooltip(column: str, data_dict: DataDictionary) -> str:
     """Create hover tooltip for column explanations"""
@@ -1049,7 +1247,7 @@ def create_hover_tooltip(column: str, data_dict: DataDictionary) -> str:
     
     return tooltip
 
-def create_visualization(df: pd.DataFrame, viz_type: str, columns_used: List[str]) -> None:
+def create_visualization(df: pd.DataFrame, viz_type: str, _columns_used: List[str]) -> None:
     """Create appropriate visualization based on data and type"""
     
     if df.empty:
@@ -1568,7 +1766,7 @@ def main():
         # Parallel generation option
         parallel_mode = st.checkbox(
             "🔄 Generate with 3 LLMs in parallel (comparison mode)",
-            help="Generate SQL with multiple models and compare results for accuracy validation"
+            help="Generate SQL with multiple models and compare results for accuracy validation. Multi-agent enhancement will be applied to the best result."
         )
         
         # Parallel mode configuration
@@ -1862,6 +2060,116 @@ def main():
             st.success("✅ File Browser Available")
         else:
             st.warning("⚠️ File Browser Unavailable (tkinter missing)")
+        
+        # Multi-Agent Configuration
+        st.subheader("🤖 Multi-Agent System")
+        
+        # Enable/disable agents
+        enable_agents = st.checkbox(
+            "Enable Multi-Agent SQL Enhancement",
+            value=True,
+            help="Use AI agents to validate DB2 syntax, enhance WHERE clauses, and optimize queries"
+        )
+        st.session_state.enable_agents = enable_agents
+        
+        # Show agent status
+        if enable_agents and AGENTS_AVAILABLE:
+            st.success("✅ Multi-Agent System: Active")
+        elif enable_agents and not AGENTS_AVAILABLE:
+            st.error("❌ Multi-Agent System: Import Error")
+        else:
+            st.info("ℹ️ Multi-Agent System: Disabled")
+        
+        if enable_agents:
+            with st.expander("⚙️ Agent Configuration", expanded=False):
+                st.write("**Active Agents:**")
+                
+                col1, col2 = st.columns(2)
+                with col1:
+                    st.write("🔍 **DB2 Syntax Validator**")
+                    st.write("• Validates SQL syntax")
+                    st.write("• Ensures DB2 compatibility")
+                    st.write("• Converts to SQLite when needed")
+                    
+                with col2:
+                    st.write("🎯 **WHERE Clause Enhancer**")
+                    st.write("• Adds time period filters")
+                    st.write("• Adds geographic filters")
+                    st.write("• Adds product/service filters")
+                    
+                st.write("🚀 **Query Optimizer**")
+                st.write("• Adds performance optimizations")
+                st.write("• Limits result sets")
+                st.write("• Uses MQT tables efficiently")
+                
+                # Database Connection Section
+        st.subheader("🗄️ Database Connection")
+        
+        # Show current connection status
+        if hasattr(st.session_state, 'db_manager') and st.session_state.db_manager:
+            current_db_type = st.session_state.db_manager.db_type
+            if current_db_type == "DB2":
+                st.success("🏢 **Connected**: IBM DB2 Database")
+            else:
+                st.warning("📁 **Fallback**: SQLite (Local Testing)")
+        
+        # DB2 Connection Form
+        with st.expander("🔧 Connect to IBM DB2", expanded=False):
+            st.write("**Enterprise Database Connection**")
+            
+            if not DB2_AVAILABLE:
+                st.error("❌ **IBM DB2 Driver Missing**")
+                st.code("pip install ibm-db", language="bash")
+                st.caption("Install the IBM DB2 driver to connect to DB2 databases")
+            else:
+                st.success("✅ IBM DB2 driver available")
+                
+                with st.form("db2_connection"):
+                    col1, col2 = st.columns(2)
+                    
+                    with col1:
+                        hostname = st.text_input("Hostname", placeholder="your-db2-server.com")
+                        database = st.text_input("Database", placeholder="SAMPLE")
+                        username = st.text_input("Username", placeholder="db2user")
+                    
+                    with col2:
+                        port = st.number_input("Port", value=50000, min_value=1, max_value=65535)
+                        password = st.text_input("Password", type="password")
+                        use_ssl = st.checkbox("Use SSL", value=True)
+                    
+                    col_connect, col_disconnect = st.columns(2)
+                    
+                    with col_connect:
+                        connect_clicked = st.form_submit_button("🔌 Connect to DB2", type="primary")
+                    
+                    with col_disconnect:
+                        disconnect_clicked = st.form_submit_button("🔌 Disconnect")
+                    
+                    if connect_clicked:
+                        if hostname and database and username and password:
+                            with st.spinner("Connecting to DB2..."):
+                                if st.session_state.db_manager.connect_to_db2(
+                                    hostname, port, database, username, password, use_ssl
+                                ):
+                                    st.session_state.db_type = "DB2"
+                                    st.rerun()
+                        else:
+                            st.error("Please fill in all connection fields")
+                    
+                    if disconnect_clicked:
+                        st.session_state.db_manager.disconnect()
+                        st.session_state.db_manager._init_default_connection()
+                        st.session_state.db_type = "SQLite"
+                        st.rerun()
+        
+        # Set db_type in session state
+        if hasattr(st.session_state, 'db_manager') and st.session_state.db_manager is not None:
+            st.session_state.db_type = st.session_state.db_manager.db_type
+                
+        if AGENTS_AVAILABLE:
+            st.success("🌟 Agent system ready!")
+        else:
+            st.error("❌ Agent system not available. Check sql_agent_orchestrator.py")
     
     # Main chat interface
     if all([st.session_state.data_dict, st.session_state.db_manager, st.session_state.llm_connector]):
@@ -1879,12 +2187,56 @@ def main():
             - "Compare this quarter vs last quarter performance"
             """)
         
-        # Chat input
-        question = st.text_input(
-            "Ask your question:",
-            placeholder="e.g., What is the total pipeline value by geography?",
-            key="question_input"
-        )
+        # Chat input with receptionist integration
+        col1, col2 = st.columns([4, 1])
+        
+        with col1:
+            question = st.text_input(
+                "Ask your question:",
+                placeholder="e.g., What is the total pipeline value by geography?",
+                key="question_input"
+            )
+        
+        with col2:
+            st.write("")  # Add space
+            use_receptionist = st.checkbox(
+                "🤖 Smart Assistant",
+                value=True,
+                help="Let the AI assistant guide you to provide complete context"
+            )
+        
+        # Initialize receptionist if enabled
+        if RECEPTIONIST_AVAILABLE and use_receptionist and question:
+            receptionist = ReceptionistAgent()
+            
+            # Check if receptionist should intervene
+            if receptionist.should_intervene(question):
+                st.warning("🔍 Let me help you refine your question for better results!")
+                
+                # Analyze the question
+                context, missing = receptionist.analyze_question(question)
+                
+                # Show interactive chat interface
+                refined_context = receptionist.render_interactive_chat(context, missing)
+                
+                # Update question if context is complete
+                if refined_context.confidence_level >= 1.0:
+                    question = refined_context.question
+                    st.success(f"✨ Enhanced question: {question}")
+                    # Store the refined question
+                    st.session_state.refined_question = question
+                elif question:
+                    # Show what's missing but allow user to proceed
+                    missing_items = []
+                    if missing.needs_time: missing_items.append("time period")
+                    if missing.needs_geography: missing_items.append("geographic region")
+                    if missing.needs_product: missing_items.append("product type")
+                    if missing.needs_metric: missing_items.append("metric focus")
+                    
+                    if missing_items:
+                        st.info(f"💡 You can proceed now, or specify: {', '.join(missing_items)} for more precise results.")
+            else:
+                st.success("🎯 Great question! All necessary context detected.")
         
         if st.button("🚀 Generate Query") and question:
             
@@ -1936,6 +2288,29 @@ def main():
                         question, schema_info, comprehensive_context
                     )
                     
+                    # Process best result with agent orchestration if available
+                    if AGENTS_AVAILABLE and st.session_state.get('enable_agents', True):
+                        best_result = parallel_result.get('best_result', {})
+                        if best_result and best_result.get('sql_query'):
+                            with st.spinner("🤖 Enhancing best query with multi-agent system..."):
+                                agent_result = process_with_agents(
+                                    sql_query=best_result.get('sql_query', ''),
+                                    question=question,
+                                    db_manager=st.session_state.db_manager,
+                                    data_dict=st.session_state.data_dict,
+                                    db_type=st.session_state.get('db_type', 'DB2'),
+                                    llm_connector=st.session_state.llm_connector
+                                )
+                                
+                                if agent_result['success']:
+                                    # Update the best result with enhanced query
+                                    best_result['original_query'] = best_result['sql_query']
+                                    best_result['sql_query'] = agent_result['final_query']
+                                    best_result['agent_processing'] = agent_result
+                                    best_result['agent_explanation'] = agent_result.get('explanation', '')
+                                    best_result['detailed_processing'] = agent_result.get('processing_log', [])
+                                    parallel_result['best_result'] = best_result
+                    
                     # Store parallel results
                     st.session_state.query_result = parallel_result
                     st.session_state.current_question = question
@@ -1946,6 +2321,26 @@ def main():
                     result = st.session_state.llm_connector.generate_sql(
                         question, schema_info, comprehensive_context
                     )
+                    
+                    # Process with agent orchestration if available and enabled
+                    if AGENTS_AVAILABLE and st.session_state.get('enable_agents', True) and result.get('sql_query'):
+                        with st.spinner("🤖 Processing with multi-agent system..."):
+                            agent_result = process_with_agents(
+                                sql_query=result.get('sql_query', ''),
+                                question=question,
+                                db_manager=st.session_state.db_manager,
+                                data_dict=st.session_state.data_dict,
+                                db_type=st.session_state.get('db_type', 'DB2'),
+                                llm_connector=st.session_state.llm_connector
+                            )
+                            
+                            if agent_result['success']:
+                                # Update the result with enhanced query
+                                result['original_query'] = result['sql_query']
+                                result['sql_query'] = agent_result['final_query']
+                                result['agent_processing'] = agent_result
+                                result['agent_explanation'] = agent_result.get('explanation', '')
+                                result['detailed_processing'] = agent_result.get('processing_log', [])
                     
                     # Store result in session state
                     st.session_state.query_result = result
@@ -1984,7 +2379,7 @@ def main():
                 st.subheader("🤖 Individual LLM Results")
                 
                 individual_results = result.get('results', [])
-                for i, llm_result in enumerate(individual_results):
+                for _, llm_result in enumerate(individual_results):
                     with st.expander(f"🧠 {llm_result.get('provider', 'Unknown').title()} - {llm_result.get('model', 'Unknown')} ({llm_result.get('generation_time', 0)}s)"):
                         if llm_result.get('error'):
                             st.error(f"❌ Error: {llm_result['error']}")
@@ -1999,14 +2394,77 @@ def main():
                     st.info(f"**Selected:** {best_result.get('provider', 'Unknown').title()} - {best_result.get('model', 'Unknown')}")
                     st.code(best_result.get('sql_query', ''), language='sql')
                     
+                    # Show agent processing for best result if available
+                    if best_result.get('agent_processing'):
+                        with st.expander("🤖 Multi-Agent Enhancement Details", expanded=False):
+                            # Debug info
+                            st.write("**🔍 Debug: Agent Processing Available**")
+                            agent_proc = best_result.get('agent_processing', {})
+                            st.write(f"- Success: {agent_proc.get('success', 'Unknown')}")
+                            st.write(f"- Processing log items: {len(agent_proc.get('processing_log', []))}")
+                            
+                            # Show detailed step visualization
+                            if best_result.get('detailed_processing'):
+                                st.write("**📋 Processing Steps:**")
+                                create_step_visualization(best_result['detailed_processing'])
+                            elif agent_proc.get('processing_log'):
+                                st.write("**📋 Processing Steps:**")
+                                create_step_visualization(agent_proc['processing_log'])
+                            else:
+                                st.warning("No detailed processing steps found")
+                            
+                            st.markdown("---")
+                            if best_result.get('agent_explanation'):
+                                st.markdown(best_result.get('agent_explanation', ''))
+                            else:
+                                st.write("No agent explanation available")
+                            
+                            # Show original vs enhanced query if different
+                            if best_result.get('original_query') and best_result['original_query'] != best_result['sql_query']:
+                                st.markdown("---")
+                                st.write("**✨ Query Enhancement Comparison**")
+                                col_orig, col_enhanced = st.columns(2)
+                                with col_orig:
+                                    st.write("**📝 Original Query:**")
+                                    st.code(best_result['original_query'], language='sql')
+                                with col_enhanced:
+                                    st.write("**✨ Enhanced Query:**")
+                                    st.code(best_result['sql_query'], language='sql')
+                                    
+                                # Show improvements summary
+                                if best_result.get('agent_processing', {}).get('improvements'):
+                                    improvements = best_result['agent_processing']['improvements']
+                                    st.write("**📈 Improvements Summary**")
+                                    col1, col2, col3 = st.columns(3)
+                                    with col1:
+                                        st.metric("Syntax Fixes", improvements.get('syntax_corrections', 0))
+                                    with col2:
+                                        st.metric("WHERE Enhancements", improvements.get('where_enhancements', 0))
+                                    with col3:
+                                        st.metric("Optimizations", improvements.get('optimizations', 0))
+                    
                     # Execute best query button
                     if st.button("▶️ Execute Best Query", key="execute_parallel_btn"):
                         if not st.session_state.db_manager.tables_loaded:
                             st.error("❌ No tables loaded! Please load MQT tables first in the sidebar.")
                         else:
+                            # Show which query will be executed
+                            query_to_execute = best_result.get('sql_query', '')
+                            st.info(f"**Executing Query**: {len(query_to_execute)} characters")
+                            
+                            # Show if agent processing was applied
+                            if best_result.get('agent_processing'):
+                                agent_success = best_result['agent_processing'].get('success', False)
+                                if agent_success:
+                                    st.success("🤖 Using agent-enhanced query")
+                                else:
+                                    st.warning("⚠️ Using original query (agent processing failed)")
+                            else:
+                                st.info("ℹ️ Using original LLM-generated query (no agent processing)")
+                            
                             with st.spinner("Executing best query..."):
                                 try:
-                                    df = st.session_state.db_manager.execute_query(best_result.get('sql_query', ''))
+                                    df = st.session_state.db_manager.execute_query(query_to_execute)
                                     
                                     if not df.empty:
                                         st.subheader("📊 Results")
@@ -2049,6 +2507,55 @@ def main():
                     st.subheader("🔍 Generated Query")
                     st.code(result.get('sql_query', ''), language='sql')
                     
+                    # Show agent processing details if available
+                    if result.get('agent_processing'):
+                        with st.expander("🤖 Multi-Agent Processing Details", expanded=False):
+                            # Debug info
+                            st.write("**🔍 Debug: Agent Processing Available**")
+                            agent_proc = result.get('agent_processing', {})
+                            st.write(f"- Success: {agent_proc.get('success', 'Unknown')}")
+                            st.write(f"- Processing log items: {len(agent_proc.get('processing_log', []))}")
+                            
+                            # Show detailed step visualization
+                            if result.get('detailed_processing'):
+                                st.write("**📋 Processing Steps:**")
+                                create_step_visualization(result['detailed_processing'])
+                            elif agent_proc.get('processing_log'):
+                                st.write("**📋 Processing Steps:**")
+                                create_step_visualization(agent_proc['processing_log'])
+                            else:
+                                st.warning("No detailed processing steps found")
+                            
+                            st.markdown("---")
+                            if result.get('agent_explanation'):
+                                st.markdown(result.get('agent_explanation', ''))
+                            else:
+                                st.write("No agent explanation available")
+                            
+                            # Show original vs enhanced query if different
+                            if result.get('original_query') and result['original_query'] != result['sql_query']:
+                                st.markdown("---")
+                                st.write("**✨ Query Enhancement Comparison**")
+                                col_orig, col_enhanced = st.columns(2)
+                                with col_orig:
+                                    st.write("**📝 Original Query:**")
+                                    st.code(result['original_query'], language='sql')
+                                with col_enhanced:
+                                    st.write("**✨ Enhanced Query:**")
+                                    st.code(result['sql_query'], language='sql')
+                                    
+                                # Show improvements summary
+                                if result.get('agent_processing', {}).get('improvements'):
+                                    improvements = result['agent_processing']['improvements']
+                                    st.write("**📈 Improvements Summary**")
+                                    col1, col2, col3 = st.columns(3)
+                                    with col1:
+                                        st.metric("Syntax Fixes", improvements.get('syntax_corrections', 0))
+                                    with col2:
+                                        st.metric("WHERE Enhancements", improvements.get('where_enhancements', 0))
+                                    with col3:
+                                        st.metric("Optimizations", improvements.get('optimizations', 0))
+                    
                     st.subheader("💡 Explanation")
                     st.write(result.get('explanation', 'No explanation available'))
                     
@@ -2057,9 +2564,23 @@ def main():
                         if not st.session_state.db_manager.tables_loaded:
                             st.error("❌ No tables loaded! Please load MQT tables first in the sidebar.")
                         else:
+                            # Show which query will be executed
+                            query_to_execute = result.get('sql_query', '')
+                            st.info(f"**Executing Query**: {len(query_to_execute)} characters")
+                            
+                            # Show if agent processing was applied
+                            if result.get('agent_processing'):
+                                agent_success = result['agent_processing'].get('success', False)
+                                if agent_success:
+                                    st.success("🤖 Using agent-enhanced query")
+                                else:
+                                    st.warning("⚠️ Using original query (agent processing failed)")
+                            else:
+                                st.info("ℹ️ Using original LLM-generated query (no agent processing)")
+                            
                             with st.spinner("Executing query..."):
                                 try:
-                                    df = st.session_state.db_manager.execute_query(result.get('sql_query', ''))
+                                    df = st.session_state.db_manager.execute_query(query_to_execute)
                                     
                                     if not df.empty:
                                         st.subheader("📊 Results")
@@ -2106,12 +2627,14 @@ def main():
                     
                     st.write("**Columns Used:**")
                     for col in result.get('columns_used', []):
-                        with st.expander(f"📊 {col}", expanded=False):
-                            info = st.session_state.data_dict.get_column_info(col)
-                            if info:
-                                st.write(f"**Description:** {info.get('description', 'N/A')}")
-                                st.write(f"**Slovak:** {info.get('slovak_description', 'N/A')}")
-                                st.write(f"**Business Use:** {info.get('business_use', 'N/A')}")
+                        info = st.session_state.data_dict.get_column_info(col)
+                        if info:
+                            st.write(f"• **{col}**")
+                            st.write(f"  - {info.get('description', 'No description available')}")
+                            if info.get('business_use') and info.get('business_use') != 'N/A':
+                                st.write(f"  - Business Use: {info.get('business_use')}")
+                        else:
+                            st.write(f"• {col}")
                     
                     confidence = result.get('confidence', 0)
                     st.metric("Confidence", f"{confidence:.1%}")
