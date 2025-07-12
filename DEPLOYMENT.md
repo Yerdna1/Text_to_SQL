@@ -1,72 +1,166 @@
-# Streamlit Cloud Deployment Guide
+# IBM Sales Pipeline Analytics - Deployment Guide
 
-## Quick Deploy to Streamlit Cloud
+Modern deployment guide for the Next.js/FastAPI application to Daytona and other Docker environments.
 
-### 1. Deploy the App
-1. Go to [share.streamlit.io](https://share.streamlit.io)
-2. Connect your GitHub account
-3. Select repository: `Yerdna1/Text_to_SQL`
-4. Main file path: `create_interactive_app.py`
-5. Click "Deploy!"
+## 🏗️ Architecture
 
-### 2. Set Environment Variables
-After deployment, you need to configure the API keys:
+The application consists of:
+- **Frontend**: Next.js React application (Port 3000)
+- **Backend**: FastAPI Python application (Port 8000)
+- **Multi-Agent System**: AI-powered SQL enhancement
+- **Database**: SQLite with dynamic MQT table loading
 
-1. Go to your app's settings (gear icon)
-2. Click on "Secrets" in the left sidebar
-3. Add the following secrets in TOML format:
+## 🚀 Quick Deployment to Daytona
 
-```toml
-[env]
-GEMINI_API_KEY = "AIzaSyC3Ppu2KDF9-pSNzC2A5jvQH7wn7c9o3cE"
-DEEPSEEK_API_KEY = "sk-0574945ee88a427f8dd55bb40ea804eb"
-OPENROUTER_API_KEY = "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"
-```
+### Prerequisites
+- Docker and Docker Compose installed
+- At least 2GB RAM available
+- Ports 3000 and 8000 available
 
-4. Click "Save"
-5. Your app will automatically restart with the new environment variables
-
-### 3. App Features
-- **Multi-LLM Support**: Gemini, DeepSeek, OpenRouter, OpenAI, Anthropic
-- **Natural Language to SQL**: Convert questions to SQL queries
-- **Interactive Visualizations**: KPIs, charts, and formatted tables
-- **Data Dictionary Integration**: Upload Excel files for column explanations
-- **File Upload**: Support for CSV and Excel MQT data files
-
-### 4. Usage
-1. Upload your data dictionary (Excel file) in the sidebar
-2. Load MQT tables (CSV/Excel files or directory path)
-3. Choose your preferred LLM provider
-4. Ask natural language questions about your data
-5. View results with automatic visualizations and explanations
-
-### 5. Local Development
-For local development, copy `.env.example` to `.env` and add your API keys:
+### 1. Quick Start
 
 ```bash
-cp .env.example .env
-# Edit .env with your API keys
-streamlit run create_interactive_app.py
+# Run the deployment script
+./deploy.sh
 ```
 
-### 6. Repository Structure
-```
-├── create_interactive_app.py    # Main Streamlit application
-├── requirements.txt             # Python dependencies
-├── .streamlit/
-│   ├── config.toml             # Streamlit configuration
-│   └── secrets.toml            # Local secrets (not committed)
-├── .env                        # Local environment variables (not committed)
-├── .gitignore                  # Git ignore rules
-└── DEPLOYMENT.md              # This deployment guide
+### 2. Access the Application
+
+- **Web Interface**: http://localhost:3000
+- **API Documentation**: http://localhost:8000/docs
+- **API Health Check**: http://localhost:8000
+
+## 🎯 Daytona-Specific Deployment
+
+### Using Daytona with API Key: `cd lovable-ui`
+
+```bash
+# Method 1: Frontend development
+cd frontend
+npm install
+npm run dev
+
+# Method 2: Full Docker deployment
+docker-compose up -d
 ```
 
-### 7. Troubleshooting
-- **Missing API Keys**: Ensure all required environment variables are set in Streamlit Cloud secrets
-- **Module Errors**: Check that all dependencies are listed in `requirements.txt`
-- **File Upload Issues**: Use the upload widgets or provide full file paths for local development
+### Environment Variables for Daytona
 
-### 8. Security Notes
-- API keys are stored securely in Streamlit Cloud secrets
-- The `.env` file and `secrets.toml` are excluded from version control
-- Environment variables are loaded automatically on app startup
+Create a `.env` file:
+```bash
+# API Configuration
+BACKEND_PORT=8000
+FRONTEND_PORT=3000
+
+# Default API Keys (optional)
+GEMINI_API_KEY=your_key_here
+DEEPSEEK_API_KEY=your_key_here
+OPENAI_API_KEY=your_key_here
+```
+
+## 📊 Getting Started
+
+### 1. Data Setup
+**Option A: Demo Data**
+- Go to "Data Setup" tab
+- Click "Demo Data" 
+- Click "Load Demo Data"
+
+**Option B: Upload Your Data**
+- Go to "Data Setup" tab
+- Click "Upload Files"
+- Upload your MQT CSV/Excel files
+
+### 2. LLM Configuration
+- Go to "LLM Setup" tab
+- Choose your preferred provider:
+  - **Gemini** (Recommended): Get API key from https://ai.google.dev/gemini-api
+  - **DeepSeek** (Recommended): Get API key from https://platform.deepseek.com
+  - **OpenAI**: Get API key from https://platform.openai.com/api-keys
+- Enter your API key and connect
+
+### 3. Start Querying
+- Go to "Query Interface" tab
+- Ask natural language questions like:
+  - "What is the total pipeline value by geography?"
+  - "Show me win rates by market segment"
+
+## 🔧 Development Commands
+
+```bash
+# Frontend development
+cd frontend
+npm install
+npm run dev
+
+# Backend development  
+cd backend
+pip install -r requirements.txt
+python main.py
+```
+
+## 🐳 Docker Deployment
+
+```bash
+# Build and start
+docker-compose up -d
+
+# Check logs
+docker-compose logs -f
+
+# Stop services
+docker-compose down
+```
+
+## 📁 Project Structure
+```
+├── frontend/                   # Next.js React frontend
+│   ├── app/                   # App router pages
+│   ├── components/            # React components
+│   ├── package.json          # Frontend dependencies
+│   └── Dockerfile            # Frontend container
+├── backend/                   # FastAPI backend
+│   ├── main.py               # API server
+│   ├── requirements.txt      # Python dependencies
+│   └── Dockerfile.backend    # Backend container
+├── agents/                    # Multi-agent system
+├── data_dictionary.py         # Data dictionary management
+├── database_manager.py        # Database operations
+├── llm_connector.py           # LLM integrations
+├── docker-compose.yml         # Docker orchestration
+├── deploy.sh                  # Deployment script
+└── DEPLOYMENT.md              # This guide
+```
+
+## 🔍 Troubleshooting
+
+**Backend fails to start:**
+```bash
+docker-compose logs backend
+docker-compose restart backend
+```
+
+**Frontend build fails:**
+```bash
+docker-compose build --no-cache frontend
+```
+
+**Port conflicts:**
+Edit `docker-compose.yml` to use different ports
+
+## 📝 Features
+
+- ✅ Natural Language to SQL conversion
+- ✅ Multi-Agent SQL enhancement and validation
+- ✅ Interactive web interface with React components
+- ✅ File upload and demo data loading
+- ✅ Multiple LLM provider support (Gemini, DeepSeek, OpenAI, etc.)
+- ✅ Real-time query results with charts and tables
+- ✅ Docker containerization for easy deployment
+- ✅ Daytona deployment ready with API key support
+
+## 🔒 Security Notes
+
+- API keys are stored in memory only (not persisted)
+- All database operations are isolated to SQLite
+- No external network access required except for LLM API calls

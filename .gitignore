@@ -1,11 +1,9 @@
 # Environment variables
 .env
 .env.local
-.env.production
-.env.staging
-
-# Streamlit secrets (for local development only)
-.streamlit/secrets.toml
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Python
 __pycache__/
@@ -37,6 +35,23 @@ ENV/
 env.bak/
 venv.bak/
 
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
 # IDE
 .vscode/
 .idea/
@@ -53,24 +68,23 @@ venv.bak/
 ehthumbs.db
 Thumbs.db
 
-# Temporary files
-*.tmp
-*.temp
-temp/
-tmp/
-
 # Logs
-*.log
 logs/
+*.log
 
-# Database
-*.db
-*.sqlite
-*.sqlite3
+# Temporary files
+tmp/
+temp/
+*.tmp
 
-# Jupyter
-.ipynb_checkpoints/
+# Docker
+.dockerignore
 
-# Local configuration
-config.local.py
-settings.local.py
+# Secrets and keys
+secrets.toml
+*.pem
+*.key
+
+# Daytona
+daytona-workspace.yaml
+EOF < /dev/null

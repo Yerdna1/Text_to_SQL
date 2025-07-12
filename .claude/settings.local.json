@@ -20,7 +20,12 @@
       "Bash(rg:*)",
       "Bash(python:*)",
       "Bash(ls:*)",
-      "Bash(mv:*)"
+      "Bash(mv:*)",
+      "Bash(./daytona-deploy.sh:*)",
+      "Bash(dos2unix:*)",
+      "Bash(./deploy.sh)",
+      "WebFetch(domain:www.daytona.io)",
+      "Bash(pip install:*)"
     ],
     "deny": []
   }

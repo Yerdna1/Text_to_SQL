@@ -1,0 +1,37 @@
+{
+  "name": "ibm-pipeline-analytics-web",
+  "version": "1.0.0",
+  "description": "IBM Sales Pipeline Analytics with Natural Language to SQL",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "axios": "^1.5.0",
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "tailwindcss": "^3.3.5",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "clsx": "^2.0.0",
+    "react-hot-toast": "^2.4.1",
+    "lucide-react": "^0.292.0",
+    "framer-motion": "^10.16.4",
+    "@tanstack/react-query": "^5.8.4",
+    "recharts": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "@types/react": "^18.2.33",
+    "@types/react-dom": "^18.2.14",
+    "eslint": "^8.52.0",
+    "eslint-config-next": "14.0.0",
+    "typescript": "^5.2.2"
+  }
+}
