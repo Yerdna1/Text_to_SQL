@@ -1,6 +1,6 @@
 'use client'
 
-import { CheckCircleIcon, XCircleIcon, InformationCircleIcon } from 'lucide-react'
+import { CheckCircle, XCircle, Info } from 'lucide-react'
 
 interface AgentStep {
   agent: string
@@ -65,9 +65,9 @@ export function AgentSteps({ steps }: AgentStepsProps) {
             <div className="flex items-start space-x-3">
               <div className="flex-shrink-0">
                 {step.success ? (
-                  <CheckCircleIcon className="w-5 h-5 text-green-500 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5" />
                 ) : (
-                  <XCircleIcon className="w-5 h-5 text-red-500 mt-0.5" />
+                  <XCircle className="w-5 h-5 text-red-500 mt-0.5" />
                 )}
               </div>
               
@@ -153,7 +153,7 @@ export function AgentSteps({ steps }: AgentStepsProps) {
       
       {steps.length === 0 && (
         <div className="text-center py-8 text-gray-500">
-          <InformationCircleIcon className="w-8 h-8 mx-auto mb-2 text-gray-400" />
+          <Info className="w-8 h-8 mx-auto mb-2 text-gray-400" />
           <p>No processing steps available</p>
         </div>
       )}

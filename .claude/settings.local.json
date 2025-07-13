@@ -25,7 +25,12 @@
       "Bash(dos2unix:*)",
       "Bash(./deploy.sh)",
       "WebFetch(domain:www.daytona.io)",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(npm install)",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(npx next:*)",
+      "Bash(PORT=3000 npm run dev)"
     ],
     "deny": []
   }
